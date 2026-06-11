@@ -140,8 +140,8 @@
     "semantic_hash": ""
   },
   "src/app/layout.tsx": {
-    "mtime": 1781150562.3944554,
-    "ast_hash": "0100bde22bc340aa01089c06c7d3888d",
+    "mtime": 1781151175.6513793,
+    "ast_hash": "c09888264a1febfd9b5f562750443607",
     "semantic_hash": ""
   },
   "src/app/page.tsx": {
@@ -180,13 +180,13 @@
     "semantic_hash": ""
   },
   "src/components/sections/FooterSection.tsx": {
-    "mtime": 1781143953.8236012,
-    "ast_hash": "e15f3a00bd36c84a4d3082be40d70c9a",
+    "mtime": 1781151239.0855165,
+    "ast_hash": "b473a06b7df9ef0b5fd2ddee2d2343bc",
     "semantic_hash": ""
   },
   "src/components/sections/Hero.tsx": {
-    "mtime": 1781150655.6763806,
-    "ast_hash": "81e8396b41a0745e7df8e3e3a88abfce",
+    "mtime": 1781151182.5826936,
+    "ast_hash": "ee875626b873fe93890c14f2107efbb9",
     "semantic_hash": ""
   },
   "src/components/sections/Revenue.tsx": {
@@ -195,8 +195,8 @@
     "semantic_hash": ""
   },
   "src/components/sections/RevenueCycle.tsx": {
-    "mtime": 1781150312.0507805,
-    "ast_hash": "cee035776653fa5d3d33ac9e49121a8d",
+    "mtime": 1781151227.3975127,
+    "ast_hash": "17a3f49895c2efe0e4c821c8f0dba922",
     "semantic_hash": ""
   },
   "src/components/sections/Services.tsx": {
@@ -210,8 +210,8 @@
     "semantic_hash": ""
   },
   "src/components/sections/Team.tsx": {
-    "mtime": 1781138370.929314,
-    "ast_hash": "c1c9e2df1b0da902183019f309f5ec0f",
+    "mtime": 1781151188.9558663,
+    "ast_hash": "6be095ad2304f37ee1a82a6ad6ee1fa2",
     "semantic_hash": ""
   },
   "src/components/sections/Testimonials.tsx": {
@@ -1187,6 +1187,11 @@
   ".codex-screens/nav-close-open.png": {
     "mtime": 1781146443.4433768,
     "ast_hash": "90a12d3488f8bac4ae0bc8bc89d1ab2d",
+    "semantic_hash": ""
+  },
+  "public/dialexpert/hero-poster.jpg": {
+    "mtime": 1781151115.87,
+    "ast_hash": "219e8ebbbd57b560e48ff008dfa99dcb",
     "semantic_hash": ""
   }
 }
