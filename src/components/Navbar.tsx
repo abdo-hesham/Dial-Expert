@@ -63,7 +63,7 @@ export default function Navbar() {
             alt="Dial Expert"
             width={4027}
             height={848}
-            loading="eager"
+            priority
             className="brand-logo"
           />
         </Link>

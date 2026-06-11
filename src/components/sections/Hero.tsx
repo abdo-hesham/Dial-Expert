@@ -25,6 +25,9 @@ export default function Hero() {
         muted
         playsInline
         className="hero-video"
+        poster="/dialexpert/hero.jpg"
+        preload="auto"
+        {...({ fetchpriority: "high" } as any)}
       >
         <source
           src="https://framerusercontent.com/assets/hyfo5PQ53wvNBdlUY8WqoWyo41I.mp4"
