@@ -13,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" data-scroll-behavior="smooth">
+    <html lang="en" data-scroll-behavior="smooth" style={{ overflowX: "hidden" }}>
       <head>
         <link rel="preconnect" href="https://fonts.cdnfonts.com" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,12 +21,12 @@ export default function RootLayout({
         <link rel="preconnect" href="https://framerusercontent.com" />
         <link rel="preload" as="image" href="https://framerusercontent.com/images/aSGF5PBvDXfvTirXeZzxaND6bcg.png?width=4027&height=848" />
         <link rel="preload" as="video" href="https://framerusercontent.com/assets/hyfo5PQ53wvNBdlUY8WqoWyo41I.mp4" />
-        <link rel="preload" as="image" href="/dialexpert/hero-poster.jpg" />
+        <link rel="preload" as="image" href="/dialexpert/hero-poster.webp" />
         <link rel="preload" as="font" href="https://fonts.cdnfonts.com/s/85546/Satoshi-Black.woff" crossOrigin="anonymous" />
         <link rel="preload" as="font" href="https://fonts.cdnfonts.com/s/85546/Satoshi-Bold.woff" crossOrigin="anonymous" />
         <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
         <style dangerouslySetInnerHTML={{ __html: "@font-face{font-family:Satoshi;font-style:normal;font-weight:900;font-display:swap;src:url(https://fonts.cdnfonts.com/s/85546/Satoshi-Black.woff) format('woff')}@font-face{font-family:Satoshi;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.cdnfonts.com/s/85546/Satoshi-Bold.woff) format('woff')}" }} />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+        <script dangerouslySetInnerHTML={{ __html: "(function(){var l=document.createElement('link');l.rel='stylesheet';l.href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap';document.head.appendChild(l)})()" }} />
       </head>
       <body>{children}</body>
     </html>

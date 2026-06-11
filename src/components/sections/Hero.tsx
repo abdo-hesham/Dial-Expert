@@ -25,7 +25,7 @@ export default function Hero() {
         muted
         playsInline
         className="hero-video"
-        poster="/dialexpert/hero-poster.jpg"
+        poster="/dialexpert/hero-poster.webp"
         preload="auto"
         style={{ maxWidth: "100%" }}
         {...({ fetchPriority: "high" } as any)}
