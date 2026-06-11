@@ -31,15 +31,17 @@
 }
 
 html {
+  overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-padding-top: 96px;
 }
 
 body {
   margin: 0;
+  overflow-x: hidden;
   background: var(--bg);
   color: var(--ink);
-  font-family: "Inter Variable", "Inter", Arial, Helvetica, sans-serif;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
   letter-spacing: 0;
 }
 
@@ -61,7 +63,7 @@ img {
 }
 
 .page {
-  overflow-x: clip;
+  overflow-x: hidden;
 }
 
 /* ── Navigation ── */
@@ -286,7 +288,7 @@ img {
 }
 
 .hero-title {
-  font-family: "Satoshi", "Inter Variable", "Inter", Arial, Helvetica, sans-serif;
+  font-family: "Satoshi", "Inter", Arial, Helvetica, sans-serif;
   font-weight: 900;
   font-size: 64px;
   line-height: 1.2;
@@ -310,6 +312,32 @@ img {
 .hero-title .hero-title-word {
   display: inline-block;
   white-space: nowrap;
+  animation: hero-word-reveal 1.15s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation-delay: var(--word-delay, 0ms);
+  will-change: transform, opacity, filter;
+}
+
+@keyframes hero-word-reveal {
+  from {
+    opacity: 0;
+    filter: blur(8px);
+    transform: translateY(28px);
+  }
+
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-title .hero-title-word {
+    animation: none;
+    opacity: 1;
+    filter: none;
+    transform: none;
+  }
 }
 
 .hero-body {
@@ -1163,7 +1191,7 @@ img {
 }
 
 .timeline-content .step-label {
-  font-family: "Inter Variable", "Inter", Arial, Helvetica, sans-serif;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.6em;
@@ -1187,7 +1215,7 @@ img {
 }
 
 .timeline-content .detail {
-  font-family: "Inter Variable", "Inter", Arial, Helvetica, sans-serif;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
   margin: 12px 0 24px;
   color: rgb(74, 79, 84);
   font-size: 16px;
@@ -1596,8 +1624,8 @@ img {
 .footer {
   position: relative;
   width: 100vw;
-  height: 100vh;
-  min-height: 100vh;
+  height: 100svh;
+  min-height: 860px;
   margin-left: calc(50% - 50vw);
   overflow: hidden;
   padding: 0;
@@ -1608,10 +1636,10 @@ img {
 .footer-container {
   position: relative;
   width: 100%;
-  height: 100vh;
-  min-height: 100vh;
+  height: 100%;
+  min-height: inherit;
   overflow: hidden;
-  padding: 46px var(--page-gutter) 24px;
+  padding: clamp(46px, 5.2vh, 58px) var(--page-gutter) 22px;
   border-radius: 0;
   background: #000;
   display: flex;
@@ -1643,7 +1671,7 @@ img {
   align-items: start;
   max-width: var(--content);
   width: 100%;
-  margin: 0 auto auto;
+  margin: 0 auto 0;
 }
 
 .footer-branding {
@@ -1656,7 +1684,7 @@ img {
 .footer-logo {
   display: inline-flex;
   width: 135px;
-  margin-bottom: 96px;
+  margin-bottom: clamp(92px, 12vh, 124px);
 }
 
 .footer-logo img {
@@ -1759,7 +1787,7 @@ img {
   z-index: 1;
   width: 100%;
   max-width: var(--content);
-  margin: 0 auto;
+  margin: clamp(82px, 9vh, 112px) auto 0;
 }
 
 .footer-divider {
@@ -1805,14 +1833,16 @@ img {
   position: relative;
   z-index: 1;
   max-width: var(--content);
-  margin: 76px auto 0;
+  width: 100%;
+  margin: clamp(70px, 8vh, 96px) auto 0;
   color: rgb(255, 255, 255);
   font-family: "Satoshi", sans-serif;
-  font-size: clamp(76px, 14.1vw, 223px);
+  font-size: clamp(94px, 12vw, 223px);
   font-weight: 900;
   line-height: 0.92;
   letter-spacing: 0;
   text-align: center;
+  white-space: nowrap;
 }
 
 /* ── Contact Page ── */
@@ -1820,7 +1850,7 @@ img {
 .contact-page {
   min-height: 100vh;
   background: var(--bg);
-  overflow-x: clip;
+  overflow-x: hidden;
 }
 
 .contact-hero {
@@ -2805,6 +2835,7 @@ img {
     margin-top: 54px;
     font-size: clamp(56px, 20vw, 120px);
     text-align: left;
+    white-space: normal;
   }
 
   .topbar .mobile-nav-shell {

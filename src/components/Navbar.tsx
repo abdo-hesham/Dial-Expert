@@ -64,7 +64,7 @@ export default function Navbar() {
             width={263}
             height={55}
             sizes="(max-width: 760px) 118px, (max-width: 1200px) 150px, 205px"
-            quality={60}
+            quality={45}
             loading="eager"
             fetchPriority="high"
             className="brand-logo"
@@ -118,7 +118,7 @@ export default function Navbar() {
             width={150}
             height={32}
             sizes="150px"
-            quality={60}
+            quality={45}
             loading="lazy"
             className="brand-logo"
           />

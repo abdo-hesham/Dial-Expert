@@ -1,7 +1,5 @@
-"use client"
-
+import type { CSSProperties } from "react"
 import Link from "next/link"
-import { motion, useReducedMotion } from "framer-motion"
 
 const heroLines = [
   ["MOST", "OUTSOURCING", "FAILS"],
@@ -15,8 +13,6 @@ const heroLineStarts = heroLines.map((_, index) =>
 )
 
 export default function Hero() {
-  const shouldReduceMotion = useReducedMotion()
-
   return (
     <section id="top" className="hero">
       <video
@@ -38,49 +34,25 @@ export default function Hero() {
       <div className="hero-overlay" />
       <div className="hero-inner">
         <div className="hero-copy">
-          <motion.h1
-            className="hero-title"
-            initial="hidden"
-            animate="show"
-            variants={{
-              hidden: {},
-              show: {
-                transition: shouldReduceMotion
-                  ? { duration: 0 }
-                  : { staggerChildren: 0.16 },
-              },
-            }}
-          >
+          <h1 className="hero-title">
             {heroLines.map((line, lineIndex) => (
               <span className="hero-title-line" key={line.join(" ")}>
                 {line.map((word, wordIndex) => (
-                  <motion.span
+                  <span
                     className="hero-title-word"
                     key={`${lineIndex}-${wordIndex}-${word}`}
-                    variants={{
-                      hidden: shouldReduceMotion
-                        ? { opacity: 1, y: 0, filter: "blur(0px)" }
-                        : { opacity: 0, y: 28, filter: "blur(8px)" },
-                      show: {
-                        opacity: 1,
-                        y: 0,
-                        filter: "blur(0px)",
-                        transition: shouldReduceMotion
-                          ? { duration: 0 }
-                          : {
-                              duration: 1.15,
-                              delay: (heroLineStarts[lineIndex] + wordIndex) * 0.09,
-                              ease: [0.22, 1, 0.36, 1],
-                            },
-                      },
-                    }}
+                    style={
+                      {
+                        "--word-delay": `${(heroLineStarts[lineIndex] + wordIndex) * 90}ms`,
+                      } as CSSProperties
+                    }
                   >
                     {word}
-                  </motion.span>
+                  </span>
                 ))}
               </span>
             ))}
-          </motion.h1>
+          </h1>
           <div className="hero-body">
             <p className="hero-sub">
               Outsourcing usually means starting over every few months. With us,

@@ -1,16 +1,16 @@
 # Graph Report - Dial-Expert  (2026-06-11)
 
 ## Corpus Check
-- 27 files · ~681,669 words
+- 27 files · ~681,608 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 133 nodes · 135 edges · 15 communities (9 shown, 6 thin omitted)
+- 132 nodes · 134 edges · 15 communities (9 shown, 6 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `621e1924`
+- Built from commit: `0c3ed7e2`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -51,8 +51,8 @@
 ## Communities (15 total, 6 thin omitted)
 
 ### Community 0 - "Community 0"
-Cohesion: 0.22
-Nodes (9): dependencies, ffmpeg-static, @fontsource-variable/inter, framer-motion, lenis, lucide-react, next, react (+1 more)
+Cohesion: 0.25
+Nodes (8): dependencies, ffmpeg-static, framer-motion, lenis, lucide-react, next, react, react-dom
 
 ### Community 11 - "Community 11"
 Cohesion: 0.11
@@ -83,7 +83,7 @@ Cohesion: 0.25
 Nodes (3): Props, sweepEase, team
 
 ## Knowledge Gaps
-- **79 isolated node(s):** `eslintConfig`, `nextConfig`, `name`, `version`, `private` (+74 more)
+- **78 isolated node(s):** `eslintConfig`, `nextConfig`, `name`, `version`, `private` (+73 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **6 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -91,9 +91,9 @@ Nodes (3): Props, sweepEase, team
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `dependencies` connect `Community 0` to `Community 11`?**
-  _High betweenness centrality (0.020) - this node is a cross-community bridge._
+  _High betweenness centrality (0.017) - this node is a cross-community bridge._
 - **What connects `eslintConfig`, `nextConfig`, `name` to the rest of the system?**
-  _79 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _78 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 11` be split into smaller, more focused modules?**
   _Cohesion score 0.1111111111111111 - nodes in this community are weakly interconnected._
 - **Should `Community 12` be split into smaller, more focused modules?**

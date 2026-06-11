@@ -28,7 +28,7 @@ export default function FooterSection() {
             muted
             loop
             playsInline
-            preload="auto"
+            preload="none"
           />
         </div>
 
