@@ -185,8 +185,8 @@
     "semantic_hash": ""
   },
   "src/components/sections/Hero.tsx": {
-    "mtime": 1781151182.5826936,
-    "ast_hash": "ee875626b873fe93890c14f2107efbb9",
+    "mtime": 1781151920.615755,
+    "ast_hash": "ffc4341e365d9f6320b9079edafa3640",
     "semantic_hash": ""
   },
   "src/components/sections/Revenue.tsx": {
@@ -1190,8 +1190,8 @@
     "semantic_hash": ""
   },
   "public/dialexpert/hero-poster.jpg": {
-    "mtime": 1781151115.87,
-    "ast_hash": "219e8ebbbd57b560e48ff008dfa99dcb",
+    "mtime": 1781151931.669,
+    "ast_hash": "687ca1dfda4526c358fbe121e72ecbc4",
     "semantic_hash": ""
   }
 }
