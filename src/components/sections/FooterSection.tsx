@@ -40,6 +40,7 @@ export default function FooterSection() {
                 alt="Dial Expert"
                 width={473}
                 height={256}
+                loading="lazy"
               />
             </Link>
 

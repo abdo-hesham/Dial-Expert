@@ -186,6 +186,7 @@ function TimelineStepContent({
             src={step.image}
             alt=""
             className="timeline-image"
+            loading="lazy"
           />
         </div>
       </div>

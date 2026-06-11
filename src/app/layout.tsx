@@ -18,10 +18,14 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.cdnfonts.com" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://framerusercontent.com" />
         <link rel="preload" as="image" href="https://framerusercontent.com/images/aSGF5PBvDXfvTirXeZzxaND6bcg.png?width=4027&height=848" />
         <link rel="preload" as="video" href="https://framerusercontent.com/assets/hyfo5PQ53wvNBdlUY8WqoWyo41I.mp4" />
-        <link rel="preconnect" href="https://framerusercontent.com" />
+        <link rel="preload" as="font" href="https://fonts.cdnfonts.com/s/85546/Satoshi-Black.woff" crossOrigin="anonymous" />
+        <link rel="preload" as="font" href="https://fonts.cdnfonts.com/s/85546/Satoshi-Bold.woff" crossOrigin="anonymous" />
+        <link rel="preload" as="font" href="https://fonts.cdnfonts.com/s/85546/Satoshi-Regular.woff" crossOrigin="anonymous" />
         <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/satoshi" />
+        <style dangerouslySetInnerHTML={{ __html: "@font-face{font-family:Satoshi;font-style:normal;font-weight:900;font-display:swap;src:url(https://fonts.cdnfonts.com/s/85546/Satoshi-Black.woff) format('woff')}@font-face{font-family:Satoshi;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.cdnfonts.com/s/85546/Satoshi-Bold.woff) format('woff')}@font-face{font-family:Satoshi;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.cdnfonts.com/s/85546/Satoshi-Regular.woff) format('woff')}" }} />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
       </head>
       <body>{children}</body>
