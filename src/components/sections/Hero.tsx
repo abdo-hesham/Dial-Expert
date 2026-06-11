@@ -27,6 +27,7 @@ export default function Hero() {
         className="hero-video"
         poster="/dialexpert/hero-poster.jpg"
         preload="auto"
+        style={{ maxWidth: "100%" }}
         {...({ fetchPriority: "high" } as any)}
       >
         <source
