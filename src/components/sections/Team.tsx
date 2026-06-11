@@ -101,7 +101,8 @@ export default function Team() {
                   src={member.src}
                   alt={member.name}
                   fill
-                  sizes="(max-width: 768px) 58vw, 14vw"
+                  sizes="(max-width: 768px) 389px, 242px"
+                  quality={68}
                   loading="lazy"
                 />
                 <div className="gallery-info">

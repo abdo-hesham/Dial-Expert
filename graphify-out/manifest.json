@@ -125,8 +125,8 @@
     "semantic_hash": ""
   },
   "package.json": {
-    "mtime": 1781150312.0457766,
-    "ast_hash": "e23230e42721c1eff1d138cb3d3a5d50",
+    "mtime": 1781152697.4518313,
+    "ast_hash": "733ec6e40726977b17b83501492ef9e5",
     "semantic_hash": ""
   },
   "postcss.config.mjs": {
@@ -140,8 +140,8 @@
     "semantic_hash": ""
   },
   "src/app/layout.tsx": {
-    "mtime": 1781151730.801997,
-    "ast_hash": "2fc2fdc5f56d5b3ceca7f7e5d033eadf",
+    "mtime": 1781152750.8448799,
+    "ast_hash": "e49ee8363a852149fd5f575be573a5eb",
     "semantic_hash": ""
   },
   "src/app/page.tsx": {
@@ -160,8 +160,8 @@
     "semantic_hash": ""
   },
   "src/components/Navbar.tsx": {
-    "mtime": 1781150581.3503442,
-    "ast_hash": "3f8bea83910630865b14075d4922182a",
+    "mtime": 1781152751.3295162,
+    "ast_hash": "70858dfbd89d931458b9c87bcfb88c84",
     "semantic_hash": ""
   },
   "src/components/SmoothScroll.tsx": {
@@ -185,8 +185,8 @@
     "semantic_hash": ""
   },
   "src/components/sections/Hero.tsx": {
-    "mtime": 1781151920.615755,
-    "ast_hash": "ffc4341e365d9f6320b9079edafa3640",
+    "mtime": 1781152985.5110407,
+    "ast_hash": "8476124d24e4885f1c755e0ae4070dd5",
     "semantic_hash": ""
   },
   "src/components/sections/Revenue.tsx": {
@@ -195,8 +195,8 @@
     "semantic_hash": ""
   },
   "src/components/sections/RevenueCycle.tsx": {
-    "mtime": 1781151227.3975127,
-    "ast_hash": "17a3f49895c2efe0e4c821c8f0dba922",
+    "mtime": 1781152849.6041658,
+    "ast_hash": "a041dbbc02671727ef02534d692696f3",
     "semantic_hash": ""
   },
   "src/components/sections/Services.tsx": {
@@ -210,8 +210,8 @@
     "semantic_hash": ""
   },
   "src/components/sections/Team.tsx": {
-    "mtime": 1781151188.9558663,
-    "ast_hash": "6be095ad2304f37ee1a82a6ad6ee1fa2",
+    "mtime": 1781152751.515975,
+    "ast_hash": "c60463508f2091b4ff15e7b894fbc752",
     "semantic_hash": ""
   },
   "src/components/sections/Testimonials.tsx": {
@@ -1192,6 +1192,11 @@
   "public/dialexpert/hero-poster.jpg": {
     "mtime": 1781151931.669,
     "ast_hash": "687ca1dfda4526c358fbe121e72ecbc4",
+    "semantic_hash": ""
+  },
+  "public/dialexpert/hero-poster.webp": {
+    "mtime": 1781152375.261,
+    "ast_hash": "631e8278904d81ffb54ba7db5362f3ee",
     "semantic_hash": ""
   }
 }

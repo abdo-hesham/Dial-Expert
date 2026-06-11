@@ -39,7 +39,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-family: "Inter Variable", "Inter", Arial, Helvetica, sans-serif;
   letter-spacing: 0;
 }
 
@@ -242,7 +242,10 @@ img {
 .hero {
   position: relative;
   height: 900px;
-  background: #111;
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.34)),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.64) 0%, rgba(0, 0, 0, 0.28) 55%, rgba(0, 0, 0, 0.1) 100%),
+    #111 url("/dialexpert/hero-poster.webp") center / cover no-repeat;
   color: #fff;
   overflow: hidden;
 }
@@ -283,7 +286,7 @@ img {
 }
 
 .hero-title {
-  font-family: "Satoshi", sans-serif;
+  font-family: "Satoshi", "Inter Variable", "Inter", Arial, Helvetica, sans-serif;
   font-weight: 900;
   font-size: 64px;
   line-height: 1.2;
@@ -307,7 +310,6 @@ img {
 .hero-title .hero-title-word {
   display: inline-block;
   white-space: nowrap;
-  will-change: transform, opacity, filter;
 }
 
 .hero-body {
@@ -1161,7 +1163,7 @@ img {
 }
 
 .timeline-content .step-label {
-  font-family: Inter, sans-serif;
+  font-family: "Inter Variable", "Inter", Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.6em;
@@ -1185,7 +1187,7 @@ img {
 }
 
 .timeline-content .detail {
-  font-family: Inter, sans-serif;
+  font-family: "Inter Variable", "Inter", Arial, Helvetica, sans-serif;
   margin: 12px 0 24px;
   color: rgb(74, 79, 84);
   font-size: 16px;
@@ -2320,6 +2322,12 @@ img {
 
   .service-desc {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .hero-video {
+    display: none;
   }
 }
 

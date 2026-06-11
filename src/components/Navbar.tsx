@@ -61,9 +61,12 @@ export default function Navbar() {
           <Image
             src="https://framerusercontent.com/images/aSGF5PBvDXfvTirXeZzxaND6bcg.png?width=4027&height=848"
             alt="Dial Expert"
-            width={4027}
-            height={848}
-            priority
+            width={263}
+            height={55}
+            sizes="(max-width: 760px) 118px, (max-width: 1200px) 150px, 205px"
+            quality={60}
+            loading="eager"
+            fetchPriority="high"
             className="brand-logo"
           />
         </Link>
@@ -112,9 +115,11 @@ export default function Navbar() {
           <Image
             src="https://framerusercontent.com/images/aSGF5PBvDXfvTirXeZzxaND6bcg.png?width=4027&height=848"
             alt="Dial Expert"
-            width={4027}
-            height={848}
-            loading="eager"
+            width={150}
+            height={32}
+            sizes="150px"
+            quality={60}
+            loading="lazy"
             className="brand-logo"
           />
         </Link>

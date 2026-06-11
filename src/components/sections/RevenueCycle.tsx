@@ -1,6 +1,7 @@
 "use client"
 
 import { useRef, useState } from "react"
+import Image from "next/image"
 import {
   motion,
   useMotionValueEvent,
@@ -182,11 +183,12 @@ function TimelineStepContent({
       <p className="detail">{step.detail}</p>
       <div className="timeline-image-wrap" style={{ transform: `rotate(${step.rot}deg)` }}>
         <div className="timeline-image-inner">
-          <img
+          <Image
             src={step.image}
             alt=""
+            fill
+            sizes="(max-width: 760px) 56vw, 185px"
             className="timeline-image"
-            loading="lazy"
           />
         </div>
       </div>

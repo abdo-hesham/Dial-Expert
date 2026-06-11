@@ -26,36 +26,22 @@ export default function Hero() {
         playsInline
         className="hero-video"
         poster="/dialexpert/hero-poster.webp"
-        preload="auto"
-        style={{ maxWidth: "100%" }}
-        {...({ fetchPriority: "high" } as any)}
+        preload="none"
+        aria-hidden="true"
       >
         <source
           src="https://framerusercontent.com/assets/hyfo5PQ53wvNBdlUY8WqoWyo41I.mp4"
           type="video/mp4"
+          media="(min-width: 1024px)"
         />
       </video>
       <div className="hero-overlay" />
       <div className="hero-inner">
-        <motion.div
-          className="hero-copy"
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.55 }}
-          variants={{
-            hidden: {},
-            show: {
-              transition: shouldReduceMotion
-                ? { duration: 0 }
-                : { staggerChildren: 0.22, delayChildren: 0.18 },
-            },
-          }}
-        >
+        <div className="hero-copy">
           <motion.h1
             className="hero-title"
             initial="hidden"
-            whileInView="show"
-            viewport={{ once: true, amount: 0.65 }}
+            animate="show"
             variants={{
               hidden: {},
               show: {
@@ -70,7 +56,7 @@ export default function Hero() {
                 {line.map((word, wordIndex) => (
                   <motion.span
                     className="hero-title-word"
-                    key={`${lineIndex}-${word}`}
+                    key={`${lineIndex}-${wordIndex}-${word}`}
                     variants={{
                       hidden: shouldReduceMotion
                         ? { opacity: 1, y: 0, filter: "blur(0px)" }
@@ -95,42 +81,18 @@ export default function Hero() {
               </span>
             ))}
           </motion.h1>
-          <motion.div
-            className="hero-body"
-            variants={{
-              hidden: shouldReduceMotion
-                ? { opacity: 1, y: 0 }
-                : { opacity: 0, y: 18 },
-              show: {
-                opacity: 1,
-                y: 0,
-                transition: shouldReduceMotion
-                  ? { duration: 0 }
-                  : { duration: 1, ease: [0.22, 1, 0.36, 1] },
-              },
-            }}
-          >
+          <div className="hero-body">
             <p className="hero-sub">
               Outsourcing usually means starting over every few months. With us,
               you start once.
             </p>
-            <motion.div
-              className="hero-actions"
-              initial={shouldReduceMotion ? false : { opacity: 0, y: 14 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.7 }}
-              transition={{
-                duration: 0.9,
-                ease: [0.22, 1, 0.36, 1],
-                delay: shouldReduceMotion ? 0 : 0.55,
-              }}
-            >
+            <div className="hero-actions">
               <Link className="button button-light" href="/contact">
                 <span>Let&apos;s Talk</span>
               </Link>
-            </motion.div>
-          </motion.div>
-        </motion.div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   )
