@@ -43,7 +43,7 @@ export default function FAQ() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.55 }}
+            viewport={{ once: false, amount: 0.55 }}
             transition={{ duration: 0.6 }}
             className="eyebrow"
           >
@@ -56,7 +56,7 @@ export default function FAQ() {
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.55 }}
+            viewport={{ once: false, amount: 0.55 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             className="section-lead"
           >
@@ -71,7 +71,7 @@ export default function FAQ() {
               key={item.q}
               initial={{ opacity: 0, y: 15 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.35 }}
+              viewport={{ once: false, amount: 0.35 }}
               transition={{ duration: 0.4, delay: 0.3 + index * 0.05 }}
             >
               <button

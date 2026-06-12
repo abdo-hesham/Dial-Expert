@@ -507,7 +507,7 @@
       "label": "HighlightMarkerTextReveal()",
       "file_type": "code",
       "source_file": "src/components/HighlightMarkerTextReveal.tsx",
-      "source_location": "L21",
+      "source_location": "L22",
       "_origin": "ast",
       "id": "components_highlightmarkertextreveal_highlightmarkertextreveal",
       "community": 43,
@@ -874,10 +874,20 @@
       "norm_label": "testimonials.tsx"
     },
     {
-      "label": "Testimonials()",
+      "label": "headingLines",
       "file_type": "code",
       "source_file": "src/components/sections/Testimonials.tsx",
       "source_location": "L9",
+      "_origin": "ast",
+      "id": "sections_testimonials_headinglines",
+      "community": 38,
+      "norm_label": "headinglines"
+    },
+    {
+      "label": "Testimonials()",
+      "file_type": "code",
+      "source_file": "src/components/sections/Testimonials.tsx",
+      "source_location": "L14",
       "_origin": "ast",
       "id": "sections_testimonials_testimonials",
       "community": 38,
@@ -2298,6 +2308,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/components/sections/Testimonials.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sections_testimonials",
+      "target": "sections_testimonials_headinglines"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/Testimonials.tsx",
       "source_location": "L15",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -2696,5 +2716,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "0c3ed7e2dca128eaac8e1c63df22a6a6f90c01f8"
+  "built_at_commit": "8930c2986b3b3effcc904c522a6ff1effc0c5414"
 }

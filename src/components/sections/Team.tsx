@@ -70,7 +70,7 @@ export default function Team() {
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: false, amount: 0.5 }}
           transition={{ duration: 0.6, delay: 0.1 }}
           className="floor-lead"
         >
@@ -82,7 +82,7 @@ export default function Team() {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ once: true, amount: 0.25 }}
+          viewport={{ once: false, amount: 0.25 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           className="gallery-strip"
         >
@@ -122,12 +122,12 @@ export default function Team() {
               "It's compounded experience.",
               "It's stability that closes.",
             ]}
-            markerColor="rgb(17, 172, 183)"
+            markerColor="#3B82F6"
             markerColors={[
-              "rgb(17, 172, 183)",
-              "rgb(35, 112, 255)",
-              "rgb(17, 172, 183)",
-              "rgb(0, 83, 255)",
+              "#3B82F6",
+              "#1A55F9",
+              "#3B82F6",
+              "#3B82F6",
             ]}
           />
         </div>

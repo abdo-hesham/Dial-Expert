@@ -1,16 +1,16 @@
-# Graph Report - Dial-Expert  (2026-06-11)
+# Graph Report - Dial-Expert  (2026-06-12)
 
 ## Corpus Check
-- 27 files · ~681,608 words
+- 27 files · ~681,896 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 132 nodes · 134 edges · 15 communities (9 shown, 6 thin omitted)
+- 133 nodes · 135 edges · 15 communities (9 shown, 6 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `0c3ed7e2`
+- Built from commit: `8930c298`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -76,14 +76,14 @@ Nodes (3): navLinks, navLinks, socialLinks
 
 ### Community 38 - "Community 38"
 Cohesion: 0.10
-Nodes (9): AnimatedSectionHeadingProps, EyebrowIconProps, faqData, cycleSteps, orbitStops, steps, MotionLink, services (+1 more)
+Nodes (10): AnimatedSectionHeadingProps, EyebrowIconProps, faqData, cycleSteps, orbitStops, steps, MotionLink, services (+2 more)
 
 ### Community 43 - "Community 43"
 Cohesion: 0.25
 Nodes (3): Props, sweepEase, team
 
 ## Knowledge Gaps
-- **78 isolated node(s):** `eslintConfig`, `nextConfig`, `name`, `version`, `private` (+73 more)
+- **79 isolated node(s):** `eslintConfig`, `nextConfig`, `name`, `version`, `private` (+74 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **6 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -93,10 +93,10 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `dependencies` connect `Community 0` to `Community 11`?**
   _High betweenness centrality (0.017) - this node is a cross-community bridge._
 - **What connects `eslintConfig`, `nextConfig`, `name` to the rest of the system?**
-  _78 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _79 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 11` be split into smaller, more focused modules?**
   _Cohesion score 0.1111111111111111 - nodes in this community are weakly interconnected._
 - **Should `Community 12` be split into smaller, more focused modules?**
   _Cohesion score 0.1 - nodes in this community are weakly interconnected._
 - **Should `Community 38` be split into smaller, more focused modules?**
-  _Cohesion score 0.10256410256410256 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.09788359788359788 - nodes in this community are weakly interconnected._

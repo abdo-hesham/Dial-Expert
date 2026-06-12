@@ -21,14 +21,12 @@ export default function Hero() {
         muted
         playsInline
         className="hero-video"
-        poster="/dialexpert/hero-poster.webp"
-        preload="none"
+        preload="metadata"
         aria-hidden="true"
       >
         <source
           src="https://framerusercontent.com/assets/hyfo5PQ53wvNBdlUY8WqoWyo41I.mp4"
           type="video/mp4"
-          media="(min-width: 1024px)"
         />
       </video>
       <div className="hero-overlay" />

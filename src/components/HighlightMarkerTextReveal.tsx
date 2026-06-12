@@ -15,8 +15,9 @@ type Props = {
 const wait = (ms: number) => new Promise((resolve) => window.setTimeout(resolve, ms))
 const nextFrame = () => new Promise((resolve) => window.requestAnimationFrame(resolve))
 const sweepEase = [0.65, 0, 0.35, 1] as const
-const visibleDelay = 1650
-const coveredSwapDelay = 90
+const visibleDelay = 520
+const coveredSwapDelay = 45
+const sweepDuration = 0.34
 
 export default function HighlightMarkerTextReveal({
   textBefore,
@@ -29,7 +30,6 @@ export default function HighlightMarkerTextReveal({
   const reduceMotion = useReducedMotion()
   const controls = useAnimationControls()
   const markerRef = useRef<HTMLHeadingElement | null>(null)
-  const hasPlayed = useRef(false)
   const isInView = useInView(markerRef, { once: false, amount: 0.45 })
   const safeWords = useMemo(
     () => (words.length > 0 ? words : ["It's consistency that converts."]),
@@ -46,15 +46,18 @@ export default function HighlightMarkerTextReveal({
   const colorStep = useRef(0)
 
   useEffect(() => {
-    if (hasPlayed.current) return
-
     if (!isInView) {
       controls.stop()
+      setIndex(0)
+      controls.set({
+        backgroundColor: colorPalette[0],
+        scaleX: 0,
+        opacity: 1,
+      })
       return
     }
 
     if (reduceMotion || safeWords.length < 2) {
-      hasPlayed.current = true
       return
     }
 
@@ -63,11 +66,13 @@ export default function HighlightMarkerTextReveal({
     async function runSequence() {
       controls.set({
         backgroundColor: colorPalette[0],
-        clipPath: "inset(0 100% 0 0)",
+        scaleX: 0,
         opacity: 1,
       })
 
-      for (let step = 1; step < safeWords.length; step += 1) {
+      let step = 1
+
+      while (!cancelled) {
         await wait(visibleDelay)
         if (cancelled) break
 
@@ -75,14 +80,14 @@ export default function HighlightMarkerTextReveal({
         const nextColor = colorPalette[colorStep.current % colorPalette.length]
         controls.set({
           backgroundColor: nextColor,
-          clipPath: "inset(0 100% 0 0)",
+          scaleX: 0,
           opacity: 1,
         })
 
         await controls.start({
-          clipPath: "inset(0 0% 0 0)",
+          scaleX: 1,
           opacity: 1,
-          transition: { duration: 0.62, ease: sweepEase },
+          transition: { duration: sweepDuration, ease: sweepEase },
         })
         if (cancelled) break
 
@@ -93,17 +98,14 @@ export default function HighlightMarkerTextReveal({
         if (cancelled) break
 
         await controls.start({
-          clipPath: "inset(0 100% 0 0)",
+          scaleX: 0,
           opacity: 1,
-          transition: { duration: 0.62, ease: sweepEase },
+          transition: { duration: sweepDuration, ease: sweepEase },
         })
         if (cancelled) break
 
-        controls.set({ clipPath: "inset(0 100% 0 0)", opacity: 1 })
-      }
-
-      if (!cancelled) {
-        hasPlayed.current = true
+        controls.set({ scaleX: 0, opacity: 1 })
+        step += 1
       }
     }
 
@@ -134,16 +136,17 @@ export default function HighlightMarkerTextReveal({
         <motion.span
           animate={controls}
           className="marker-reveal-bar"
-          initial={{ clipPath: "inset(0 100% 0 0)", opacity: 1 }}
+          initial={{ scaleX: 0, opacity: 1 }}
           style={{
-            backgroundColor: colorPalette[index % colorPalette.length],
+            backgroundColor: colorPalette[0],
             bottom: "-0.08em",
             left: "-0.16em",
             pointerEvents: "none",
             position: "absolute",
             right: "-0.16em",
             top: "-0.1em",
-            willChange: "clip-path",
+            transformOrigin: "left center",
+            willChange: "transform",
             zIndex: 3,
           }}
         />
@@ -156,7 +159,7 @@ export default function HighlightMarkerTextReveal({
           gap: 0.02em;
           margin: 0;
           color: ${textColor};
-          font-family: "General Sans", "General Sans Placeholder", sans-serif;
+          font-family: "General Sans", "Inter", Arial, Helvetica, sans-serif;
           font-size: 64px;
           line-height: 125%;
           font-weight: 700;

@@ -73,7 +73,7 @@ export default function RevenueCycle() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: false, amount: 0.5 }}
           transition={{ duration: 0.6 }}
           className="eyebrow"
         >
@@ -88,7 +88,7 @@ export default function RevenueCycle() {
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: false, amount: 0.5 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           className="section-lead"
           style={{ maxWidth: 558 }}
@@ -105,7 +105,7 @@ export default function RevenueCycle() {
             key={step.num}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.08 }}
+            viewport={{ once: false, amount: 0.08 }}
             transition={{
               duration: shouldReduceMotion ? 0 : 0.8,
               ease: "easeOut",

@@ -70,7 +70,7 @@ export default function Services() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.55 }}
+            viewport={{ once: false, amount: 0.55 }}
             transition={{ duration: 0.6 }}
             className="eyebrow eyebrow-dark"
           >
@@ -81,7 +81,7 @@ export default function Services() {
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.55 }}
+            viewport={{ once: false, amount: 0.55 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             className="section-lead lead-dark"
           >
@@ -94,7 +94,7 @@ export default function Services() {
         <motion.div
           initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, amount: 0.55 }}
+          viewport={{ once: false, amount: 0.55 }}
           transition={{ duration: 0.6, delay: 0.3 }}
         >
           <Link className="button button-dark" href="/contact">
@@ -111,7 +111,7 @@ export default function Services() {
             key={service.title}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.25 }}
+            viewport={{ once: false, amount: 0.25 }}
             transition={{ duration: 0.55, delay: 0.08 + index * 0.06 }}
           >
             <div className="service-shell">

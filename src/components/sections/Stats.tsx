@@ -1,19 +1,19 @@
-"use client"
+"use client";
 
-import { useRef } from "react"
-import { motion } from "framer-motion"
-import AnimatedSectionHeading from "../AnimatedSectionHeading"
-import EyebrowIcon from "../EyebrowIcon"
+import { useRef } from "react";
+import { motion } from "framer-motion";
+import AnimatedSectionHeading from "../AnimatedSectionHeading";
+import EyebrowIcon from "../EyebrowIcon";
 
 const stats = [
   ["7YRS", "In the industry"],
   ["250+", "Active professionals"],
-  ["\u2193 60%", "Across Care Campaigns"],
-  ["90-93%", "Continents served"],
-]
+  ["\u2193 60%", "Operational overhead\nOur automation absorbs it"],
+  ["90-93%", "Monthly CSAT\nSustained on care campaigns"],
+];
 
 export default function Stats() {
-  const ref = useRef(null)
+  const ref = useRef(null);
 
   return (
     <section id="who-we-are" className="section section-white who-section">
@@ -21,7 +21,7 @@ export default function Stats() {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.55 }}
+          viewport={{ once: false, amount: 0.55 }}
           transition={{ duration: 0.6 }}
           className="eyebrow"
         >
@@ -36,13 +36,13 @@ export default function Stats() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: false, amount: 0.3 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           className="who-copy"
         >
           <p>
-            The closer working your leads in month four? Been on them since
-            week one.
+            The closer working your leads in month four? Been on them since week
+            one.
           </p>
           <p>That&apos;s the buy. A floor that holds.</p>
           <p>
@@ -61,7 +61,8 @@ export default function Stats() {
             We treat your business like it&apos;s ours. The people running it
             already do. Zero to one of the fastest-growing floors in Egypt
             inside a year &mdash; and we don&apos;t stop till the name lands on
-            Forbes.
+            <span className="sparkle-text sparkle-text-light ml-3">Forbes</span>
+            .
           </p>
           <p>Come build it with us.</p>
         </motion.div>
@@ -73,15 +74,19 @@ export default function Stats() {
               className="stat-item"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.55 }}
+              viewport={{ once: false, amount: 0.55 }}
               transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
             >
               <div className="stat-number">{value}</div>
-              <span className="stat-label">{label}</span>
+              <span className="stat-label">
+                {label.split("\n").map((line) => (
+                  <span key={line}>{line}</span>
+                ))}
+              </span>
             </motion.div>
           ))}
         </div>
       </div>
     </section>
-  )
+  );
 }

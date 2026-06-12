@@ -20,18 +20,27 @@ export default function Navbar() {
 
   useEffect(() => {
     const THRESHOLD = 60
-    let lastScrollY = window.scrollY
+    let idleTimer = 0
 
     const onScroll = () => {
       const currentScrollY = window.scrollY
-      setScrolled(currentScrollY > THRESHOLD)
-      setHidden(currentScrollY > lastScrollY && currentScrollY > THRESHOLD)
-      lastScrollY = currentScrollY
+      const isPastTop = currentScrollY > THRESHOLD
+
+      setScrolled(isPastTop)
+      setHidden(false)
+
+      window.clearTimeout(idleTimer)
+      if (isPastTop) {
+        idleTimer = window.setTimeout(() => setHidden(true), 1150)
+      }
     }
 
     onScroll()
     window.addEventListener("scroll", onScroll, { passive: true })
-    return () => window.removeEventListener("scroll", onScroll)
+    return () => {
+      window.clearTimeout(idleTimer)
+      window.removeEventListener("scroll", onScroll)
+    }
   }, [])
 
   useEffect(() => {
