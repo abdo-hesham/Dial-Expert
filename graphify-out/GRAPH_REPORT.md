@@ -1,7 +1,7 @@
 # Graph Report - Dial-Expert  (2026-06-12)
 
 ## Corpus Check
-- 27 files · ~681,896 words
+- 27 files · ~681,813 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,12 +10,13 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `8930c298`
+- Built from commit: `018ab91a`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - [[_COMMUNITY_Community 0|Community 0]]
+- [[_COMMUNITY_Community 1|Community 1]]
 - [[_COMMUNITY_Community 11|Community 11]]
 - [[_COMMUNITY_Community 12|Community 12]]
 - [[_COMMUNITY_Community 33|Community 33]]
@@ -23,7 +24,6 @@
 - [[_COMMUNITY_Community 35|Community 35]]
 - [[_COMMUNITY_Community 38|Community 38]]
 - [[_COMMUNITY_Community 43|Community 43]]
-- [[_COMMUNITY_Community 61|Community 61]]
 - [[_COMMUNITY_Community 62|Community 62]]
 - [[_COMMUNITY_Community 75|Community 75]]
 - [[_COMMUNITY_Community 99|Community 99]]

@@ -16,6 +16,7 @@ const navLinks = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [hidden, setHidden] = useState(false)
+  const [overHero, setOverHero] = useState(true)
   const [menuOpen, setMenuOpen] = useState(false)
 
   useEffect(() => {
@@ -24,22 +25,27 @@ export default function Navbar() {
 
     const onScroll = () => {
       const currentScrollY = window.scrollY
-      const isPastTop = currentScrollY > THRESHOLD
+      const hero = document.querySelector<HTMLElement>(".hero")
+      const heroBottom = hero ? hero.offsetTop + hero.offsetHeight : 0
+      const isOverHero = hero ? currentScrollY < heroBottom - 96 : currentScrollY <= THRESHOLD
 
-      setScrolled(isPastTop)
+      setOverHero(isOverHero)
+      setScrolled(!isOverHero)
       setHidden(false)
 
       window.clearTimeout(idleTimer)
-      if (isPastTop) {
+      if (!isOverHero && currentScrollY > THRESHOLD) {
         idleTimer = window.setTimeout(() => setHidden(true), 1150)
       }
     }
 
     onScroll()
     window.addEventListener("scroll", onScroll, { passive: true })
+    window.addEventListener("resize", onScroll)
     return () => {
       window.clearTimeout(idleTimer)
       window.removeEventListener("scroll", onScroll)
+      window.removeEventListener("resize", onScroll)
     }
   }, [])
 
@@ -64,7 +70,7 @@ export default function Navbar() {
   const closeMenu = () => setMenuOpen(false)
 
   return (
-    <header className={`topbar${scrolled ? " scrolled" : ""}${hidden && !menuOpen ? " hidden" : ""}${menuOpen ? " menu-open" : ""}`}>
+    <header className={`topbar${overHero ? " over-hero" : ""}${scrolled ? " scrolled" : ""}${hidden && !menuOpen ? " hidden" : ""}${menuOpen ? " menu-open" : ""}`}>
       <div className="topbar-inner">
         <Link className="brand" href="/" aria-label="Dial Expert home" onClick={closeMenu}>
           <Image
@@ -135,7 +141,12 @@ export default function Navbar() {
 
         <nav className="mobile-nav" aria-label="Mobile navigation">
           {navLinks.map((link) => (
-            <Link key={link.label} href={link.href} tabIndex={menuOpen ? 0 : -1} onClick={closeMenu}>
+            <Link
+              key={link.label}
+              href={link.href}
+              tabIndex={menuOpen ? 0 : -1}
+              onClick={closeMenu}
+            >
               {link.label}
             </Link>
           ))}

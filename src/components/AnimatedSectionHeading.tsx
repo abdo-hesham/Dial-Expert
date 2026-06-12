@@ -6,12 +6,14 @@ type AnimatedSectionHeadingProps = {
   lines: string[]
   className?: string
   as?: "h1" | "h2" | "h3"
+  delay?: number
 }
 
 export default function AnimatedSectionHeading({
   lines,
   className = "section-heading",
   as = "h2",
+  delay = 0,
 }: AnimatedSectionHeadingProps) {
   const shouldReduceMotion = useReducedMotion()
   const MotionTag = motion[as]
@@ -32,7 +34,7 @@ export default function AnimatedSectionHeading({
         show: {
           transition: shouldReduceMotion
             ? { duration: 0 }
-            : { staggerChildren: 0.16 },
+            : { delayChildren: delay, staggerChildren: 0.16 },
         },
       }}
     >

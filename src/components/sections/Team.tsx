@@ -125,9 +125,9 @@ export default function Team() {
             markerColor="#3B82F6"
             markerColors={[
               "#3B82F6",
+              "#00DEBC",
+              "#D0FF71",
               "#1A55F9",
-              "#3B82F6",
-              "#3B82F6",
             ]}
           />
         </div>

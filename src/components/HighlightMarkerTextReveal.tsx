@@ -17,7 +17,7 @@ const nextFrame = () => new Promise((resolve) => window.requestAnimationFrame(re
 const sweepEase = [0.65, 0, 0.35, 1] as const
 const visibleDelay = 520
 const coveredSwapDelay = 45
-const sweepDuration = 0.34
+const sweepDuration = 0.52
 
 export default function HighlightMarkerTextReveal({
   textBefore,

@@ -5,6 +5,7 @@ import { ArrowRight, Hand } from "lucide-react"
 import { motion } from "framer-motion"
 import { useEffect, useRef, useState } from "react"
 import EyebrowIcon from "../EyebrowIcon"
+import AnimatedSectionHeading from "../AnimatedSectionHeading"
 
 const headingLines = [
   "We're not going to ask you",
@@ -15,12 +16,7 @@ export default function Testimonials() {
   const sectionRef = useRef<HTMLElement | null>(null)
   const [introActive, setIntroActive] = useState(false)
   const [introComplete, setIntroComplete] = useState(false)
-  const contentDelay = 3.15
-  const wordsBeforeLine = headingLines.map((_, index) =>
-    headingLines
-      .slice(0, index)
-      .reduce((total, line) => total + line.split(/\s+/).filter(Boolean).length, 0)
-  )
+  const contentDelay = 4.65
 
   useEffect(() => {
     let completeTimer = 0
@@ -31,7 +27,7 @@ export default function Testimonials() {
       window.clearTimeout(completeTimer)
       setIntroActive(true)
       setIntroComplete(false)
-      completeTimer = window.setTimeout(() => setIntroComplete(true), 3150)
+      completeTimer = window.setTimeout(() => setIntroComplete(true), 4650)
     }
 
     const checkSection = () => {
@@ -103,7 +99,7 @@ export default function Testimonials() {
               No
             </span>
             <span className="testimonial-hand-wave">
-              <Hand size={34} strokeWidth={2.6} />
+              <Hand size={42} strokeWidth={2.6} />
             </span>
           </div>
         </div>
@@ -137,44 +133,13 @@ export default function Testimonials() {
           <span>We&apos;ll keep it simple</span>
         </motion.div>
 
-        <motion.h2
-          className="testimonials-framer-heading"
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: false, amount: 0.55 }}
-          variants={{
-            hidden: {},
-            show: {
-              transition: { delayChildren: contentDelay + 0.12, staggerChildren: 0.055 },
-            },
-          }}
-        >
-          {headingLines.map((line, lineIndex) => (
-            <span className="section-heading-line" key={line}>
-              {line.split(/\s+/).filter(Boolean).map((word, wordIndex) => (
-                <motion.span
-                  className="section-heading-word"
-                  key={`${lineIndex}-${word}-${wordIndex}`}
-                  variants={{
-                    hidden: { opacity: 0, y: 28, filter: "blur(8px)" },
-                    show: {
-                      opacity: 1,
-                      y: 0,
-                      filter: "blur(0px)",
-                      transition: {
-                        duration: 0.82,
-                        delay: (wordsBeforeLine[lineIndex] + wordIndex) * 0.018,
-                        ease: [0.22, 1, 0.36, 1],
-                      },
-                    },
-                  }}
-                >
-                  {word}
-                </motion.span>
-              ))}
-            </span>
-          ))}
-        </motion.h2>
+        {introComplete ? (
+          <AnimatedSectionHeading
+            className="testimonials-framer-heading"
+            lines={headingLines}
+            delay={0.12}
+          />
+        ) : null}
 
         <motion.p
           className="testimonials-framer-copy"

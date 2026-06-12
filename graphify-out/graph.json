@@ -417,7 +417,7 @@
       "label": "AnimatedSectionHeading()",
       "file_type": "code",
       "source_file": "src/components/AnimatedSectionHeading.tsx",
-      "source_location": "L11",
+      "source_location": "L12",
       "_origin": "ast",
       "id": "components_animatedsectionheading_animatedsectionheading",
       "community": 38,
@@ -570,7 +570,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "sections_cta",
-      "community": 61,
+      "community": 1,
       "norm_label": "cta.tsx"
     },
     {
@@ -580,7 +580,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "sections_cta_marqueerow",
-      "community": 61,
+      "community": 1,
       "norm_label": "marqueerow()"
     },
     {
@@ -590,7 +590,7 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "sections_cta_cta",
-      "community": 61,
+      "community": 1,
       "norm_label": "cta()"
     },
     {
@@ -670,7 +670,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "sections_hero",
-      "community": 61,
+      "community": 1,
       "norm_label": "hero.tsx"
     },
     {
@@ -680,7 +680,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "sections_hero_herolines",
-      "community": 61,
+      "community": 1,
       "norm_label": "herolines"
     },
     {
@@ -690,7 +690,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "sections_hero_herolinestarts",
-      "community": 61,
+      "community": 1,
       "norm_label": "herolinestarts"
     },
     {
@@ -700,7 +700,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "sections_hero_hero",
-      "community": 61,
+      "community": 1,
       "norm_label": "hero()"
     },
     {
@@ -877,7 +877,7 @@
       "label": "headingLines",
       "file_type": "code",
       "source_file": "src/components/sections/Testimonials.tsx",
-      "source_location": "L9",
+      "source_location": "L10",
       "_origin": "ast",
       "id": "sections_testimonials_headinglines",
       "community": 38,
@@ -887,7 +887,7 @@
       "label": "Testimonials()",
       "file_type": "code",
       "source_file": "src/components/sections/Testimonials.tsx",
-      "source_location": "L14",
+      "source_location": "L15",
       "_origin": "ast",
       "id": "sections_testimonials_testimonials",
       "community": 38,
@@ -2716,5 +2716,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "8930c2986b3b3effcc904c522a6ff1effc0c5414"
+  "built_at_commit": "018ab91a3d3036794486f156330c31e07c5ba98e"
 }
