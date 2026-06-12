@@ -147,6 +147,7 @@ img {
   display: inline-flex;
   align-items: center;
   justify-self: start;
+  min-width: 0;
 }
 
 .brand-logo {
@@ -2387,6 +2388,10 @@ img {
   .topbar-inner {
     position: relative;
     z-index: 2;
+    display: flex;
+    grid-template-columns: none;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
     gap: clamp(18px, 4vw, 36px);
     padding: 0;
@@ -2399,10 +2404,15 @@ img {
   }
 
   .topbar.scrolled {
-    padding-top: 16px;
+    padding: 16px var(--pad-x) 0;
+    background: transparent;
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
   }
 
   .topbar.scrolled .topbar-inner {
+    width: 100%;
     padding: 0;
     border-color: transparent;
     border-radius: 0;
@@ -2704,7 +2714,7 @@ img {
   }
 
   .topbar-inner {
-    gap: 14px;
+    gap: 10px;
     width: 100%;
     padding: 0;
   }
@@ -2724,13 +2734,14 @@ img {
   }
 
   .brand-logo {
-    width: 143px;
+    width: 118px;
   }
 
   .topbar .button {
-    min-height: 48px;
-    padding: 0 31px;
-    font-size: 18px;
+    min-width: 112px;
+    min-height: 42px;
+    padding: 0 18px;
+    font-size: 14px;
   }
 
   .menu-toggle {
