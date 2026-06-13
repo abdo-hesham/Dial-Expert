@@ -2120,6 +2120,51 @@ img {
   transform: translateX(2px);
 }
 
+.footer-column.footer-social-column {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start;
+  gap: 0 !important;
+}
+
+.footer-column.footer-social-column > strong {
+  margin-bottom: 30px !important;
+}
+
+.footer-column.footer-social-column > .footer-social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 12px !important;
+  gap: 10px;
+}
+
+.footer-social-icons a {
+  display: inline-grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  color: rgb(255, 255, 255);
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    background-color 180ms ease;
+}
+
+.footer-social-icons a:hover {
+  border-color: rgba(255, 255, 255, 0.52);
+  background: var(--blue);
+  transform: translateY(-2px);
+}
+
+.footer-social-icons svg {
+  width: 19px;
+  height: 19px;
+  fill: currentColor;
+}
+
 .footer-bottom {
   position: relative;
   z-index: 1;
