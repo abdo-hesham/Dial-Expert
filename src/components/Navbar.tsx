@@ -21,7 +21,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const THRESHOLD = 60
-    let idleTimer = 0
+    let lastScrollY = window.scrollY
 
     const onScroll = () => {
       const currentScrollY = window.scrollY
@@ -31,19 +31,22 @@ export default function Navbar() {
 
       setOverHero(isOverHero)
       setScrolled(!isOverHero)
-      setHidden(false)
 
-      window.clearTimeout(idleTimer)
-      if (!isOverHero && currentScrollY > THRESHOLD) {
-        idleTimer = window.setTimeout(() => setHidden(true), 1150)
+      if (isOverHero) {
+        setHidden(false)
+      } else if (currentScrollY > lastScrollY) {
+        setHidden(true)
+      } else if (currentScrollY < lastScrollY) {
+        setHidden(false)
       }
+
+      lastScrollY = currentScrollY
     }
 
     onScroll()
     window.addEventListener("scroll", onScroll, { passive: true })
     window.addEventListener("resize", onScroll)
     return () => {
-      window.clearTimeout(idleTimer)
       window.removeEventListener("scroll", onScroll)
       window.removeEventListener("resize", onScroll)
     }

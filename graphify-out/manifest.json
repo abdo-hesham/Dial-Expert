@@ -145,8 +145,8 @@
     "semantic_hash": ""
   },
   "src/app/page.tsx": {
-    "mtime": 1781124046.1905048,
-    "ast_hash": "dad8d81c60105d2731b4a4634f53948d",
+    "mtime": 1781494404.3508937,
+    "ast_hash": "43da59c99ad366a42ccc638ac22f5e4d",
     "semantic_hash": ""
   },
   "src/components/EyebrowIcon.tsx": {
@@ -160,8 +160,8 @@
     "semantic_hash": ""
   },
   "src/components/Navbar.tsx": {
-    "mtime": 1781289821.3726134,
-    "ast_hash": "6bc1e52989758d4418f1d8338c7bc612",
+    "mtime": 1781492209.9506888,
+    "ast_hash": "f9fe69e53fb75da9c9cff24e6eee9d38",
     "semantic_hash": ""
   },
   "src/components/SmoothScroll.tsx": {
@@ -1197,6 +1197,271 @@
   "public/dialexpert/hero-poster.webp": {
     "mtime": 1781152375.261,
     "ast_hash": "631e8278904d81ffb54ba7db5362f3ee",
+    "semantic_hash": ""
+  },
+  "src/components/sections/EngagementWays.tsx": {
+    "mtime": 1781492756.182142,
+    "ast_hash": "3104350ac921e66293b69df3aac295a3",
+    "semantic_hash": ""
+  },
+  "public/loader/support.js": {
+    "mtime": 1781474738.0,
+    "ast_hash": "37cb653323f84c54a810386b6b2c4942",
+    "semantic_hash": ""
+  },
+  "src/components/DialExpertOrbitLoader.tsx": {
+    "mtime": 1781495560.5597818,
+    "ast_hash": "faff57f74a541734cfe22b45a4890aa1",
+    "semantic_hash": ""
+  },
+  "public/loader/Dial Expert Orbit Loader.dc.html": {
+    "mtime": 1781474736.0,
+    "ast_hash": "77dcc4cfee2e2e2bb05f556dfbf5bc9c",
+    "semantic_hash": ""
+  },
+  "public/loader/assets/bg-blue-glow.jpg": {
+    "mtime": 1781474736.0,
+    "ast_hash": "2b8963cb19b158554d73714143778411",
+    "semantic_hash": ""
+  },
+  "public/loader/assets/employees/s01.jpg": {
+    "mtime": 1781474736.0,
+    "ast_hash": "5b0c9ceb33d13f11d5b4bac774cb6e21",
+    "semantic_hash": ""
+  },
+  "public/loader/assets/employees/s02.jpg": {
+    "mtime": 1781474736.0,
+    "ast_hash": "891769f39bb063d86d7b9bb7227309eb",
+    "semantic_hash": ""
+  },
+  "public/loader/assets/employees/s03.jpg": {
+    "mtime": 1781474736.0,
+    "ast_hash": "186bbf5b132d1f5b8403a95619d3ba44",
+    "semantic_hash": ""
+  },
+  "public/loader/assets/employees/s04.jpg": {
+    "mtime": 1781474736.0,
+    "ast_hash": "0e0c6f66d011d2e38d994ed022715310",
+    "semantic_hash": ""
+  },
+  "public/loader/assets/employees/s05.jpg": {
+    "mtime": 1781474736.0,
+    "ast_hash": "4a5e88a301484996291d5a98b1d820af",
+    "semantic_hash": ""
+  },
+  "public/loader/assets/employees/s06.jpg": {
+    "mtime": 1781474736.0,
+    "ast_hash": "e9dd3224129b5f9ea5bc2d45ffa82de7",
+    "semantic_hash": ""
+  },
+  "public/loader/assets/employees/s07.jpg": {
+    "mtime": 1781474736.0,
+    "ast_hash": "f4b92b94e1d3d1da1d5c01c3d9fe3420",
+    "semantic_hash": ""
+  },
+  "public/loader/assets/employees/s08.jpg": {
+    "mtime": 1781474738.0,
+    "ast_hash": "433302368cde2549d358954388e7e34d",
+    "semantic_hash": ""
+  },
+  "public/loader/assets/employees/s09.jpg": {
+    "mtime": 1781474738.0,
+    "ast_hash": "bb2af78e78763a763dbe05727a218998",
+    "semantic_hash": ""
+  },
+  "public/loader/assets/employees/s10.jpg": {
+    "mtime": 1781474738.0,
+    "ast_hash": "1adb130a5ebfad06fc41ba092e077670",
+    "semantic_hash": ""
+  },
+  "public/loader/assets/employees/s11.jpg": {
+    "mtime": 1781474738.0,
+    "ast_hash": "88545be82720594c933e841509482125",
+    "semantic_hash": ""
+  },
+  "public/loader/assets/employees/s12.jpg": {
+    "mtime": 1781474738.0,
+    "ast_hash": "e910bf45264c2dffe6d15a632d77024f",
+    "semantic_hash": ""
+  },
+  "public/loader/assets/employees/s13.jpg": {
+    "mtime": 1781474738.0,
+    "ast_hash": "0b80de7a625b3f9e733c32520e7ca8ce",
+    "semantic_hash": ""
+  },
+  "public/loader/assets/employees/s14.jpg": {
+    "mtime": 1781474738.0,
+    "ast_hash": "03dfbf557e9e074c46064d612bee2a46",
+    "semantic_hash": ""
+  },
+  "public/loader/assets/employees/s15.jpg": {
+    "mtime": 1781474738.0,
+    "ast_hash": "6adb49b96d7199e441309d8cd961fecc",
+    "semantic_hash": ""
+  },
+  "public/loader/assets/employees/s16.jpg": {
+    "mtime": 1781474738.0,
+    "ast_hash": "106774e271f3fedd471d8a66e59476b2",
+    "semantic_hash": ""
+  },
+  "public/loader/assets/team/t01.png": {
+    "mtime": 1781474738.0,
+    "ast_hash": "7df4c4c42670fdd5cc7fc7037b9034a8",
+    "semantic_hash": ""
+  },
+  "public/loader/assets/team/t02.png": {
+    "mtime": 1781474738.0,
+    "ast_hash": "8464ac786961363806637857a44768f7",
+    "semantic_hash": ""
+  },
+  "public/loader/assets/team/t03.png": {
+    "mtime": 1781474738.0,
+    "ast_hash": "59b351724feb48a183a4b0dd69f07dbb",
+    "semantic_hash": ""
+  },
+  "public/loader/assets/team/t04.png": {
+    "mtime": 1781474738.0,
+    "ast_hash": "84b196fd42a3798675d6b261f994b40b",
+    "semantic_hash": ""
+  },
+  "public/loader/assets/team/t05.png": {
+    "mtime": 1781474738.0,
+    "ast_hash": "a35be9fc5cca3f16496418bda625ffa0",
+    "semantic_hash": ""
+  },
+  "public/loader/assets/team/t06.png": {
+    "mtime": 1781474738.0,
+    "ast_hash": "699a121aa05c36f8f65dc240997d076b",
+    "semantic_hash": ""
+  },
+  "public/loader/assets/team/t07.png": {
+    "mtime": 1781474738.0,
+    "ast_hash": "d49ef32fac428f665e7374fc5d1ec170",
+    "semantic_hash": ""
+  },
+  "public/loader/assets/team/t08.png": {
+    "mtime": 1781474738.0,
+    "ast_hash": "229d081c3e8dfb89ec21bb0745c47bd3",
+    "semantic_hash": ""
+  },
+  "public/loader/assets/team/t09.png": {
+    "mtime": 1781474738.0,
+    "ast_hash": "96fd2edf4f1961a1379946f3c3a402d0",
+    "semantic_hash": ""
+  },
+  "public/loader/assets/team/t10.png": {
+    "mtime": 1781474738.0,
+    "ast_hash": "b18856234f531c51a8e6d614a21fb8b2",
+    "semantic_hash": ""
+  },
+  "public/loader/uploads/Cinematic_close-up_of_an_Egyptian_man_at_his_call_center_stat_23521036-2579-4101-9b4d-f9b6e3793d29_0.png": {
+    "mtime": 1781474738.0,
+    "ast_hash": "570fc0814c00777d8229766847f685ed",
+    "semantic_hash": ""
+  },
+  "public/loader/uploads/Cinematic_shot_of_a_smiling_Egyptian_team_manager_walking_the_6d862736-d46d-4114-be3a-286238b5cb6c_3.png": {
+    "mtime": 1781474738.0,
+    "ast_hash": "1c6b3051ea4a203d281f5f63348ae6da",
+    "semantic_hash": ""
+  },
+  "public/loader/uploads/Close-up_headshot_of_a_stylish_young_man_in_a_crisp_button-do_448d4d5b-14c8-40f3-864a-a61816df0ad7_2-b415e492.png": {
+    "mtime": 1781474738.0,
+    "ast_hash": "9f9ae5b573829d45569c58966c19ba3a",
+    "semantic_hash": ""
+  },
+  "public/loader/uploads/Close-up_headshot_of_a_stylish_young_man_in_a_crisp_button-do_448d4d5b-14c8-40f3-864a-a61816df0ad7_2.png": {
+    "mtime": 1781474738.0,
+    "ast_hash": "9f9ae5b573829d45569c58966c19ba3a",
+    "semantic_hash": ""
+  },
+  "public/loader/uploads/Close-up_portrait_of_a_confident_young_professional_woman_wea_fa1df7d8-0fc5-4382-aede-9005bfd0101c_3-309180a8.png": {
+    "mtime": 1781474738.0,
+    "ast_hash": "33e302bea998bcf9bd70814ca7db4f7f",
+    "semantic_hash": ""
+  },
+  "public/loader/uploads/Close-up_portrait_of_a_confident_young_professional_woman_wea_fa1df7d8-0fc5-4382-aede-9005bfd0101c_3.png": {
+    "mtime": 1781474738.0,
+    "ast_hash": "33e302bea998bcf9bd70814ca7db4f7f",
+    "semantic_hash": ""
+  },
+  "public/loader/uploads/Front-facing_ID-style_headshot_of_a_young_Egyptian_woman_warm_adcc4bce-747a-436a-b2d1-28688cebbf91_0-59f57cd3.png": {
+    "mtime": 1781474738.0,
+    "ast_hash": "084e9df93f1b85b673b2a2868b4cf8fd",
+    "semantic_hash": ""
+  },
+  "public/loader/uploads/Front-facing_ID-style_headshot_of_a_young_Egyptian_woman_warm_adcc4bce-747a-436a-b2d1-28688cebbf91_0.png": {
+    "mtime": 1781474738.0,
+    "ast_hash": "084e9df93f1b85b673b2a2868b4cf8fd",
+    "semantic_hash": ""
+  },
+  "public/loader/uploads/Front-facing_ID-style_headshot_of_a_young_Egyptian_woman_wear_ea2c8269-1eed-4c82-8b94-f7b089e24998_3-00506fb9.png": {
+    "mtime": 1781474738.0,
+    "ast_hash": "e915f468c01bcd21ec3123afddf45f07",
+    "semantic_hash": ""
+  },
+  "public/loader/uploads/Front-facing_ID-style_headshot_of_a_young_Egyptian_woman_wear_ea2c8269-1eed-4c82-8b94-f7b089e24998_3.png": {
+    "mtime": 1781474738.0,
+    "ast_hash": "e915f468c01bcd21ec3123afddf45f07",
+    "semantic_hash": ""
+  },
+  "public/loader/uploads/hesuka_Cinematic_close-up_of_an_Egyptian_man_at_his_call_cent_0b15fd32-eed6-4bd3-976b-8fc9ac326934_2.png": {
+    "mtime": 1781474738.0,
+    "ast_hash": "8464ac786961363806637857a44768f7",
+    "semantic_hash": ""
+  },
+  "public/loader/uploads/hesuka_Cinematic_close-up_of_an_Egyptian_man_at_his_call_cent_4e93b10c-4bbe-4850-8618-287386dad711_0.png": {
+    "mtime": 1781474738.0,
+    "ast_hash": "b18856234f531c51a8e6d614a21fb8b2",
+    "semantic_hash": ""
+  },
+  "public/loader/uploads/hesuka_Cinematic_close-up_of_an_Egyptian_man_at_his_call_cent_4e93b10c-4bbe-4850-8618-287386dad711_2 (1).png": {
+    "mtime": 1781474738.0,
+    "ast_hash": "6f5be9b9900cfaf154f9ef4bfc38d90e",
+    "semantic_hash": ""
+  },
+  "public/loader/uploads/hesuka_Cinematic_close-up_of_an_Egyptian_man_at_his_call_cent_6e36dc1b-74aa-45ee-84d2-f6c2a54f596e_1.png": {
+    "mtime": 1781474738.0,
+    "ast_hash": "84b196fd42a3798675d6b261f994b40b",
+    "semantic_hash": ""
+  },
+  "public/loader/uploads/hesuka_Cinematic_close-up_portrait_of_a_young_Egyptian_woman__d89e4cec-7dd4-4df0-a203-5b39660cbb09_3.png": {
+    "mtime": 1781474738.0,
+    "ast_hash": "a35be9fc5cca3f16496418bda625ffa0",
+    "semantic_hash": ""
+  },
+  "public/loader/uploads/hesuka_Cinematic_shot_of_a_smiling_Egyptian_team_manager_walk_6d862736-d46d-4114-be3a-286238b5cb6c_0.png": {
+    "mtime": 1781474738.0,
+    "ast_hash": "73f740c4161dde03f13135f61e2ba38f",
+    "semantic_hash": ""
+  },
+  "public/loader/uploads/hesuka_Cinematic_shot_of_an_Egyptian_call_center_agent_smilin_bb8e3030-4e93-4871-93ac-23f0aa3e2b2d_2.png": {
+    "mtime": 1781474738.0,
+    "ast_hash": "699a121aa05c36f8f65dc240997d076b",
+    "semantic_hash": ""
+  },
+  "public/loader/uploads/hesuka_Cinematic_three-quarter_shot_of_an_Egyptian_call_cente_c90b0ea9-0c0c-4101-b1ff-e381a4eab0f0_1.png": {
+    "mtime": 1781474738.0,
+    "ast_hash": "229d081c3e8dfb89ec21bb0745c47bd3",
+    "semantic_hash": ""
+  },
+  "public/loader/uploads/hesuka_Editorial_close-up_of_an_Egyptian_woman_in_a_modern_hi_609108d4-8dcf-4af0-a6ad-b1905ad7117a_3.png": {
+    "mtime": 1781474738.0,
+    "ast_hash": "96fd2edf4f1961a1379946f3c3a402d0",
+    "semantic_hash": ""
+  },
+  "public/loader/uploads/hesuka_Editorial_close-up_of_an_Egyptian_woman_in_a_modern_hi_8bcaebc7-a39c-43f9-a8aa-d620858db4a6_0.png": {
+    "mtime": 1781474738.0,
+    "ast_hash": "d49ef32fac428f665e7374fc5d1ec170",
+    "semantic_hash": ""
+  },
+  "public/loader/uploads/hesuka_Front-facing_ID-style_headshot_of_a_young_Egyptian_wom_adcc4bce-747a-436a-b2d1-28688cebbf91_3.png": {
+    "mtime": 1781474738.0,
+    "ast_hash": "7df4c4c42670fdd5cc7fc7037b9034a8",
+    "semantic_hash": ""
+  },
+  "public/loader/uploads/hesuka_Front-facing_ID-style_headshot_of_a_young_Egyptian_wom_b59090a4-e388-46ef-960e-3deff4767df3_1.png": {
+    "mtime": 1781474738.0,
+    "ast_hash": "59b351724feb48a183a4b0dd69f07dbb",
     "semantic_hash": ""
   }
 }

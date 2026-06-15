@@ -52,6 +52,10 @@ body.nav-menu-open {
   overflow: hidden;
 }
 
+body.loader-active {
+  overflow: hidden;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -67,6 +71,242 @@ img {
 
 .page {
   overflow-x: hidden;
+}
+
+/* Dial Expert Orbit Loader */
+
+.dial-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  overflow: hidden;
+  background: #07100d;
+  color: #f4f6f5;
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 720ms ease;
+  will-change: opacity;
+}
+
+.dial-loader.is-fading {
+  opacity: 0;
+}
+
+.dial-loader-ambient {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  width: min(720px, 86vw);
+  height: min(720px, 86vw);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(29, 158, 117, 0.14), rgba(0, 82, 204, 0.05) 46%, rgba(7, 16, 13, 0) 70%);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  animation: dial-loader-soft-pulse 5s ease-in-out infinite;
+}
+
+.dial-loader-core-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(29, 158, 117, 0.34), rgba(0, 82, 204, 0.1) 48%, rgba(7, 16, 13, 0) 72%);
+  filter: blur(22px);
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: opacity 500ms ease;
+}
+
+.dial-loader-core-glow.is-visible {
+  opacity: 1;
+}
+
+.dial-loader-orbit {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.dial-loader-avatar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  border-radius: 50%;
+  background-position: center 28%;
+  background-size: cover;
+  box-shadow:
+    0 0 0 1px #5dcaa5,
+    0 10px 26px rgba(0, 0, 0, 0.55);
+  will-change: transform, opacity;
+}
+
+.dial-loader-lockup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.dial-loader-lockup.is-visible {
+  opacity: 1;
+}
+
+.dial-loader-mark {
+  display: block;
+  width: clamp(76px, 11vw, 108px);
+  height: auto;
+  margin-bottom: 26px;
+  opacity: 0;
+  filter: drop-shadow(0 10px 30px rgba(29, 158, 117, 0.25));
+  transform: scale(0.7);
+  transition:
+    opacity 300ms ease,
+    transform 460ms cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.dial-loader-lockup.is-visible .dial-loader-mark {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.dial-loader-wordmark {
+  color: #f4f6f5;
+  font-family: "Satoshi", "Inter", Arial, Helvetica, sans-serif;
+  font-size: clamp(32px, 4.8vw, 56px);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0;
+  opacity: 0;
+  transform: translate3d(0, 12px, 0);
+  transition:
+    opacity 420ms ease 80ms,
+    transform 420ms cubic-bezier(0.22, 1, 0.36, 1) 80ms;
+}
+
+.dial-loader-lockup.is-visible .dial-loader-wordmark {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.dial-loader-tagline {
+  margin-top: 16px;
+  color: #5dcaa5;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: clamp(11px, 1.4vw, 15px);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 420ms ease 220ms;
+}
+
+.dial-loader-lockup.is-visible .dial-loader-tagline {
+  opacity: 1;
+}
+
+.dial-loader-progress {
+  position: absolute;
+  left: 50%;
+  bottom: max(140px, 18%);
+  z-index: 25;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  opacity: 1;
+  pointer-events: none;
+  transform: translateX(-50%);
+  transition: opacity 400ms ease;
+}
+
+.dial-loader-progress.is-hidden {
+  opacity: 0;
+}
+
+.dial-loader-track {
+  width: min(168px, 56vw);
+  height: 2px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.13);
+}
+
+.dial-loader-fill {
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #1d9e75, #5dcaa5);
+  will-change: width;
+}
+
+.dial-loader-percent {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.55);
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+@keyframes dial-loader-soft-pulse {
+  0%,
+  100% {
+    opacity: 0.55;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  50% {
+    opacity: 0.85;
+    transform: translate(-50%, -50%) scale(1.06);
+  }
+}
+
+@media (max-width: 760px) {
+  .dial-loader-core-glow {
+    width: 280px;
+    height: 280px;
+  }
+
+  .dial-loader-mark {
+    margin-bottom: 22px;
+  }
+
+  .dial-loader-tagline {
+    letter-spacing: 0.24em;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dial-loader,
+  .dial-loader-ambient,
+  .dial-loader-core-glow,
+  .dial-loader-avatar,
+  .dial-loader-mark,
+  .dial-loader-wordmark,
+  .dial-loader-tagline,
+  .dial-loader-progress {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 /* ── Navigation ── */
@@ -86,22 +326,26 @@ img {
   gap: 0;
   height: min-content;
   padding: 20px 80px;
-  background-color: rgba(0, 0, 0, 0.25);
   box-shadow: none;
-  backdrop-filter: blur(22px);
-  -webkit-backdrop-filter: blur(22px);
   pointer-events: none;
   will-change: auto;
   transform-origin: 50% 50% 0;
   transition:
     padding 0.35s ease,
     background-color 0.35s ease,
+    backdrop-filter 0.35s ease,
     box-shadow 0.35s ease,
     transform 0.42s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .topbar.hidden {
   transform: translateY(calc(-100% - 24px));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .topbar {
+    transition-duration: 0.01ms;
+  }
 }
 
 .topbar.scrolled {
@@ -1401,6 +1645,339 @@ img {
 }
 
 /* ── Testimonials ── */
+
+/* How We Engage */
+
+.engage-section {
+  padding-top: 110px;
+  padding-bottom: 120px;
+  text-align: center;
+}
+
+.engage-head {
+  width: min(var(--content), 100%);
+  margin: 0 auto;
+}
+
+.engage-head .eyebrow {
+  color: var(--ink);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.engage-head .section-heading {
+  margin-top: 28px;
+  font-size: clamp(42px, 4.7vw, 64px);
+  line-height: 1.16;
+}
+
+.engage-lead {
+  max-width: 840px;
+  margin-top: 18px;
+  color: rgb(95, 95, 95);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.engage-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 40px;
+  width: min(var(--content), 100%);
+  margin: 64px auto 0;
+}
+
+.engage-card-motion {
+  min-width: 0;
+}
+
+.engage-card {
+  position: relative;
+  display: block;
+  min-height: 330px;
+  overflow: hidden;
+  border-radius: 24px;
+  background: #fff;
+  color: #fff;
+  isolation: isolate;
+  outline: none;
+}
+
+.engage-card::after {
+  content: none;
+}
+
+.engage-card-media {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  margin: 0;
+  overflow: hidden;
+  border-radius: inherit;
+  background: #111;
+  filter: none;
+  transform: translate3d(0, 0, 0) scaleY(1);
+  transform-origin: top center;
+  transition:
+    border-radius 420ms cubic-bezier(0.22, 1, 0.36, 1),
+    filter 420ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 520ms cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform, filter;
+}
+
+.engage-card-image {
+  object-fit: cover;
+  object-position: center center;
+  transform: translate3d(0, 0, 0) scale(1.02);
+  transition: transform 520ms cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
+}
+
+.engage-card-crop {
+  position: absolute;
+  z-index: 2;
+  width: 42px;
+  height: 190px;
+  bottom: -84px;
+  background: #fff;
+  opacity: 0;
+  pointer-events: none;
+  transform: rotate(40deg);
+  transform-origin: center;
+  transition: opacity 260ms ease;
+}
+
+.engage-card-crop-left {
+  left: 24%;
+}
+
+.engage-card-crop-right {
+  right: 24%;
+}
+
+.engage-card-copy {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(28px, 3.3vw, 44px);
+  text-align: left;
+  transform: translate3d(0, 0, 0);
+  transition:
+    color 260ms ease,
+    transform 520ms cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
+}
+
+.engage-card-title {
+  display: flex;
+  align-items: baseline;
+  gap: clamp(18px, 2vw, 28px);
+  min-width: 0;
+}
+
+.engage-card-title span,
+.engage-card-title h3 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 0;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.42);
+}
+
+.engage-card-title span {
+  flex: 0 0 auto;
+  font-size: clamp(38px, 3.3vw, 48px);
+  line-height: 1.15;
+}
+
+.engage-card-title h3 {
+  margin: 0;
+  font-size: clamp(28px, 2.8vw, 40px);
+  line-height: 1;
+}
+
+.engage-card-copy p {
+  max-width: 660px;
+  margin: 18px 0 0;
+  color: #4a4f54;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.52;
+  opacity: 0;
+  transform: translate3d(0, 14px, 0);
+  transition:
+    opacity 260ms ease,
+    transform 360ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.engage-card:hover,
+.engage-card:focus-visible {
+  color: #000;
+}
+
+.engage-card:hover .engage-card-title span,
+.engage-card:hover .engage-card-title h3,
+.engage-card:focus-visible .engage-card-title span,
+.engage-card:focus-visible .engage-card-title h3 {
+  text-shadow: none;
+}
+
+.engage-card:hover::after,
+.engage-card:focus-visible::after {
+  opacity: 0;
+}
+
+.engage-card:hover .engage-card-media,
+.engage-card:focus-visible .engage-card-media {
+  border-radius: 24px;
+  filter: none;
+  transform: translate3d(0, 0, 0) scaleY(0.38);
+}
+
+.engage-card:hover .engage-card-image,
+.engage-card:focus-visible .engage-card-image {
+  transform: translate3d(0, -16%, 0) scale(1.04, 2.64);
+}
+
+.engage-card:hover .engage-card-copy,
+.engage-card:focus-visible .engage-card-copy {
+  transform: translate3d(0, 26%, 0);
+}
+
+.engage-card:hover .engage-card-copy p,
+.engage-card:focus-visible .engage-card-copy p {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .engage-card,
+  .engage-card::after,
+  .engage-card-media,
+  .engage-card-image,
+  .engage-card-copy,
+  .engage-card-copy p,
+  .engage-card-crop {
+    transition-duration: 0.01ms;
+  }
+}
+
+@media (max-width: 1200px) {
+  .engage-card-grid {
+    gap: 24px;
+  }
+
+  .engage-card-title {
+    gap: 18px;
+  }
+
+  .engage-card-copy p {
+    font-size: 17px;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 760px) {
+  .engage-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .engage-head .eyebrow {
+    font-size: 14px;
+  }
+
+  .engage-head .section-heading {
+    margin-top: 18px;
+    font-size: clamp(30px, 10.4vw, 40px);
+    line-height: 1.12;
+  }
+
+  .engage-lead {
+    max-width: 22rem;
+    margin-top: 16px;
+    font-size: 15px;
+    line-height: 1.55;
+  }
+
+  .engage-card-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    margin-top: 42px;
+  }
+
+  .engage-card {
+    min-height: 0;
+    overflow: visible;
+    padding-top: 152px;
+  }
+
+  .engage-card::after {
+    opacity: 0;
+  }
+
+  .engage-card,
+  .engage-card:hover,
+  .engage-card:focus-visible {
+    color: #000;
+  }
+
+  .engage-card .engage-card-media,
+  .engage-card:hover .engage-card-media,
+  .engage-card:focus-visible .engage-card-media {
+    height: 152px;
+    transform: none;
+  }
+
+  .engage-card .engage-card-image,
+  .engage-card:hover .engage-card-image,
+  .engage-card:focus-visible .engage-card-image {
+    transform: translate3d(0, 0, 0) scale(1.04);
+  }
+
+  .engage-card .engage-card-copy,
+  .engage-card:hover .engage-card-copy,
+  .engage-card:focus-visible .engage-card-copy {
+    position: relative;
+    inset: auto;
+    transform: none;
+  }
+
+  .engage-card-copy {
+    padding: 28px 30px 34px;
+  }
+
+  .engage-card-title {
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .engage-card-title span {
+    font-size: 34px;
+  }
+
+  .engage-card-title h3 {
+    font-size: clamp(26px, 8vw, 34px);
+    line-height: 1.04;
+  }
+
+  .engage-card .engage-card-copy p,
+  .engage-card:hover .engage-card-copy p,
+  .engage-card:focus-visible .engage-card-copy p {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .engage-card-copy p {
+    margin-top: 14px;
+    font-size: 15px;
+    line-height: 1.55;
+  }
+}
 
 .testimonials-section {
   min-height: 100vh;

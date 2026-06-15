@@ -324,6 +324,536 @@
       "norm_label": "config"
     },
     {
+      "label": "support.js",
+      "file_type": "code",
+      "source_file": "public/loader/support.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "loader_support",
+      "community": 2,
+      "norm_label": "support.js"
+    },
+    {
+      "label": "getReact()",
+      "file_type": "code",
+      "source_file": "public/loader/support.js",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "loader_support_getreact",
+      "community": 2,
+      "norm_label": "getreact()"
+    },
+    {
+      "label": "getReactDOM()",
+      "file_type": "code",
+      "source_file": "public/loader/support.js",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "loader_support_getreactdom",
+      "community": 2,
+      "norm_label": "getreactdom()"
+    },
+    {
+      "label": "parseDcDocument()",
+      "file_type": "code",
+      "source_file": "public/loader/support.js",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "loader_support_parsedcdocument",
+      "community": 2,
+      "norm_label": "parsedcdocument()"
+    },
+    {
+      "label": "parseDcText()",
+      "file_type": "code",
+      "source_file": "public/loader/support.js",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "loader_support_parsedctext",
+      "community": 2,
+      "norm_label": "parsedctext()"
+    },
+    {
+      "label": "parseDataProps()",
+      "file_type": "code",
+      "source_file": "public/loader/support.js",
+      "source_location": "L56",
+      "_origin": "ast",
+      "id": "loader_support_parsedataprops",
+      "community": 2,
+      "norm_label": "parsedataprops()"
+    },
+    {
+      "label": "dcNameFromPath()",
+      "file_type": "code",
+      "source_file": "public/loader/support.js",
+      "source_location": "L75",
+      "_origin": "ast",
+      "id": "loader_support_dcnamefrompath",
+      "community": 2,
+      "norm_label": "dcnamefrompath()"
+    },
+    {
+      "label": "rootNameForDocument()",
+      "file_type": "code",
+      "source_file": "public/loader/support.js",
+      "source_location": "L131",
+      "_origin": "ast",
+      "id": "loader_support_rootnamefordocument",
+      "community": 2,
+      "norm_label": "rootnamefordocument()"
+    },
+    {
+      "label": "safeDecode()",
+      "file_type": "code",
+      "source_file": "public/loader/support.js",
+      "source_location": "L141",
+      "_origin": "ast",
+      "id": "loader_support_safedecode",
+      "community": 2,
+      "norm_label": "safedecode()"
+    },
+    {
+      "label": "boot()",
+      "file_type": "code",
+      "source_file": "public/loader/support.js",
+      "source_location": "L148",
+      "_origin": "ast",
+      "id": "loader_support_boot",
+      "community": 2,
+      "norm_label": "boot()"
+    },
+    {
+      "label": "resolve()",
+      "file_type": "code",
+      "source_file": "public/loader/support.js",
+      "source_location": "L192",
+      "_origin": "ast",
+      "id": "loader_support_resolve",
+      "community": 2,
+      "norm_label": "resolve()"
+    },
+    {
+      "label": "parensWrapWhole()",
+      "file_type": "code",
+      "source_file": "public/loader/support.js",
+      "source_location": "L224",
+      "_origin": "ast",
+      "id": "loader_support_parenswrapwhole",
+      "community": 2,
+      "norm_label": "parenswrapwhole()"
+    },
+    {
+      "label": "findTopLevelEquality()",
+      "file_type": "code",
+      "source_file": "public/loader/support.js",
+      "source_location": "L235",
+      "_origin": "ast",
+      "id": "loader_support_findtoplevelequality",
+      "community": 2,
+      "norm_label": "findtoplevelequality()"
+    },
+    {
+      "label": "resolvePath()",
+      "file_type": "code",
+      "source_file": "public/loader/support.js",
+      "source_location": "L250",
+      "_origin": "ast",
+      "id": "loader_support_resolvepath",
+      "community": 2,
+      "norm_label": "resolvepath()"
+    },
+    {
+      "label": "encodeCase()",
+      "file_type": "code",
+      "source_file": "public/loader/support.js",
+      "source_location": "L322",
+      "_origin": "ast",
+      "id": "loader_support_encodecase",
+      "community": 2,
+      "norm_label": "encodecase()"
+    },
+    {
+      "label": "kebabToCamel()",
+      "file_type": "code",
+      "source_file": "public/loader/support.js",
+      "source_location": "L341",
+      "_origin": "ast",
+      "id": "loader_support_kebabtocamel",
+      "community": 2,
+      "norm_label": "kebabtocamel()"
+    },
+    {
+      "label": "cssToObj()",
+      "file_type": "code",
+      "source_file": "public/loader/support.js",
+      "source_location": "L344",
+      "_origin": "ast",
+      "id": "loader_support_csstoobj",
+      "community": 2,
+      "norm_label": "csstoobj()"
+    },
+    {
+      "label": "compileAttr()",
+      "file_type": "code",
+      "source_file": "public/loader/support.js",
+      "source_location": "L354",
+      "_origin": "ast",
+      "id": "loader_support_compileattr",
+      "community": 3,
+      "norm_label": "compileattr()"
+    },
+    {
+      "label": "collectProps()",
+      "file_type": "code",
+      "source_file": "public/loader/support.js",
+      "source_location": "L368",
+      "_origin": "ast",
+      "id": "loader_support_collectprops",
+      "community": 3,
+      "norm_label": "collectprops()"
+    },
+    {
+      "label": "hostPositionStyle()",
+      "file_type": "code",
+      "source_file": "public/loader/support.js",
+      "source_location": "L409",
+      "_origin": "ast",
+      "id": "loader_support_hostpositionstyle",
+      "community": 2,
+      "norm_label": "hostpositionstyle()"
+    },
+    {
+      "label": "compileTemplate()",
+      "file_type": "code",
+      "source_file": "public/loader/support.js",
+      "source_location": "L419",
+      "_origin": "ast",
+      "id": "loader_support_compiletemplate",
+      "community": 2,
+      "norm_label": "compiletemplate()"
+    },
+    {
+      "label": "walkChildren()",
+      "file_type": "code",
+      "source_file": "public/loader/support.js",
+      "source_location": "L435",
+      "_origin": "ast",
+      "id": "loader_support_walkchildren",
+      "community": 3,
+      "norm_label": "walkchildren()"
+    },
+    {
+      "label": "walk()",
+      "file_type": "code",
+      "source_file": "public/loader/support.js",
+      "source_location": "L438",
+      "_origin": "ast",
+      "id": "loader_support_walk",
+      "community": 3,
+      "norm_label": "walk()"
+    },
+    {
+      "label": "warnUnresolved()",
+      "file_type": "code",
+      "source_file": "public/loader/support.js",
+      "source_location": "L451",
+      "_origin": "ast",
+      "id": "loader_support_warnunresolved",
+      "community": 2,
+      "norm_label": "warnunresolved()"
+    },
+    {
+      "label": "walkText()",
+      "file_type": "code",
+      "source_file": "public/loader/support.js",
+      "source_location": "L457",
+      "_origin": "ast",
+      "id": "loader_support_walktext",
+      "community": 3,
+      "norm_label": "walktext()"
+    },
+    {
+      "label": "walkFor()",
+      "file_type": "code",
+      "source_file": "public/loader/support.js",
+      "source_location": "L499",
+      "_origin": "ast",
+      "id": "loader_support_walkfor",
+      "community": 3,
+      "norm_label": "walkfor()"
+    },
+    {
+      "label": "walkIf()",
+      "file_type": "code",
+      "source_file": "public/loader/support.js",
+      "source_location": "L534",
+      "_origin": "ast",
+      "id": "loader_support_walkif",
+      "community": 3,
+      "norm_label": "walkif()"
+    },
+    {
+      "label": "walkComponent()",
+      "file_type": "code",
+      "source_file": "public/loader/support.js",
+      "source_location": "L549",
+      "_origin": "ast",
+      "id": "loader_support_walkcomponent",
+      "community": 3,
+      "norm_label": "walkcomponent()"
+    },
+    {
+      "label": "walkXImport()",
+      "file_type": "code",
+      "source_file": "public/loader/support.js",
+      "source_location": "L571",
+      "_origin": "ast",
+      "id": "loader_support_walkximport",
+      "community": 3,
+      "norm_label": "walkximport()"
+    },
+    {
+      "label": "walkElement()",
+      "file_type": "code",
+      "source_file": "public/loader/support.js",
+      "source_location": "L627",
+      "_origin": "ast",
+      "id": "loader_support_walkelement",
+      "community": 3,
+      "norm_label": "walkelement()"
+    },
+    {
+      "label": "constructor()",
+      "file_type": "code",
+      "source_file": "public/loader/support.js",
+      "source_location": "L651",
+      "_origin": "ast",
+      "id": "loader_support_constructor",
+      "community": 2,
+      "norm_label": "constructor()"
+    },
+    {
+      "label": "setState()",
+      "file_type": "code",
+      "source_file": "public/loader/support.js",
+      "source_location": "L658",
+      "_origin": "ast",
+      "id": "loader_support_setstate",
+      "community": 2,
+      "norm_label": "setstate()"
+    },
+    {
+      "label": "forceUpdate()",
+      "file_type": "code",
+      "source_file": "public/loader/support.js",
+      "source_location": "L661",
+      "_origin": "ast",
+      "id": "loader_support_forceupdate",
+      "community": 2,
+      "norm_label": "forceupdate()"
+    },
+    {
+      "label": "componentDidMount()",
+      "file_type": "code",
+      "source_file": "public/loader/support.js",
+      "source_location": "L664",
+      "_origin": "ast",
+      "id": "loader_support_componentdidmount",
+      "community": 2,
+      "norm_label": "componentdidmount()"
+    },
+    {
+      "label": "componentDidUpdate()",
+      "file_type": "code",
+      "source_file": "public/loader/support.js",
+      "source_location": "L666",
+      "_origin": "ast",
+      "id": "loader_support_componentdidupdate",
+      "community": 2,
+      "norm_label": "componentdidupdate()"
+    },
+    {
+      "label": "componentWillUnmount()",
+      "file_type": "code",
+      "source_file": "public/loader/support.js",
+      "source_location": "L668",
+      "_origin": "ast",
+      "id": "loader_support_componentwillunmount",
+      "community": 2,
+      "norm_label": "componentwillunmount()"
+    },
+    {
+      "label": "renderVals()",
+      "file_type": "code",
+      "source_file": "public/loader/support.js",
+      "source_location": "L671",
+      "_origin": "ast",
+      "id": "loader_support_rendervals",
+      "community": 2,
+      "norm_label": "rendervals()"
+    },
+    {
+      "label": "evalDcLogic()",
+      "file_type": "code",
+      "source_file": "public/loader/support.js",
+      "source_location": "L675",
+      "_origin": "ast",
+      "id": "loader_support_evaldclogic",
+      "community": 2,
+      "norm_label": "evaldclogic()"
+    },
+    {
+      "label": "Placeholder()",
+      "file_type": "code",
+      "source_file": "public/loader/support.js",
+      "source_location": "L687",
+      "_origin": "ast",
+      "id": "loader_support_placeholder",
+      "community": 2,
+      "norm_label": "placeholder()"
+    },
+    {
+      "label": "hintToMin()",
+      "file_type": "code",
+      "source_file": "public/loader/support.js",
+      "source_location": "L708",
+      "_origin": "ast",
+      "id": "loader_support_hinttomin",
+      "community": 2,
+      "norm_label": "hinttomin()"
+    },
+    {
+      "label": "createComponentFactory()",
+      "file_type": "code",
+      "source_file": "public/loader/support.js",
+      "source_location": "L713",
+      "_origin": "ast",
+      "id": "loader_support_createcomponentfactory",
+      "community": 2,
+      "norm_label": "createcomponentfactory()"
+    },
+    {
+      "label": "isRenderableType()",
+      "file_type": "code",
+      "source_file": "public/loader/support.js",
+      "source_location": "L930",
+      "_origin": "ast",
+      "id": "loader_support_isrenderabletype",
+      "community": 2,
+      "norm_label": "isrenderabletype()"
+    },
+    {
+      "label": "resolveDottedPath()",
+      "file_type": "code",
+      "source_file": "public/loader/support.js",
+      "source_location": "L934",
+      "_origin": "ast",
+      "id": "loader_support_resolvedottedpath",
+      "community": 2,
+      "norm_label": "resolvedottedpath()"
+    },
+    {
+      "label": "createExternalModules()",
+      "file_type": "code",
+      "source_file": "public/loader/support.js",
+      "source_location": "L945",
+      "_origin": "ast",
+      "id": "loader_support_createexternalmodules",
+      "community": 2,
+      "norm_label": "createexternalmodules()"
+    },
+    {
+      "label": "isElementClass()",
+      "file_type": "code",
+      "source_file": "public/loader/support.js",
+      "source_location": "L1107",
+      "_origin": "ast",
+      "id": "loader_support_iselementclass",
+      "community": 2,
+      "norm_label": "iselementclass()"
+    },
+    {
+      "label": "createHelmetManager()",
+      "file_type": "code",
+      "source_file": "public/loader/support.js",
+      "source_location": "L1116",
+      "_origin": "ast",
+      "id": "loader_support_createhelmetmanager",
+      "community": 2,
+      "norm_label": "createhelmetmanager()"
+    },
+    {
+      "label": "createPseudoSheet()",
+      "file_type": "code",
+      "source_file": "public/loader/support.js",
+      "source_location": "L1168",
+      "_origin": "ast",
+      "id": "loader_support_createpseudosheet",
+      "community": 2,
+      "norm_label": "createpseudosheet()"
+    },
+    {
+      "label": "createRegistry()",
+      "file_type": "code",
+      "source_file": "public/loader/support.js",
+      "source_location": "L1189",
+      "_origin": "ast",
+      "id": "loader_support_createregistry",
+      "community": 2,
+      "norm_label": "createregistry()"
+    },
+    {
+      "label": "createRuntime()",
+      "file_type": "code",
+      "source_file": "public/loader/support.js",
+      "source_location": "L1220",
+      "_origin": "ast",
+      "id": "loader_support_createruntime",
+      "community": 2,
+      "norm_label": "createruntime()"
+    },
+    {
+      "label": "hideRawTemplate()",
+      "file_type": "code",
+      "source_file": "public/loader/support.js",
+      "source_location": "L1381",
+      "_origin": "ast",
+      "id": "loader_support_hiderawtemplate",
+      "community": 2,
+      "norm_label": "hiderawtemplate()"
+    },
+    {
+      "label": "loadScript()",
+      "file_type": "code",
+      "source_file": "public/loader/support.js",
+      "source_location": "L1386",
+      "_origin": "ast",
+      "id": "loader_support_loadscript",
+      "community": 2,
+      "norm_label": "loadscript()"
+    },
+    {
+      "label": "loadReactUmd()",
+      "file_type": "code",
+      "source_file": "public/loader/support.js",
+      "source_location": "L1399",
+      "_origin": "ast",
+      "id": "loader_support_loadreactumd",
+      "community": 2,
+      "norm_label": "loadreactumd()"
+    },
+    {
+      "label": "init()",
+      "file_type": "code",
+      "source_file": "public/loader/support.js",
+      "source_location": "L1407",
+      "_origin": "ast",
+      "id": "loader_support_init",
+      "community": 2,
+      "norm_label": "init()"
+    },
+    {
       "label": "page.tsx",
       "file_type": "code",
       "source_file": "src/app/contact/page.tsx",
@@ -387,7 +917,7 @@
       "label": "Home()",
       "file_type": "code",
       "source_file": "src/app/page.tsx",
-      "source_location": "L14",
+      "source_location": "L16",
       "_origin": "ast",
       "id": "app_page_home",
       "community": 38,
@@ -422,6 +952,36 @@
       "id": "components_animatedsectionheading_animatedsectionheading",
       "community": 38,
       "norm_label": "animatedsectionheading()"
+    },
+    {
+      "label": "DialExpertOrbitLoader.tsx",
+      "file_type": "code",
+      "source_file": "src/components/DialExpertOrbitLoader.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "components_dialexpertorbitloader",
+      "community": 38,
+      "norm_label": "dialexpertorbitloader.tsx"
+    },
+    {
+      "label": "PHOTOS",
+      "file_type": "code",
+      "source_file": "src/components/DialExpertOrbitLoader.tsx",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "components_dialexpertorbitloader_photos",
+      "community": 38,
+      "norm_label": "photos"
+    },
+    {
+      "label": "DialExpertOrbitLoader()",
+      "file_type": "code",
+      "source_file": "src/components/DialExpertOrbitLoader.tsx",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "components_dialexpertorbitloader_dialexpertorbitloader",
+      "community": 38,
+      "norm_label": "dialexpertorbitloader()"
     },
     {
       "label": "EyebrowIcon.tsx",
@@ -570,7 +1130,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "sections_cta",
-      "community": 1,
+      "community": 38,
       "norm_label": "cta.tsx"
     },
     {
@@ -580,7 +1140,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "sections_cta_marqueerow",
-      "community": 1,
+      "community": 38,
       "norm_label": "marqueerow()"
     },
     {
@@ -590,8 +1150,28 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "sections_cta_cta",
-      "community": 1,
+      "community": 38,
       "norm_label": "cta()"
+    },
+    {
+      "label": "EngagementWays.tsx",
+      "file_type": "code",
+      "source_file": "src/components/sections/EngagementWays.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "sections_engagementways",
+      "community": 38,
+      "norm_label": "engagementways.tsx"
+    },
+    {
+      "label": "EngagementWays",
+      "file_type": "code",
+      "source_file": "src/components/sections/EngagementWays.tsx",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "sections_engagementways_engagementways",
+      "community": 38,
+      "norm_label": "engagementways"
     },
     {
       "label": "FAQ.tsx",
@@ -890,7 +1470,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "sections_team",
-      "community": 43,
+      "community": 38,
       "norm_label": "team.tsx"
     },
     {
@@ -900,7 +1480,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "sections_team_team",
-      "community": 43,
+      "community": 38,
       "norm_label": "team"
     },
     {
@@ -1656,6 +2236,1032 @@
       "target": "postcss_config_config"
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L148",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support",
+      "target": "loader_support_boot"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L368",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support",
+      "target": "loader_support_collectprops"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L354",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support",
+      "target": "loader_support_compileattr"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L419",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support",
+      "target": "loader_support_compiletemplate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L664",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support",
+      "target": "loader_support_componentdidmount"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L666",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support",
+      "target": "loader_support_componentdidupdate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L668",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support",
+      "target": "loader_support_componentwillunmount"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L651",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support",
+      "target": "loader_support_constructor"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L713",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support",
+      "target": "loader_support_createcomponentfactory"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L945",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support",
+      "target": "loader_support_createexternalmodules"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L1116",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support",
+      "target": "loader_support_createhelmetmanager"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L1168",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support",
+      "target": "loader_support_createpseudosheet"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L1189",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support",
+      "target": "loader_support_createregistry"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L1220",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support",
+      "target": "loader_support_createruntime"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L344",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support",
+      "target": "loader_support_csstoobj"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L75",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support",
+      "target": "loader_support_dcnamefrompath"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L322",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support",
+      "target": "loader_support_encodecase"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L675",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support",
+      "target": "loader_support_evaldclogic"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L235",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support",
+      "target": "loader_support_findtoplevelequality"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L661",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support",
+      "target": "loader_support_forceupdate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support",
+      "target": "loader_support_getreact"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support",
+      "target": "loader_support_getreactdom"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L1381",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support",
+      "target": "loader_support_hiderawtemplate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L708",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support",
+      "target": "loader_support_hinttomin"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L409",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support",
+      "target": "loader_support_hostpositionstyle"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L1407",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support",
+      "target": "loader_support_init"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L1107",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support",
+      "target": "loader_support_iselementclass"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L930",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support",
+      "target": "loader_support_isrenderabletype"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L341",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support",
+      "target": "loader_support_kebabtocamel"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L1399",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support",
+      "target": "loader_support_loadreactumd"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L1386",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support",
+      "target": "loader_support_loadscript"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L224",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support",
+      "target": "loader_support_parenswrapwhole"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L56",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support",
+      "target": "loader_support_parsedataprops"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support",
+      "target": "loader_support_parsedcdocument"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L38",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support",
+      "target": "loader_support_parsedctext"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L687",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support",
+      "target": "loader_support_placeholder"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L671",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support",
+      "target": "loader_support_rendervals"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L192",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support",
+      "target": "loader_support_resolve"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L934",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support",
+      "target": "loader_support_resolvedottedpath"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L250",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support",
+      "target": "loader_support_resolvepath"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L131",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support",
+      "target": "loader_support_rootnamefordocument"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L141",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support",
+      "target": "loader_support_safedecode"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L658",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support",
+      "target": "loader_support_setstate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L438",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support",
+      "target": "loader_support_walk"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L435",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support",
+      "target": "loader_support_walkchildren"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L549",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support",
+      "target": "loader_support_walkcomponent"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L627",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support",
+      "target": "loader_support_walkelement"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L499",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support",
+      "target": "loader_support_walkfor"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L534",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support",
+      "target": "loader_support_walkif"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L457",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support",
+      "target": "loader_support_walktext"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L571",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support",
+      "target": "loader_support_walkximport"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L451",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support",
+      "target": "loader_support_warnunresolved"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L151",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support_boot",
+      "target": "loader_support_getreact"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L714",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support_createcomponentfactory",
+      "target": "loader_support_getreact"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L683",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support_evaldclogic",
+      "target": "loader_support_getreact"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L182",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support_boot",
+      "target": "loader_support_getreactdom"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L149",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support_boot",
+      "target": "loader_support_parsedcdocument"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L28",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support_parsedcdocument",
+      "target": "loader_support_parsedataprops"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L46",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support_parsedctext",
+      "target": "loader_support_parsedataprops"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L139",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support_rootnamefordocument",
+      "target": "loader_support_dcnamefrompath"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L152",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support_boot",
+      "target": "loader_support_rootnamefordocument"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L133",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support_rootnamefordocument",
+      "target": "loader_support_safedecode"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L1401",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support_loadreactumd",
+      "target": "loader_support_resolve"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L198",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support_resolve",
+      "target": "loader_support_findtoplevelequality"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L195",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support_resolve",
+      "target": "loader_support_parenswrapwhole"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L222",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support_resolve",
+      "target": "loader_support_resolvepath"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L422",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support_compiletemplate",
+      "target": "loader_support_encodecase"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L376",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support_collectprops",
+      "target": "loader_support_kebabtocamel"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L350",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support_csstoobj",
+      "target": "loader_support_kebabtocamel"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L410",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support_hostpositionstyle",
+      "target": "loader_support_csstoobj"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L393",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support_collectprops",
+      "target": "loader_support_compileattr"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L556",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support_walkcomponent",
+      "target": "loader_support_compileattr"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L500",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support_walkfor",
+      "target": "loader_support_compileattr"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L535",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support_walkif",
+      "target": "loader_support_compileattr"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L572",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support_walkximport",
+      "target": "loader_support_compileattr"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L557",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support_walkcomponent",
+      "target": "loader_support_collectprops"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L630",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support_walkelement",
+      "target": "loader_support_collectprops"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L585",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support_walkximport",
+      "target": "loader_support_collectprops"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L430",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support_compiletemplate",
+      "target": "loader_support_walkchildren"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L558",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support_walkcomponent",
+      "target": "loader_support_walkchildren"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L631",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support_walkelement",
+      "target": "loader_support_walkchildren"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L503",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support_walkfor",
+      "target": "loader_support_walkchildren"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L538",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support_walkif",
+      "target": "loader_support_walkchildren"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L587",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support_walkximport",
+      "target": "loader_support_walkchildren"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L447",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support_walk",
+      "target": "loader_support_walkcomponent"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L448",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support_walk",
+      "target": "loader_support_walkelement"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L443",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support_walk",
+      "target": "loader_support_walkfor"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L444",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support_walk",
+      "target": "loader_support_walkif"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L439",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support_walk",
+      "target": "loader_support_walktext"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L445",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support_walk",
+      "target": "loader_support_walkximport"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L1228",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support_createruntime",
+      "target": "loader_support_createcomponentfactory"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L931",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support_isrenderabletype",
+      "target": "loader_support_iselementclass"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L1227",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support_createruntime",
+      "target": "loader_support_createexternalmodules"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L1223",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support_createruntime",
+      "target": "loader_support_createhelmetmanager"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L1222",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support_createruntime",
+      "target": "loader_support_createpseudosheet"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L1221",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support_createruntime",
+      "target": "loader_support_createregistry"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L1408",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support_init",
+      "target": "loader_support_createruntime"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "public/loader/support.js",
+      "source_location": "L1403",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "loader_support_loadreactumd",
+      "target": "loader_support_loadscript"
+    },
+    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -1733,6 +3339,17 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/app/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_page",
+      "target": "components_dialexpertorbitloader"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.tsx",
       "source_location": "L1",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -1760,6 +3377,17 @@
       "confidence_score": 1.0,
       "source": "app_page",
       "target": "sections_cta"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_page",
+      "target": "sections_engagementways"
     },
     {
       "relation": "imports_from",
@@ -1884,6 +3512,17 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/EngagementWays.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sections_engagementways",
+      "target": "components_animatedsectionheading"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "src/components/sections/FAQ.tsx",
       "source_location": "L5",
       "weight": 1.0,
@@ -1960,6 +3599,26 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "src/components/DialExpertOrbitLoader.tsx",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_dialexpertorbitloader",
+      "target": "components_dialexpertorbitloader_dialexpertorbitloader"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/DialExpertOrbitLoader.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_dialexpertorbitloader",
+      "target": "components_dialexpertorbitloader_photos"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "src/components/EyebrowIcon.tsx",
       "source_location": "L7",
       "weight": 1.0,
@@ -1976,6 +3635,17 @@
       "confidence_score": 1.0,
       "source": "components_eyebrowicon",
       "target": "components_eyebrowicon_eyebrowiconprops"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/EngagementWays.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sections_engagementways",
+      "target": "components_eyebrowicon"
     },
     {
       "relation": "imports_from",
@@ -2157,6 +3827,16 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/EngagementWays.tsx",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sections_engagementways",
+      "target": "sections_engagementways_engagementways"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "src/components/sections/FAQ.tsx",
       "source_location": "L34",
       "weight": 1.0,
@@ -2180,9 +3860,9 @@
       "source_file": "src/components/sections/FooterSection.tsx",
       "source_location": "L38",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sections_footersection",
-      "target": "sections_footersection_facebookicon",
-      "confidence_score": 1.0
+      "target": "sections_footersection_facebookicon"
     },
     {
       "relation": "contains",
@@ -2200,9 +3880,9 @@
       "source_file": "src/components/sections/FooterSection.tsx",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sections_footersection",
-      "target": "sections_footersection_instagramicon",
-      "confidence_score": 1.0
+      "target": "sections_footersection_instagramicon"
     },
     {
       "relation": "contains",
@@ -2210,9 +3890,9 @@
       "source_file": "src/components/sections/FooterSection.tsx",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sections_footersection",
-      "target": "sections_footersection_linkedinicon",
-      "confidence_score": 1.0
+      "target": "sections_footersection_linkedinicon"
     },
     {
       "relation": "contains",
@@ -2240,9 +3920,9 @@
       "source_file": "src/components/sections/FooterSection.tsx",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sections_footersection",
-      "target": "sections_footersection_tiktokicon",
-      "confidence_score": 1.0
+      "target": "sections_footersection_tiktokicon"
     },
     {
       "relation": "contains",
@@ -2796,5 +4476,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "4b6659054e0ed30561ad8b8d9651cc000f8da3b4"
+  "built_at_commit": "34f89c3e4077d66b3c71e340251a86e276f98aaa"
 }
