@@ -21,7 +21,7 @@ export default function Hero() {
         playsInline
         className="hero-video"
         preload="none"
-        poster="https://framerusercontent.com/images/aSGF5PBvDXfvTirXeZzxaND6bcg.png?width=1920"
+        poster="/dialexpert/hero-poster.jpg"
         aria-hidden="true"
       >
         <source
