@@ -75,7 +75,7 @@ export default function Navbar() {
       <div className="topbar-inner">
         <Link className="brand" href="/" aria-label="Dial Expert home" onClick={closeMenu}>
           <Image
-            src="https://framerusercontent.com/images/aSGF5PBvDXfvTirXeZzxaND6bcg.png?width=422&height=89"
+            src="https://framerusercontent.com/images/aSGF5PBvDXfvTirXeZzxaND6bcg.png"
             alt="Dial Expert"
             width={263}
             height={55}
@@ -129,7 +129,7 @@ export default function Navbar() {
 
         <Link className="mobile-menu-brand" href="/" aria-label="Dial Expert home" tabIndex={menuOpen ? 0 : -1} onClick={closeMenu}>
           <Image
-            src="https://framerusercontent.com/images/aSGF5PBvDXfvTirXeZzxaND6bcg.png?width=240&height=51"
+            src="https://framerusercontent.com/images/aSGF5PBvDXfvTirXeZzxaND6bcg.png"
             alt="Dial Expert"
             width={150}
             height={32}

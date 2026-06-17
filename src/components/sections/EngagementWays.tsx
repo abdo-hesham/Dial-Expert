@@ -13,7 +13,7 @@ const engagementWays = [
     copy:
       "Hiring and managing in-house sales and support teams comes with high costs, slow ramp times, and constant management overhead.",
     image:
-      "https://framerusercontent.com/images/USdkaFsd9cz1KsNBgFTMErZtIA.jpg?width=1248&height=832",
+      "https://framerusercontent.com/images/USdkaFsd9cz1KsNBgFTMErZtIA.jpg",
     alt: "Market trading chart with candlesticks and moving average lines",
   },
   {
@@ -22,7 +22,7 @@ const engagementWays = [
     copy:
       "Poor communication, high turnover, and inconsistent execution from outsourcing partners that don't invest in management or training.",
     image:
-      "https://framerusercontent.com/images/eySk8pJlPyuhtdhXTU7FZFdCs0.jpg?width=1248&height=832",
+      "https://framerusercontent.com/images/eySk8pJlPyuhtdhXTU7FZFdCs0.jpg",
     alt: "Open office sales floor with teams working at rows of desks",
   },
 ]

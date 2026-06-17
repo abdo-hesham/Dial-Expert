@@ -12,49 +12,49 @@ const team = [
     name: "Mohamed Ibrahim",
     role: "Floor Manager",
     accent: "oklch(70% 0.18 250)",
-    src: "https://framerusercontent.com/images/66EFnJbatkwuOs6n4IRhhS2IkY.jpg?width=500&height=500",
+    src: "https://framerusercontent.com/images/66EFnJbatkwuOs6n4IRhhS2IkY.jpg",
   },
   {
     name: "Nour Hassan",
     role: "Floor Manager",
     accent: "oklch(76% 0.16 165)",
-    src: "https://framerusercontent.com/images/DJ3UKJV5DCaNNBAd5jmi55IMHeM.jpg?width=500&height=700",
+    src: "https://framerusercontent.com/images/DJ3UKJV5DCaNNBAd5jmi55IMHeM.jpg",
   },
   {
     name: "Omar Adel",
     role: "Floor Manager",
     accent: "oklch(74% 0.2 35)",
-    src: "https://framerusercontent.com/images/g5lE8Lew6aKsf3kL0tzdeISurgk.jpg?width=500&height=700",
+    src: "https://framerusercontent.com/images/g5lE8Lew6aKsf3kL0tzdeISurgk.jpg",
   },
   {
     name: "Youssef Samir",
     role: "Floor Manager",
     accent: "oklch(72% 0.18 285)",
-    src: "https://framerusercontent.com/images/9bbCQsHfnRIEWwTsJpj76ZeifHs.jpg?width=500&height=700",
+    src: "https://framerusercontent.com/images/9bbCQsHfnRIEWwTsJpj76ZeifHs.jpg",
   },
   {
     name: "Karim Nabil",
     role: "Floor Manager",
     accent: "oklch(78% 0.14 205)",
-    src: "https://framerusercontent.com/images/ro7AK6m42H5HBn1YHWlRN89ihm8.jpg?width=500&height=700",
+    src: "https://framerusercontent.com/images/ro7AK6m42H5HBn1YHWlRN89ihm8.jpg",
   },
   {
     name: "Nour Elsaid",
     role: "Floor Manager",
     accent: "oklch(73% 0.2 255)",
-    src: "https://framerusercontent.com/images/J5KVtq4fCjd95XXrqJjMQivoJ4.jpg?width=500&height=750",
+    src: "https://framerusercontent.com/images/J5KVtq4fCjd95XXrqJjMQivoJ4.jpg",
   },
   {
     name: "Mona Adel",
     role: "Floor Manager",
     accent: "oklch(78% 0.16 95)",
-    src: "https://framerusercontent.com/images/lXPGKJKNeVfM1KEgAmuakvdnQw.jpg?width=500&height=750",
+    src: "https://framerusercontent.com/images/lXPGKJKNeVfM1KEgAmuakvdnQw.jpg",
   },
   {
     name: "Sara Mahmoud",
     role: "Floor Manager",
     accent: "oklch(76% 0.18 330)",
-    src: "https://framerusercontent.com/images/C139n8lAoJLOIVsVVe99V4fEDvU.jpg?width=500&height=500",
+    src: "https://framerusercontent.com/images/C139n8lAoJLOIVsVVe99V4fEDvU.jpg",
   },
 ];
 
@@ -116,7 +116,7 @@ export default function Team() {
                   alt={member.name}
                   fill
                   sizes="(max-width: 768px) 389px, 242px"
-                  quality={50}
+                  quality={80}
                   loading="lazy"
                 />
                 <div className="gallery-info">
