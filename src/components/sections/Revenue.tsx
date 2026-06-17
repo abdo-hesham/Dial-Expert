@@ -8,52 +8,52 @@ import EyebrowIcon from "../EyebrowIcon"
 const cycleSteps = [
   [
     "01",
-    "Your pipeline starts moving",
-    "We handle the outreach. You get qualified appointments and more closed deals.",
+    "High cost of in-house hiring",
+    "Internal teams are expensive to hire, train, and manage at scale.",
   ],
   [
     "02",
-    "Less Overhead, More Growth",
-    "Building a sales floor takes years and major investment. We did that work, you get the floor, not the buildout.",
+    "Cheap outsourcing backfires",
+    "Low-cost outsourcing often creates poor results, weak communication, and low accountability.",
   ],
   [
     "03",
-    "No Slips. No Leaks.",
-    "We automate the repetitive work, protect the data, and keep your team focused on what humans do best.",
+    "Growth hits a wall",
+    "Execution becomes inconsistent and leaders lose time managing problems they shouldn't have to manage.",
   ],
 ]
 
 const orbitStops = [
   {
-    key: "appointments",
-    label: "Appointments",
-    sideLabel: "Appointments",
-    headline: "Appointments",
-    description: "About one in ten cold conversations turns into an appointment.",
+    key: "cost",
+    label: "Cost",
+    sideLabel: "Cost",
+    headline: "Cost",
+    description: "Hiring in-house becomes expensive, slow, and hard to manage.",
     tone: "blue",
   },
   {
-    key: "closes",
-    label: "Closes",
-    sideLabel: "Closes",
-    headline: "Closes",
-    description: "About 3 in 100 close. The floor that booked it is the floor that closes it.",
+    key: "quality",
+    label: "Quality",
+    sideLabel: "Quality",
+    headline: "Quality",
+    description: "Cheap outsourcing often creates poor accountability and high turnover.",
     tone: "blue",
   },
   {
-    key: "csat",
-    label: "CSAT",
-    sideLabel: "CSAT",
-    headline: "CSAT",
-    description: "The sale is not the end. Retention and service keep the loop healthy.",
+    key: "consistency",
+    label: "Consistency",
+    sideLabel: "Consistency",
+    headline: "Consistency",
+    description: "Growth slows when execution becomes inconsistent.",
     tone: "gray",
   },
   {
-    key: "leads",
-    label: "Leads",
-    sideLabel: "Leads",
-    headline: "Leads",
-    description: "We keep the top of the pipe moving so the floor never goes cold.",
+    key: "focus",
+    label: "Focus",
+    sideLabel: "Focus",
+    headline: "Focus",
+    description: "Leaders lose time managing problems they should not have to manage.",
     tone: "gray",
   },
 ]
@@ -92,41 +92,31 @@ export default function Revenue() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false, amount: 0.55 }}
+          viewport={{ once: true, amount: 0.55 }}
           transition={{ duration: 0.6 }}
           className="eyebrow"
         >
           <EyebrowIcon variant="framer" />
-          <span>The Floor Problem</span>
+          <span>The Challenge</span>
         </motion.div>
 
         <AnimatedSectionHeading
           lines={[
-            "Your pipeline isn't dry because the market dried up.",
-            "It's dry because no one's working it.",
+            "Scaling A Team Gets",
+            "Expensive Fast.",
           ]}
         />
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           className="section-lead problem-lead"
         >
           <p>
-            Closers sitting on dead leads. An appointment rate that hasn&apos;t
-            moved in two quarters. You, doing the dialing yourself at 7pm.
-            That&apos;s not a market problem, it&apos;s a floor problem. We&apos;ve
-            been fixing it for seven years across debt settlement, insurance,
-            financial programs, real estate, and cold outreach.
-          </p>
-          <p>
-            About one in ten cold conversations turns into an appointment.
-            About three in a hundred close. Those aren&apos;t targets on a slide,
-            they&apos;re what our floors are averaging right now, on live campaigns.
-            We don&apos;t hand you a list and call it lead gen. We hand your closer
-            a conversation that&apos;s already warm.
+            Hiring in-house becomes expensive, slow, and hard to manage.
+            Outsourcing often creates new problems: weak communication, poor accountability, and high turnover.
           </p>
         </motion.div>
       </div>
@@ -134,14 +124,14 @@ export default function Revenue() {
       <motion.div
         initial={{ opacity: 0, scale: 0.96 }}
         whileInView={{ opacity: 1, scale: 1 }}
-        viewport={{ once: false, amount: 0.35 }}
+        viewport={{ once: true, amount: 0.35 }}
         transition={{ duration: 0.8, delay: 0.3 }}
         className="orbit-wrap"
       >
         <div className={`orbit-label top ${activeStop.key === "appointments" ? "is-active" : ""}`}>Appointments</div>
         <div className={`orbit-label left ${activeStop.key === "leads" ? "is-active" : ""}`}>Leads</div>
-        <div className={`orbit-label right ${activeStop.key === "closes" ? "is-active" : ""}`}>Closes</div>
-        <div className={`orbit-label bottom ${activeStop.key === "csat" ? "is-active" : ""}`}>CSAT</div>
+        <div className={`orbit-label right ${activeStop.key === "quality" ? "is-active" : ""}`}>Quality</div>
+        <div className={`orbit-label bottom ${activeStop.key === "consistency" ? "is-active" : ""}`}>Consistency</div>
         <div className="orbit-ring">
           <svg
             className="orbit-svg"
@@ -221,10 +211,9 @@ export default function Revenue() {
 
       <div className="cycle-grid">
         <div className="cycle-intro">
-          <h3>The Full Revenue Cycle</h3>
+          <h3>The Core Challenges</h3>
           <p>
-            Leads, appointments, closes, and the CSAT that keeps them. We keep
-            the cycle moving.
+            Cost, quality, consistency, and leadership focus. These four problems drive most businesses to look for a better way.
           </p>
         </div>
 

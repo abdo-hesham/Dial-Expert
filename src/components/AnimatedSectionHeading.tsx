@@ -28,7 +28,7 @@ export default function AnimatedSectionHeading({
       className={className}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.55 }}
+      viewport={{ once: true, amount: 0.55 }}
       variants={{
         hidden: {},
         show: {

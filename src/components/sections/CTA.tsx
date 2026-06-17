@@ -1,56 +1,57 @@
 "use client"
 
 import Link from "next/link"
+import { motion } from "framer-motion"
 import { ArrowUpRight } from "lucide-react"
-import { useRef, useState } from "react"
-
-function MarqueeRow({ className, href }: { className: string; href: string }) {
-  const words = Array.from({ length: 8 }, (_, index) => (
-    <span key={index}>Let&apos;s Talk</span>
-  ))
-
-  return (
-    <Link className={`marquee-row ${className}`} href={href}>
-      <span className="marquee-track">{words}</span>
-      <span className="marquee-track" aria-hidden="true">{words}</span>
-    </Link>
-  )
-}
+import EyebrowIcon from "@/components/EyebrowIcon"
+import AnimatedSectionHeading from "@/components/AnimatedSectionHeading"
+import { BeamsBackground } from "@/components/ui/beams-background"
 
 export default function CTA() {
-  const sectionRef = useRef<HTMLElement | null>(null)
-  const [mousePos, setMousePos] = useState<{ x: number; y: number } | null>(null)
-
-  function handleMouseMove(e: React.MouseEvent) {
-    const rect = sectionRef.current?.getBoundingClientRect()
-    if (!rect) return
-    setMousePos({ x: e.clientX - rect.left, y: e.clientY - rect.top })
-  }
-
-  function handleMouseLeave() {
-    setMousePos(null)
-  }
-
   return (
-    <section
-      ref={sectionRef}
-      className="contact-band"
-      onMouseMove={handleMouseMove}
-      onMouseLeave={handleMouseLeave}
-    >
-      <MarqueeRow className="marquee-forward" href="/contact" />
-      <MarqueeRow className="marquee-reverse" href="/contact" />
-      <span
-        className="marquee-hover-badge"
-        aria-hidden="true"
-        style={
-          mousePos
-            ? { left: mousePos.x, top: mousePos.y, opacity: 1, transform: "translate(-50%, -50%) scale(1)" }
-            : undefined
-        }
-      >
-        <ArrowUpRight size={24} strokeWidth={2.5} />
-      </span>
+    <section className="cta-beam-section">
+      <BeamsBackground className="cta-beam-bg">
+        <div className="cta-beam-content">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.55 }}
+            transition={{ duration: 0.6 }}
+          >
+            <EyebrowIcon variant="framer" />
+          </motion.div>
+
+          <AnimatedSectionHeading lines={["Let\u2019s Talk."]} />
+
+          <motion.p
+            className="cta-beam-body"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
+            Whether you are scaling your internal team, replacing an
+            underperforming provider, or looking for a better way to handle
+            sales and support, DialExpert can help you build the operation
+            behind your growth.
+          </motion.p>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+          >
+            <Link className="cta-beam-btn btn-fill-hover" href="/contact">
+              <span className="btn-fill" aria-hidden="true" />
+              <span className="btn-text">Book A Strategy Call</span>
+              <span className="cta-beam-btn-arrow">
+                <ArrowUpRight size={18} strokeWidth={2.5} />
+              </span>
+            </Link>
+          </motion.div>
+        </div>
+      </BeamsBackground>
     </section>
   )
 }
