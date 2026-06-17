@@ -14,6 +14,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-scroll-behavior="smooth">
+      <head>
+        <link rel="preconnect" href="https://framerusercontent.com" />
+        <link rel="preconnect" href="https://assets.framer.com" />
+        <link rel="dns-prefetch" href="https://framerusercontent.com" />
+        <link rel="dns-prefetch" href="https://assets.framer.com" />
+      </head>
       <body>{children}</body>
     </html>
   )

@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
 
@@ -13,43 +13,41 @@ const navLinks = [
   { label: "Contact Us", href: "/contact" },
 ]
 
+const HERO_HEIGHT = 900
+const NAV_HIDE_OFFSET = 96
+const DISAPPEAR_AT = HERO_HEIGHT - NAV_HIDE_OFFSET
+
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [hidden, setHidden] = useState(false)
   const [overHero, setOverHero] = useState(true)
   const [menuOpen, setMenuOpen] = useState(false)
+  const lastScrollYRef = useRef(0)
 
   useEffect(() => {
-    const THRESHOLD = 60
-    let lastScrollY = window.scrollY
+    lastScrollYRef.current = window.scrollY
 
     const onScroll = () => {
       const currentScrollY = window.scrollY
-      const hero = document.querySelector<HTMLElement>(".hero")
-      const heroBottom = hero ? hero.offsetTop + hero.offsetHeight : 0
-      const isOverHero = hero ? currentScrollY < heroBottom - 96 : currentScrollY <= THRESHOLD
+      const isOverHero = currentScrollY < DISAPPEAR_AT
 
       setOverHero(isOverHero)
       setScrolled(!isOverHero)
 
       if (isOverHero) {
         setHidden(false)
-      } else if (currentScrollY > lastScrollY) {
+      } else if (currentScrollY > lastScrollYRef.current) {
         setHidden(true)
-      } else if (currentScrollY < lastScrollY) {
+      } else if (currentScrollY < lastScrollYRef.current) {
         setHidden(false)
       }
 
-      lastScrollY = currentScrollY
+      lastScrollYRef.current = currentScrollY
     }
 
     onScroll()
     window.addEventListener("scroll", onScroll, { passive: true })
-    window.addEventListener("resize", onScroll)
-    return () => {
-      window.removeEventListener("scroll", onScroll)
-      window.removeEventListener("resize", onScroll)
-    }
+    return () => window.removeEventListener("scroll", onScroll)
   }, [])
 
   useEffect(() => {
@@ -77,12 +75,12 @@ export default function Navbar() {
       <div className="topbar-inner">
         <Link className="brand" href="/" aria-label="Dial Expert home" onClick={closeMenu}>
           <Image
-            src="https://framerusercontent.com/images/aSGF5PBvDXfvTirXeZzxaND6bcg.png?width=4027&height=848"
+            src="https://framerusercontent.com/images/aSGF5PBvDXfvTirXeZzxaND6bcg.png?width=422&height=89"
             alt="Dial Expert"
             width={263}
             height={55}
             sizes="(max-width: 760px) 118px, (max-width: 1200px) 150px, 205px"
-            quality={45}
+            quality={80}
             loading="eager"
             fetchPriority="high"
             className="brand-logo"
@@ -131,12 +129,12 @@ export default function Navbar() {
 
         <Link className="mobile-menu-brand" href="/" aria-label="Dial Expert home" tabIndex={menuOpen ? 0 : -1} onClick={closeMenu}>
           <Image
-            src="https://framerusercontent.com/images/aSGF5PBvDXfvTirXeZzxaND6bcg.png?width=4027&height=848"
+            src="https://framerusercontent.com/images/aSGF5PBvDXfvTirXeZzxaND6bcg.png?width=240&height=51"
             alt="Dial Expert"
             width={150}
             height={32}
             sizes="150px"
-            quality={45}
+            quality={80}
             loading="lazy"
             className="brand-logo"
           />

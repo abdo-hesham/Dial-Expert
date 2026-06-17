@@ -120,13 +120,13 @@
     "semantic_hash": ""
   },
   "next.config.ts": {
-    "mtime": 1781153478.4229877,
-    "ast_hash": "3d1c7a87ec60d24f0192be9f6af71a5b",
+    "mtime": 1781717539.212386,
+    "ast_hash": "2c52c80bc0f29a7a220cee81608e553a",
     "semantic_hash": ""
   },
   "package.json": {
-    "mtime": 1781153512.811045,
-    "ast_hash": "ff37e02833653eb51ae9c4a2220e3d54",
+    "mtime": 1781658153.8012848,
+    "ast_hash": "cedd192d5b85fcf0f0dd9942e93b19dc",
     "semantic_hash": ""
   },
   "postcss.config.mjs": {
@@ -140,13 +140,13 @@
     "semantic_hash": ""
   },
   "src/app/layout.tsx": {
-    "mtime": 1781153477.183578,
-    "ast_hash": "742b0d7cced636db56915852e6e4473a",
+    "mtime": 1781720195.3461902,
+    "ast_hash": "03184c3141eaadf476ac65349d3c3278",
     "semantic_hash": ""
   },
   "src/app/page.tsx": {
-    "mtime": 1781494404.3508937,
-    "ast_hash": "43da59c99ad366a42ccc638ac22f5e4d",
+    "mtime": 1781665091.7936022,
+    "ast_hash": "be29ca255b0c360812dee4784357a704",
     "semantic_hash": ""
   },
   "src/components/EyebrowIcon.tsx": {
@@ -155,13 +155,13 @@
     "semantic_hash": ""
   },
   "src/components/HighlightMarkerTextReveal.tsx": {
-    "mtime": 1781292927.576113,
-    "ast_hash": "dee11649eabc55fc90600f3ae321ea1f",
+    "mtime": 1781665119.9551215,
+    "ast_hash": "04dd3d68d4b9df9dea1f70ffe315846f",
     "semantic_hash": ""
   },
   "src/components/Navbar.tsx": {
-    "mtime": 1781492209.9506888,
-    "ast_hash": "f9fe69e53fb75da9c9cff24e6eee9d38",
+    "mtime": 1781720118.7855442,
+    "ast_hash": "d846bd5d81764e6a021658d5c0520700",
     "semantic_hash": ""
   },
   "src/components/SmoothScroll.tsx": {
@@ -170,53 +170,53 @@
     "semantic_hash": ""
   },
   "src/components/sections/CTA.tsx": {
-    "mtime": 1781134556.5681565,
-    "ast_hash": "df3bed8f10f0e0daa4303fb7f1e86dba",
+    "mtime": 1781665139.9767509,
+    "ast_hash": "f23f3542b6d4d2fe17126caeda7ace31",
     "semantic_hash": ""
   },
   "src/components/sections/FAQ.tsx": {
-    "mtime": 1781229760.2319744,
-    "ast_hash": "0d83c684ae94322f3fb1a9ef974e5ae3",
+    "mtime": 1781665124.5708663,
+    "ast_hash": "922efea4666d2038588a7abb2fae4c9e",
     "semantic_hash": ""
   },
   "src/components/sections/FooterSection.tsx": {
-    "mtime": 1781315787.2490485,
-    "ast_hash": "251aeb192560328e0ecf6fe3b7435531",
+    "mtime": 1781720139.1771939,
+    "ast_hash": "35e7ed17b8711b48e68434eb2e4f3320",
     "semantic_hash": ""
   },
   "src/components/sections/Hero.tsx": {
-    "mtime": 1781231278.5463047,
-    "ast_hash": "6005cbd2030b86998d6c61da835472d8",
+    "mtime": 1781720215.8557467,
+    "ast_hash": "78aa5143f7e2f213c2ce468348b641df",
     "semantic_hash": ""
   },
   "src/components/sections/Revenue.tsx": {
-    "mtime": 1781229759.888227,
-    "ast_hash": "609d00da4d19aae025039c022a90aafa",
+    "mtime": 1781665152.3341434,
+    "ast_hash": "df385b6ac932387eb14f97d83e374e89",
     "semantic_hash": ""
   },
   "src/components/sections/RevenueCycle.tsx": {
-    "mtime": 1781229760.0913486,
-    "ast_hash": "96214b6755503585bb627fcbd03cda87",
+    "mtime": 1781720184.491042,
+    "ast_hash": "febff24e31c752e372913e72fb6350cb",
     "semantic_hash": ""
   },
   "src/components/sections/Services.tsx": {
-    "mtime": 1781229759.7476006,
-    "ast_hash": "71dfcc7b93073766bf019cb66df0e260",
+    "mtime": 1781720144.1092198,
+    "ast_hash": "a672bad7d4dcc24828f070137784ea29",
     "semantic_hash": ""
   },
   "src/components/sections/Stats.tsx": {
-    "mtime": 1781231221.799208,
-    "ast_hash": "077d58b795b0c6bc62699301a52e0d93",
+    "mtime": 1781665135.9776354,
+    "ast_hash": "1fe2b9febfda33dec42cfab02d4be2fc",
     "semantic_hash": ""
   },
   "src/components/sections/Team.tsx": {
-    "mtime": 1781290309.5095756,
-    "ast_hash": "a272d7fce94ccf41271cf01359859d56",
+    "mtime": 1781720078.1903393,
+    "ast_hash": "a7754316d66565680cb8e8f8c5c6d717",
     "semantic_hash": ""
   },
   "src/components/sections/Testimonials.tsx": {
-    "mtime": 1781287826.199243,
-    "ast_hash": "4d531d219d2b05ba4f5174a45fdba6db",
+    "mtime": 1781720155.49933,
+    "ast_hash": "32e5fd941c41a46e9565cecd3392d40b",
     "semantic_hash": ""
   },
   "test-results/.last-run.json": {
@@ -1060,8 +1060,8 @@
     "semantic_hash": ""
   },
   "src/components/AnimatedSectionHeading.tsx": {
-    "mtime": 1781286929.5060294,
-    "ast_hash": "9ebfadf4c6aea7d5e25ce165263a2fdf",
+    "mtime": 1781665119.1896408,
+    "ast_hash": "712f5e49cca94979afde8c7ea9eef2af",
     "semantic_hash": ""
   },
   ".codex-screens/footer-100vh-check.png": {
@@ -1200,8 +1200,8 @@
     "semantic_hash": ""
   },
   "src/components/sections/EngagementWays.tsx": {
-    "mtime": 1781492756.182142,
-    "ast_hash": "3104350ac921e66293b69df3aac295a3",
+    "mtime": 1781720180.9873097,
+    "ast_hash": "b6bdeb2a7df4f2e5899092236920b57f",
     "semantic_hash": ""
   },
   "public/loader/support.js": {
@@ -1210,8 +1210,8 @@
     "semantic_hash": ""
   },
   "src/components/DialExpertOrbitLoader.tsx": {
-    "mtime": 1781495560.5597818,
-    "ast_hash": "faff57f74a541734cfe22b45a4890aa1",
+    "mtime": 1781496287.5260036,
+    "ast_hash": "619da98ffa09f9ffa65edb8ab6408157",
     "semantic_hash": ""
   },
   "public/loader/Dial Expert Orbit Loader.dc.html": {
@@ -1462,6 +1462,26 @@
   "public/loader/uploads/hesuka_Front-facing_ID-style_headshot_of_a_young_Egyptian_wom_b59090a4-e388-46ef-960e-3deff4767df3_1.png": {
     "mtime": 1781474738.0,
     "ast_hash": "59b351724feb48a183a4b0dd69f07dbb",
+    "semantic_hash": ""
+  },
+  "src/components/sections/ContactForm.tsx": {
+    "mtime": 1781665153.3936307,
+    "ast_hash": "8574ca24f52259c3515454d3787e75a2",
+    "semantic_hash": ""
+  },
+  "src/components/ui/beams-background.tsx": {
+    "mtime": 1781665061.756818,
+    "ast_hash": "1d3d182363e6c3b87e8ce58a98f42060",
+    "semantic_hash": ""
+  },
+  "src/components/ui/pulse-beams.tsx": {
+    "mtime": 1781658060.2130775,
+    "ast_hash": "7dd22515ee791c83973ee703b1399bca",
+    "semantic_hash": ""
+  },
+  "src/lib/utils.ts": {
+    "mtime": 1781657823.5856805,
+    "ast_hash": "a07d34b0bc25ccd722903c9f1ce41330",
     "semantic_hash": ""
   }
 }

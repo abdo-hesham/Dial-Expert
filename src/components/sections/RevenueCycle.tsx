@@ -19,7 +19,7 @@ const steps = [
     heading: "Recruit",
     detail:
       "We screen large volumes to find people with discipline and ambition. Not everyone who applies makes it through.",
-    image: "https://framerusercontent.com/images/uRnAJVoOX4O4uUxyzAa1VVP32Go.jpg",
+    image: "https://framerusercontent.com/images/uRnAJVoOX4O4uUxyzAa1VVP32Go.jpg?width=370",
     rot: -3,
   },
   {
@@ -27,7 +27,7 @@ const steps = [
     heading: "Train",
     detail:
       "Structured onboarding and continuous development so every agent knows your product, process, and standards before they take their first call.",
-    image: "https://framerusercontent.com/images/GBpay3B8HObfTUqnBW7uHWQV7rs.jpg",
+    image: "https://framerusercontent.com/images/GBpay3B8HObfTUqnBW7uHWQV7rs.jpg?width=370",
     rot: 3,
   },
   {
@@ -35,7 +35,7 @@ const steps = [
     heading: "Manage",
     detail:
       "Dedicated managers oversee quality and day-to-day performance on every campaign. Real leadership, not just supervision.",
-    image: "https://framerusercontent.com/images/FyzSrMXLccPvtlrtS0kHTWyNlcU.jpg",
+    image: "https://framerusercontent.com/images/FyzSrMXLccPvtlrtS0kHTWyNlcU.jpg?width=370",
     rot: -3,
   },
   {
@@ -43,7 +43,7 @@ const steps = [
     heading: "Optimize",
     detail:
       "Performance is reviewed and improved continuously. Scripts get sharper. Qualification gets tighter. Your pipeline keeps moving.",
-    image: "https://framerusercontent.com/images/xxhQ666ZyQDc0tmEw1IPm1E9Qr4.webp",
+    image: "https://framerusercontent.com/images/xxhQ666ZyQDc0tmEw1IPm1E9Qr4.webp?width=370",
     rot: 3,
   },
 ]

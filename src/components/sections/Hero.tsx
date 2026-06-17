@@ -21,7 +21,7 @@ export default function Hero() {
         playsInline
         className="hero-video"
         preload="none"
-        poster="/dialexpert/hero-poster.jpg"
+        poster="/dialexpert/hero-poster.webp"
         aria-hidden="true"
       >
         <source
