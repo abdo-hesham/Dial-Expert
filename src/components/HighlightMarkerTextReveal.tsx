@@ -30,7 +30,7 @@ export default function HighlightMarkerTextReveal({
   const reduceMotion = useReducedMotion()
   const controls = useAnimationControls()
   const markerRef = useRef<HTMLHeadingElement | null>(null)
-  const isInView = useInView(markerRef, { once: true, amount: 0.45 })
+  const isInView = useInView(markerRef, { once: false, amount: 0.45 })
   const safeWords = useMemo(
     () => (words.length > 0 ? words : ["It's consistency that converts."]),
     [words]

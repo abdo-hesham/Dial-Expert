@@ -109,14 +109,14 @@ export default function Testimonials() {
         className="testimonials-framer-inner"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        viewport={{ once: true, amount: 0.55 }}
+        viewport={{ once: false, amount: 0.55 }}
         transition={{ duration: 0.2, delay: contentDelay }}
       >
         <motion.div
           className="eyebrow testimonials-eyebrow"
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.7 }}
+          viewport={{ once: false, amount: 0.7 }}
           transition={{ duration: 0.55, delay: contentDelay, ease: "easeOut" }}
         >
           <motion.span
@@ -145,7 +145,7 @@ export default function Testimonials() {
           className="testimonials-framer-copy"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: false, amount: 0.5 }}
           transition={{ duration: 0.65, delay: contentDelay + 0.7, ease: "easeOut" }}
         >
           Instead, through our{" "}
@@ -162,7 +162,7 @@ export default function Testimonials() {
           className="testimonials-actions"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.4 }}
+          viewport={{ once: false, amount: 0.4 }}
           transition={{ duration: 0.65, delay: contentDelay + 0.92, ease: "easeOut" }}
         >
           <Link className="revenue-share-button" href="/contact">
@@ -179,7 +179,7 @@ export default function Testimonials() {
             className="testimonials-note"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.5 }}
+            viewport={{ once: false, amount: 0.5 }}
             transition={{ duration: 0.55, delay: contentDelay + 1.1, ease: "easeOut" }}
           >
             Available to qualifying clients &middot; Discussed on the 30-min call

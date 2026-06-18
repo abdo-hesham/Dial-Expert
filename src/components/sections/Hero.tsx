@@ -1,15 +1,16 @@
-import type { CSSProperties } from "react";
-import Link from "next/link";
+import type { CSSProperties } from "react"
+import Link from "next/link"
 
 const heroLines = [
-  ["BUILD", "A", "REVENUE", "TEAM"],
-  ["WITHOUT", "BUILDING", "A"],
-  ["CALL", "CENTER."],
-];
+  ["MOST", "OUTSOURCING", "FAILS"],
+  ["BECAUSE", "THE", "PEOPLE"],
+  ["DON'T", "GIVE", "A", "DAMN."],
+  ["OURS", "DO."],
+]
 
 const heroLineStarts = heroLines.map((_, index) =>
-  heroLines.slice(0, index).reduce((total, line) => total + line.length, 0),
-);
+  heroLines.slice(0, index).reduce((total, line) => total + line.length, 0)
+)
 
 export default function Hero() {
   return (
@@ -20,8 +21,7 @@ export default function Hero() {
         muted
         playsInline
         className="hero-video"
-        preload="none"
-        poster="https://framerusercontent.com/images/aSGF5PBvDXfvTirXeZzxaND6bcg.png?width=1920"
+        preload="metadata"
         aria-hidden="true"
       >
         <source
@@ -53,30 +53,17 @@ export default function Hero() {
           </h1>
           <div className="hero-body">
             <p className="hero-sub">
-              Sales, customer support, appointment setting, and lead generation
-              teams&mdash;recruited, trained, and managed by DialExpert so you
-              can scale without the hiring headaches.
+              Outsourcing usually means starting over every few months. With us,
+              you start once.
             </p>
             <div className="hero-actions">
               <Link className="button button-light" href="/contact">
-                <span>Book A Strategy Call</span>
+                <span>Let&apos;s Talk</span>
               </Link>
-            </div>
-            <div className="hero-trust">
-              <div className="hero-trust-row">
-                <span>7+ Years Operating</span>
-                <span className="hero-trust-dot" aria-hidden="true" />
-                <span>250+ Team Members</span>
-              </div>
-              <div className="hero-trust-row">
-                <span>20+ Managers</span>
-                <span className="hero-trust-dot" aria-hidden="true" />
-                <span>$300M+ Revenue Generated</span>
-              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-  );
+  )
 }

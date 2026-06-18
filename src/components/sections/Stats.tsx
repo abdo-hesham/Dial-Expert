@@ -6,10 +6,10 @@ import AnimatedSectionHeading from "../AnimatedSectionHeading";
 import EyebrowIcon from "../EyebrowIcon";
 
 const stats = [
-  ["7+", "Years Operating"],
-  ["250+", "Active Professionals"],
-  ["20+", "Dedicated Managers"],
-  ["$300M+", "Revenue Generated"],
+  ["7YRS", "In the industry"],
+  ["250+", "Active professionals"],
+  ["\u2193 60%", "Operational overhead\nOur automation absorbs it"],
+  ["90-93%", "Monthly CSAT\nSustained on care campaigns"],
 ];
 
 export default function Stats() {
@@ -21,43 +21,50 @@ export default function Stats() {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.55 }}
+          viewport={{ once: false, amount: 0.55 }}
           transition={{ duration: 0.6 }}
           className="eyebrow"
         >
           <EyebrowIcon variant="framer" />
-          <span>Why DialExpert</span>
+          <span>Who We Are</span>
         </motion.div>
 
         <AnimatedSectionHeading
-          lines={["Most Outsourcing Companies", "Sell Headcount. We Build", "Teams People Can Rely On."]}
+          lines={["LET'S BUILD SOMETHING", "BIGGER TOGETHER."]}
         />
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: false, amount: 0.3 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           className="who-copy"
         >
           <p>
-            Anyone can fill seats. Very few can build a team that is trained, managed, accountable, and consistently improving. DialExpert was built for businesses that need more than headcount.
+            The closer working your leads in month four? Been on them since week
+            one.
+          </p>
+          <p>That&apos;s the buy. A floor that holds.</p>
+          <p>
+            We built it from nothing. Founders in their twenties &mdash; no
+            playbook, no safety net, one stubborn idea: you can make money over
+            the phone and still change the life of the person holding it. Both
+            ends of the line.
           </p>
           <p>
-            <strong>Rigorous recruiting process</strong> &mdash; We screen for self-motivated individuals who already have discipline.
+            So we built the floor we wished existed. Every manager here came up
+            through it. Nobody walked in with a title. When your closer hits the
+            wall, the one coaching them has hit it too &mdash; and already knows
+            the way through.
           </p>
           <p>
-            <strong>Performance-based culture</strong> &mdash; Every agent is held to measurable standards that improve over time.
+            We treat your business like it&apos;s ours. The people running it
+            already do. Zero to one of the fastest-growing floors in Egypt
+            inside a year &mdash; and we don&apos;t stop till the name lands on
+            <span className="sparkle-text sparkle-text-light ml-3">Forbes</span>
+            .
           </p>
-          <p>
-            <strong>Continuous training and coaching</strong> &mdash; Structured onboarding and ongoing development, not one-and-done training.
-          </p>
-          <p>
-            <strong>20+ managers overseeing execution</strong> &mdash; Real management structure with leaders who came up through the floor.
-          </p>
-          <p>
-            <strong>Real office operation in Egypt</strong> &mdash; A physical office with real infrastructure, not a remote-at-home model.
-          </p>
+          <p>Come build it with us.</p>
         </motion.div>
 
         <div className="stats-grid">
@@ -67,7 +74,7 @@ export default function Stats() {
               className="stat-item"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.55 }}
+              viewport={{ once: false, amount: 0.55 }}
               transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
             >
               <div className="stat-number">{value}</div>

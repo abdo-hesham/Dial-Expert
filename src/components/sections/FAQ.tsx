@@ -7,24 +7,28 @@ import EyebrowIcon from "../EyebrowIcon"
 
 const faqData = [
   {
-    q: "What does DialExpert actually do?",
-    a: "We build and manage sales, support, and lead generation teams. Our clients get a full managed operation without the overhead of building an in-house call center.",
+    q: "How does the revenue share program work?",
+    a: "On qualifying engagements, we tie our pay to your numbers — not to a contract signed in advance. Most arrangements involve a base operational fee with the upside indexed to your results. We work the campaign on the line. If we don't perform, the economics reflect it. Ask us on the call — it's easier to explain than write down.",
   },
   {
-    q: "Where are your agents located?",
-    a: "Our team is based in a physical office in Egypt. We operate with real management structure, real infrastructure, and real people behind the work.",
+    q: "What happens if results don't come in month one?",
+    a: "We tell you before you have to ask. Real-time reporting means you see exactly what we see, every day. And the revenue share model means we feel the same number you feel — so if something isn't converting, fixing it costs us too. That's not a guarantee. It's the economics of how this is structured.",
   },
   {
-    q: "How do you hire?",
-    a: "We screen for self-motivated individuals who already have discipline. Our recruiting process is rigorous and focused on finding people who will show up, improve, and perform consistently.",
+    q: "How fast can a campaign go live?",
+    a: "Ten business days from signed agreement to first live call. We've built the infrastructure, the training programs, and the systems so you're not waiting for us to get ready. Most outsourcing operations take 4-6 weeks to launch. We've already absorbed that setup cost so you don't have to.",
   },
   {
-    q: "Can you work with our existing team?",
-    a: "Yes. We can serve as a full external team or support your internal operations. The structure is flexible depending on what your business needs.",
+    q: "How do you handle compliance in regulated industries?",
+    a: "Regulated industries are where most outsourcing firms cut corners. Our agents are trained in the specific compliance language and documentation requirements of each vertical — debt settlement, debt collection, health insurance, auto insurance, tax relief. No generic scripts running on sensitive conversations.",
   },
   {
-    q: "How is performance managed?",
-    a: "Our managers oversee quality and execution daily. Every campaign has dedicated leadership that reviews performance, coaches agents, and optimizes the approach continuously.",
+    q: "What does your proprietary infrastructure mean for my data?",
+    a: "Our CRM, sales tracker, and operational platforms were built in-house. Your client data sits inside infrastructure we own and control end-to-end — not third-party tools where most BPO breaches originate. We took that breach vector off the table entirely.",
+  },
+  {
+    q: "Do clients typically start with one service or multiple?",
+    a: "Most start with one — usually cold calling or a financial program vertical. About two-thirds expand into a second service within 90 days. A 30-minute call is enough to figure out which one makes sense for you first.",
   },
 ]
 
@@ -39,7 +43,7 @@ export default function FAQ() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.55 }}
+            viewport={{ once: false, amount: 0.55 }}
             transition={{ duration: 0.6 }}
             className="eyebrow"
           >
@@ -47,12 +51,12 @@ export default function FAQ() {
             <span>FAQs</span>
           </motion.div>
           <AnimatedSectionHeading
-            lines={["Questions Worth Asking", "Before You Build Your", "Next Team."]}
+            lines={["Questions we get", "before every deal."]}
           />
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.55 }}
+            viewport={{ once: false, amount: 0.55 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             className="section-lead"
           >
@@ -67,7 +71,7 @@ export default function FAQ() {
               key={item.q}
               initial={{ opacity: 0, y: 15 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.35 }}
+              viewport={{ once: false, amount: 0.35 }}
               transition={{ duration: 0.4, delay: 0.3 + index * 0.05 }}
             >
               <button

@@ -9,18 +9,18 @@ import EyebrowIcon from "../EyebrowIcon"
 const engagementWays = [
   {
     num: "01",
-    title: "Expensive internal teams",
+    title: "Revenue Share",
     copy:
-      "Hiring and managing in-house sales and support teams comes with high costs, slow ramp times, and constant management overhead.",
+      "Best when you want our pay tied to your results. We carry more of the risk; the upside is indexed to what the floor actually produces.",
     image:
       "https://framerusercontent.com/images/USdkaFsd9cz1KsNBgFTMErZtIA.jpg?width=6240&height=4160",
     alt: "Market trading chart with candlesticks and moving average lines",
   },
   {
     num: "02",
-    title: "Underperforming outsourcing",
+    title: "Dedicated seats",
     copy:
-      "Poor communication, high turnover, and inconsistent execution from outsourcing partners that don't invest in management or training.",
+      "Best when you want a fixed team trained on your offer. You get predictable capacity, reporting, and a floor that stays close to your playbook.",
     image:
       "https://framerusercontent.com/images/eySk8pJlPyuhtdhXTU7FZFdCs0.jpg?width=5472&height=3648",
     alt: "Open office sales floor with teams working at rows of desks",
@@ -36,26 +36,27 @@ export default function EngagementWays() {
         <motion.div
           initial={shouldReduceMotion ? false : { opacity: 0, y: 20 }}
           whileInView={shouldReduceMotion ? undefined : { opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.55 }}
+          viewport={{ once: false, amount: 0.55 }}
           transition={{ duration: 0.6 }}
           className="eyebrow"
         >
           <EyebrowIcon variant="framer" />
-          <span>Why Clients Switch</span>
+          <span>How We Engage</span>
         </motion.div>
 
         <AnimatedSectionHeading
-          lines={["They Are Looking For", "Fewer Problems."]}
+          lines={["Three ways to run this.", "Pick the one that fits."]}
         />
 
         <motion.p
           initial={shouldReduceMotion ? false : { opacity: 0, y: 20 }}
           whileInView={shouldReduceMotion ? undefined : { opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.45 }}
+          viewport={{ once: false, amount: 0.45 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           className="section-lead engage-lead"
         >
-          Most clients come to us because something is already costing them time, money, or momentum. They are tired of inconsistent quality and constant management headaches.
+          We sort out which on the call. Most clients know where they land
+          before they sign, figure out yours now.
         </motion.p>
       </div>
 
@@ -65,7 +66,7 @@ export default function EngagementWays() {
             key={way.num}
             initial={shouldReduceMotion ? false : { opacity: 0, y: 34 }}
             whileInView={shouldReduceMotion ? undefined : { opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.28 }}
+            viewport={{ once: false, amount: 0.28 }}
             transition={{
               duration: shouldReduceMotion ? 0 : 0.72,
               delay: shouldReduceMotion ? 0 : index * 0.12,

@@ -15,34 +15,34 @@ import EyebrowIcon from "../EyebrowIcon"
 
 const steps = [
   {
-    num: "Step 1",
-    heading: "Recruit",
+    num: "1- The Call",
+    heading: "30 minutes. We listen first.",
     detail:
-      "We screen large volumes to find people with discipline and ambition. Not everyone who applies makes it through.",
+      "No deck, no pitch. You tell us what's broken and what good looks like. By the end you'll know whether we can help, what it would cost, and what comes next. If we're not the right fit, we say so.",
     image: "https://framerusercontent.com/images/uRnAJVoOX4O4uUxyzAa1VVP32Go.jpg",
     rot: -3,
   },
   {
-    num: "Step 2",
-    heading: "Train",
+    num: "2- Setup",
+    heading: "10 days. Then you're live.",
     detail:
-      "Structured onboarding and continuous development so every agent knows your product, process, and standards before they take their first call.",
+      "We build the team, train on your product, and get the floor ready. The average outsourcing operation takes 4-6 weeks. We've absorbed that setup cost. You just show up to the launch.",
     image: "https://framerusercontent.com/images/GBpay3B8HObfTUqnBW7uHWQV7rs.jpg",
     rot: 3,
   },
   {
-    num: "Step 3",
-    heading: "Manage",
+    num: "3- Month One",
+    heading: "Numbers in. We refine.",
     detail:
-      "Dedicated managers oversee quality and day-to-day performance on every campaign. Real leadership, not just supervision.",
+      "Real-time reporting. You give feedback. We sharpen the script, tighten the qualification criteria, fix whatever isn't converting. Active, not passive.",
     image: "https://framerusercontent.com/images/FyzSrMXLccPvtlrtS0kHTWyNlcU.jpg",
     rot: -3,
   },
   {
-    num: "Step 4",
-    heading: "Optimize",
+    num: "4- Month Two Onward",
+    heading: "Your pipeline never stops.",
     detail:
-      "Performance is reviewed and improved continuously. Scripts get sharper. Qualification gets tighter. Your pipeline keeps moving.",
+      "The floor knows your campaign. Appointments land. Deals close. Your team stops doing the volume work that was never the right job for them.",
     image: "https://framerusercontent.com/images/xxhQ666ZyQDc0tmEw1IPm1E9Qr4.webp",
     rot: 3,
   },
@@ -73,27 +73,28 @@ export default function RevenueCycle() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: false, amount: 0.5 }}
           transition={{ duration: 0.6 }}
           className="eyebrow"
         >
           <EyebrowIcon variant="framer" />
-          <span>How We Operate</span>
+          <span>What To Expect</span>
         </motion.div>
 
         <AnimatedSectionHeading
-          lines={["Performance Is Built.", "Not Hired."]}
+          lines={["From first call to", "live campaign."]}
         />
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: false, amount: 0.5 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           className="section-lead"
           style={{ maxWidth: 558 }}
         >
-          A 4-step process that turns recruits into reliable performers on your campaigns.
+          No mystery. No long sales process. The sequence is short because
+          we&apos;ve already built everything that usually takes months.
         </motion.p>
       </div>
 
@@ -104,7 +105,7 @@ export default function RevenueCycle() {
             key={step.num}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.08 }}
+            viewport={{ once: false, amount: 0.08 }}
             transition={{
               duration: shouldReduceMotion ? 0 : 0.8,
               ease: "easeOut",
