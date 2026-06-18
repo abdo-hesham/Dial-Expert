@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import AnimatedSectionHeading from "../AnimatedSectionHeading"
+import EyebrowIcon from "../EyebrowIcon"
 
 const supportOptions = ["Sales", "Support", "Lead Generation", "Appointment Setting", "Customer Support", "Specialized Campaign", "Other"]
 
@@ -16,8 +17,12 @@ export default function ContactForm() {
           transition={{ duration: 0.6 }}
           className="contact-form-head"
         >
+          <div className="eyebrow">
+            <EyebrowIcon variant="framer" />
+            <span>Get In Touch</span>
+          </div>
           <AnimatedSectionHeading
-            lines={["Tell Us What", "You Need."]}
+            lines={["Tell Us What", "You Need"]}
           />
         </motion.div>
 
