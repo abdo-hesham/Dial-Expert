@@ -19,10 +19,9 @@ export default function Testimonials() {
   const contentDelay = 4.65
 
   useEffect(() => {
-    const section = sectionRef.current
-    if (!section) return
-
     let completeTimer = 0
+    let frame = 0
+    let pollTimer = 0
 
     const startIntro = () => {
       window.clearTimeout(completeTimer)
@@ -31,27 +30,47 @@ export default function Testimonials() {
       completeTimer = window.setTimeout(() => setIntroComplete(true), 4650)
     }
 
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIntroActive((wasActive) => {
-            if (!wasActive) startIntro()
-            return true
-          })
-        } else {
-          window.clearTimeout(completeTimer)
-          setIntroActive(false)
-          setIntroComplete(false)
-        }
-      },
-      { threshold: 0 },
-    )
+    const checkSection = () => {
+      const section = sectionRef.current
+      if (!section) return
 
-    observer.observe(section)
+      const rect = section.getBoundingClientRect()
+      const entersViewport =
+        rect.top < window.innerHeight &&
+        rect.bottom > 0
+
+      if (entersViewport) {
+        setIntroActive((wasActive) => {
+          if (!wasActive) {
+            startIntro()
+          }
+
+          return true
+        })
+      } else {
+        window.clearTimeout(completeTimer)
+        setIntroActive(false)
+        setIntroComplete(false)
+      }
+    }
+
+    const scheduleCheck = () => {
+      window.cancelAnimationFrame(frame)
+      frame = window.requestAnimationFrame(checkSection)
+    }
+
+    scheduleCheck()
+    pollTimer = window.setInterval(scheduleCheck, 120)
+    window.setTimeout(() => window.clearInterval(pollTimer), 2400)
+    window.addEventListener("scroll", scheduleCheck, { passive: true })
+    window.addEventListener("resize", scheduleCheck)
 
     return () => {
       window.clearTimeout(completeTimer)
-      observer.disconnect()
+      window.clearInterval(pollTimer)
+      window.cancelAnimationFrame(frame)
+      window.removeEventListener("scroll", scheduleCheck)
+      window.removeEventListener("resize", scheduleCheck)
     }
   }, [])
 

@@ -14,42 +14,42 @@ const services = [
     title: "Outbound Sales",
     desc: "Build a team that follows up consistently without the burden of internal hiring.",
     image:
-      "https://framerusercontent.com/images/2OMzQEYtFsMJe9R4TdqOcQE208k.png?width=1090&height=467",
+      "https://framerusercontent.com/images/2OMzQEYtFsMJe9R4TdqOcQE208k.png?width=3360&height=1440",
   },
   {
     num: "02",
     title: "Lead Generation",
     desc: "Qualify opportunities and create a stronger pipeline for your business.",
     image:
-      "https://framerusercontent.com/images/4pVjOHJLM9w4iDTb5BQ2G1orSo.png?width=1090&height=467",
+      "https://framerusercontent.com/images/4pVjOHJLM9w4iDTb5BQ2G1orSo.png?width=1680&height=720",
   },
   {
     num: "03",
     title: "Appointment Setting",
     desc: "Keep your calendar filled while your internal team focuses on closing.",
     image:
-      "https://framerusercontent.com/images/5kTnXZDLQEOHHQwz8HysG8hzB0.png?width=1090&height=467",
+      "https://framerusercontent.com/images/5kTnXZDLQEOHHQwz8HysG8hzB0.png?width=3360&height=1440",
   },
   {
     num: "04",
     title: "Inbound Sales",
     desc: "Turn incoming interest into revenue with trained representatives.",
     image:
-      "https://framerusercontent.com/images/cIQiz350DxCswpNIm51NlgSBfIk.png?width=1090&height=467",
+      "https://framerusercontent.com/images/cIQiz350DxCswpNIm51NlgSBfIk.png?width=1680&height=720",
   },
   {
     num: "05",
     title: "Customer Support",
     desc: "Deliver responsive, professional support that protects your brand.",
     image:
-      "https://framerusercontent.com/images/CTEEEg6HAZ6NFgnZ3T0KMzlnh74.png?width=1090&height=467",
+      "https://framerusercontent.com/images/CTEEEg6HAZ6NFgnZ3T0KMzlnh74.png?width=1680&height=720",
   },
   {
     num: "06",
     title: "Specialized Campaigns",
     desc: "Build custom teams for specific business initiatives and goals.",
     image:
-      "https://framerusercontent.com/images/II45yOtnPWRqsj3oAfIVoimV9hM.png?width=1090&height=467",
+      "https://framerusercontent.com/images/II45yOtnPWRqsj3oAfIVoimV9hM.png?width=1680&height=720",
   },
 ]
 
