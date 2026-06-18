@@ -69,7 +69,7 @@ export default function FooterSection() {
           <div className="footer-branding">
             <Link className="footer-logo" href="/" aria-label="Dial Expert home">
               <Image
-                src="https://framerusercontent.com/images/1r9bp6mMWQMRoDFpl4dGOCznagw.png"
+                src="https://framerusercontent.com/images/1r9bp6mMWQMRoDFpl4dGOCznagw.png?width=240&height=130"
                 alt="Dial Expert"
                 width={240}
                 height={130}
