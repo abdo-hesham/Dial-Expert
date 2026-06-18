@@ -23,16 +23,6 @@ export default function CTA() {
 
           <AnimatedSectionHeading lines={["Let\u2019s Talk."]} />
 
-          <motion.h3
-            className="cta-beam-subhead"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.6, delay: 0.15 }}
-          >
-            Ready To Build A Team That Performs?
-          </motion.h3>
-
           <motion.p
             className="cta-beam-body"
             initial={{ opacity: 0, y: 20 }}
@@ -40,7 +30,10 @@ export default function CTA() {
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Whether you are scaling your internal team, replacing an underperforming provider, or looking for a better way to handle sales and support, DialExpert can help you build the operation behind your growth.
+            Whether you are scaling your internal team, replacing an
+            underperforming provider, or looking for a better way to handle
+            sales and support, DialExpert can help you build the operation
+            behind your growth.
           </motion.p>
 
           <motion.div

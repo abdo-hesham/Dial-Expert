@@ -8,23 +8,23 @@ import EyebrowIcon from "../EyebrowIcon"
 const faqData = [
   {
     q: "What does DialExpert actually do?",
-    a: "We build and manage sales, support, and lead gen teams.",
+    a: "We build and manage sales, support, and lead generation teams. Our clients get a full managed operation without the overhead of building an in-house call center.",
   },
   {
     q: "Where are your agents located?",
-    a: "Our team is based in a physical office in Egypt.",
+    a: "Our team is based in a physical office in Egypt. We operate with real management structure, real infrastructure, and real people behind the work.",
   },
   {
     q: "How do you hire?",
-    a: "We screen for self-motivated individuals who already have discipline.",
+    a: "We screen for self-motivated individuals who already have discipline. Our recruiting process is rigorous and focused on finding people who will show up, improve, and perform consistently.",
   },
   {
     q: "Can you work with our existing team?",
-    a: "Yes, we can be a full external team or support your internal operations.",
+    a: "Yes. We can serve as a full external team or support your internal operations. The structure is flexible depending on what your business needs.",
   },
   {
     q: "How is performance managed?",
-    a: "Our managers oversee quality and execution daily.",
+    a: "Our managers oversee quality and execution daily. Every campaign has dedicated leadership that reviews performance, coaches agents, and optimizes the approach continuously.",
   },
 ]
 
@@ -49,6 +49,16 @@ export default function FAQ() {
           <AnimatedSectionHeading
             lines={["Questions Worth Asking", "Before You Build Your", "Next Team."]}
           />
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.55 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="section-lead"
+          >
+            If you&apos;re evaluating us, you&apos;re probably thinking at least
+            one of these.
+          </motion.p>
         </div>
 
         <div className="faq-list">

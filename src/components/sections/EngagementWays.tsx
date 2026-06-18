@@ -1,26 +1,41 @@
 "use client"
 
-import { motion } from "framer-motion"
-import { Building2, Users, Headphones, MessageSquare, RefreshCw, XCircle } from "lucide-react"
+import Image from "next/image"
+import Link from "next/link"
+import { motion, useReducedMotion } from "framer-motion"
 import AnimatedSectionHeading from "../AnimatedSectionHeading"
 import EyebrowIcon from "../EyebrowIcon"
 
-const problems = [
-  { icon: Building2, text: "Expensive internal teams" },
-  { icon: Users, text: "Underperforming outsourcing partners" },
-  { icon: Headphones, text: "Constant management headaches" },
-  { icon: MessageSquare, text: "Poor communication" },
-  { icon: RefreshCw, text: "High turnover" },
-  { icon: XCircle, text: "Inconsistent execution" },
+const engagementWays = [
+  {
+    num: "01",
+    title: "Expensive internal teams",
+    copy:
+      "Hiring and managing in-house sales and support teams comes with high costs, slow ramp times, and constant management overhead.",
+    image:
+      "https://framerusercontent.com/images/USdkaFsd9cz1KsNBgFTMErZtIA.jpg",
+    alt: "Market trading chart with candlesticks and moving average lines",
+  },
+  {
+    num: "02",
+    title: "Underperforming outsourcing",
+    copy:
+      "Poor communication, high turnover, and inconsistent execution from outsourcing partners that don't invest in management or training.",
+    image:
+      "https://framerusercontent.com/images/eySk8pJlPyuhtdhXTU7FZFdCs0.jpg",
+    alt: "Open office sales floor with teams working at rows of desks",
+  },
 ]
 
-export default function WhyClientsSwitch() {
+export default function EngagementWays() {
+  const shouldReduceMotion = useReducedMotion()
+
   return (
-    <section className="section section-white switch-section">
-      <div className="switch-head">
+    <section className="section section-white engage-section">
+      <div className="engage-head">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={shouldReduceMotion ? false : { opacity: 0, y: 20 }}
+          whileInView={shouldReduceMotion ? undefined : { opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.55 }}
           transition={{ duration: 0.6 }}
           className="eyebrow"
@@ -34,35 +49,52 @@ export default function WhyClientsSwitch() {
         />
 
         <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={shouldReduceMotion ? false : { opacity: 0, y: 20 }}
+          whileInView={shouldReduceMotion ? undefined : { opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.45 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="section-lead switch-lead"
+          className="section-lead engage-lead"
         >
           Most clients come to us because something is already costing them time, money, or momentum. They are tired of inconsistent quality and constant management headaches.
         </motion.p>
       </div>
 
-      <div className="switch-grid">
-        {problems.map((item, index) => {
-          const Icon = item.icon
-          return (
-            <motion.div
-              key={item.text}
-              className="switch-item"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: 0.4, delay: 0.2 + index * 0.08 }}
-            >
-              <span className="switch-icon">
-                <Icon size={22} strokeWidth={1.5} />
-              </span>
-              <span>{item.text}</span>
-            </motion.div>
-          )
-        })}
+      <div className="engage-card-grid">
+        {engagementWays.map((way, index) => (
+          <motion.div
+            key={way.num}
+            initial={shouldReduceMotion ? false : { opacity: 0, y: 34 }}
+            whileInView={shouldReduceMotion ? undefined : { opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.28 }}
+            transition={{
+              duration: shouldReduceMotion ? 0 : 0.72,
+              delay: shouldReduceMotion ? 0 : index * 0.12,
+              ease: [0.22, 1, 0.36, 1],
+            }}
+            className="engage-card-motion"
+          >
+            <Link className="engage-card" href="/contact">
+              <figure className="engage-card-media">
+                <Image
+                  src={way.image}
+                  alt={way.alt}
+                  fill
+                  sizes="(max-width: 760px) calc(100vw - 36px), (max-width: 1200px) calc((100vw - 96px) / 2), 624px"
+                  className="engage-card-image"
+                />
+                <span className="engage-card-crop engage-card-crop-left" />
+                <span className="engage-card-crop engage-card-crop-right" />
+              </figure>
+              <div className="engage-card-copy">
+                <div className="engage-card-title">
+                  <span>{way.num}</span>
+                  <h3>{way.title}</h3>
+                </div>
+                <p>{way.copy}</p>
+              </div>
+            </Link>
+          </motion.div>
+        ))}
       </div>
     </section>
   )

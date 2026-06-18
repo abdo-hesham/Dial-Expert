@@ -61,16 +61,14 @@ export default function Hero() {
               <Link className="button button-light" href="/contact">
                 <span>Book A Strategy Call</span>
               </Link>
-              <Link className="hero-secondary-link" href="#how-we-operate">
-                <span>See How We Operate</span>
-              </Link>
             </div>
             <div className="hero-trust">
               <div className="hero-trust-row">
                 <span>7+ Years Operating</span>
                 <span className="hero-trust-dot" aria-hidden="true" />
                 <span>250+ Team Members</span>
-                <span className="hero-trust-dot" aria-hidden="true" />
+              </div>
+              <div className="hero-trust-row">
                 <span>20+ Managers</span>
                 <span className="hero-trust-dot" aria-hidden="true" />
                 <span>$300M+ Revenue Generated</span>
