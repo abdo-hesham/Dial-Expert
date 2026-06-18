@@ -26,7 +26,7 @@ const steps = [
     num: "Step 2",
     heading: "Train",
     detail:
-      "Structured onboarding and continuous development.",
+      "Structured onboarding and continuous development so every agent knows your product, process, and standards before they take their first call.",
     image: "https://framerusercontent.com/images/GBpay3B8HObfTUqnBW7uHWQV7rs.jpg",
     rot: 3,
   },
@@ -34,7 +34,7 @@ const steps = [
     num: "Step 3",
     heading: "Manage",
     detail:
-      "Managers oversee quality and day-to-day performance.",
+      "Dedicated managers oversee quality and day-to-day performance on every campaign. Real leadership, not just supervision.",
     image: "https://framerusercontent.com/images/FyzSrMXLccPvtlrtS0kHTWyNlcU.jpg",
     rot: -3,
   },
@@ -42,7 +42,7 @@ const steps = [
     num: "Step 4",
     heading: "Optimize",
     detail:
-      "Performance is reviewed and improved continuously.",
+      "Performance is reviewed and improved continuously. Scripts get sharper. Qualification gets tighter. Your pipeline keeps moving.",
     image: "https://framerusercontent.com/images/xxhQ666ZyQDc0tmEw1IPm1E9Qr4.webp",
     rot: 3,
   },
