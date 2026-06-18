@@ -23,6 +23,16 @@ export default function CTA() {
 
           <AnimatedSectionHeading lines={["Let\u2019s Talk."]} />
 
+          <motion.h3
+            className="cta-beam-subhead"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+          >
+            Ready To Build A Team That Performs?
+          </motion.h3>
+
           <motion.p
             className="cta-beam-body"
             initial={{ opacity: 0, y: 20 }}

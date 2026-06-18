@@ -20,7 +20,7 @@ const services = [
   {
     num: "02",
     title: "Lead Generation",
-    desc: "Qualify opportunities and create a stronger pipeline for your business.",
+    desc: "Qualify opportunities and create a stronger pipeline.",
     image:
       "https://framerusercontent.com/images/4pVjOHJLM9w4iDTb5BQ2G1orSo.png",
   },
@@ -48,7 +48,7 @@ const services = [
   {
     num: "06",
     title: "Specialized Campaigns",
-    desc: "Build custom teams for specific business initiatives and goals.",
+    desc: "Build custom teams for specific business initiatives.",
     image:
       "https://framerusercontent.com/images/II45yOtnPWRqsj3oAfIVoimV9hM.png",
   },
@@ -72,15 +72,6 @@ export default function Services() {
             <span>What We Do</span>
           </motion.div>
           <AnimatedSectionHeading lines={["One Partner For Sales,", "Support, And Growth."]} />
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.55 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="section-lead lead-dark"
-          >
-            Most start with one service and expand within 90 days. A 30-minute call is enough to figure out which one makes sense for you first.
-          </motion.p>
         </div>
 
         <motion.div
