@@ -1,65 +1,85 @@
 import type { CSSProperties } from "react"
 import Link from "next/link"
+import Image from "next/image"
+import { Play } from "lucide-react"
 
 const heroLines = [
-  ["MOST", "OUTSOURCING", "FAILS"],
-  ["BECAUSE", "THE", "PEOPLE"],
-  ["DON'T", "GIVE", "A", "DAMN."],
-  ["OURS", "DO."],
+  ["Build", "a", "Revenue", "Team"],
+  ["Without", "Building", "a", "Call", "Center."],
 ]
 
 const heroLineStarts = heroLines.map((_, index) =>
   heroLines.slice(0, index).reduce((total, line) => total + line.length, 0)
 )
 
+const metrics = [
+  { value: "7+", label: "Years\nOperating" },
+  { value: "250+", label: "Team\nMembers" },
+  { value: "20+", label: "Managers" },
+  { value: "$300M+", label: "Revenue\nGenerated" },
+]
+
 export default function Hero() {
   return (
     <section id="top" className="hero">
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="hero-video"
-        preload="metadata"
-        aria-hidden="true"
-      >
-        <source
-          src="https://framerusercontent.com/assets/hyfo5PQ53wvNBdlUY8WqoWyo41I.mp4"
-          type="video/mp4"
-        />
-      </video>
-      <div className="hero-overlay" />
-      <div className="hero-inner">
-        <div className="hero-copy">
-          <h1 className="hero-title">
-            {heroLines.map((line, lineIndex) => (
-              <span className="hero-title-line" key={line.join(" ")}>
-                {line.map((word, wordIndex) => (
-                  <span
-                    className="hero-title-word"
-                    key={`${lineIndex}-${wordIndex}-${word}`}
-                    style={
-                      {
-                        "--word-delay": `${(heroLineStarts[lineIndex] + wordIndex) * 90}ms`,
-                      } as CSSProperties
-                    }
-                  >
-                    {word}
+      <div className="hero-frame">
+        <div className="hero-panel">
+          <Image
+            src="https://framerusercontent.com/images/eySk8pJlPyuhtdhXTU7FZFdCs0.jpg?width=5472&height=3648"
+            alt=""
+            fill
+            className="hero-bg"
+            sizes="100vw"
+            priority
+          />
+          <div className="hero-bg-blend" />
+          <div className="hero-content">
+            <div className="hero-main">
+              <h1 className="hero-title">
+                {heroLines.map((line, lineIndex) => (
+                  <span className="hero-title-line" key={line.join(" ")}>
+                    {line.map((word, wordIndex) => (
+                      <span
+                        className="hero-title-word"
+                        key={`${lineIndex}-${wordIndex}-${word}`}
+                        style={
+                          {
+                            "--word-delay": `${(heroLineStarts[lineIndex] + wordIndex) * 90}ms`,
+                          } as CSSProperties
+                        }
+                      >
+                        {word}
+                      </span>
+                    ))}
                   </span>
                 ))}
-              </span>
-            ))}
-          </h1>
-          <div className="hero-body">
-            <p className="hero-sub">
-              Outsourcing usually means starting over every few months. With us,
-              you start once.
-            </p>
-            <div className="hero-actions">
-              <Link className="button button-light" href="/contact">
-                <span>Let&apos;s Talk</span>
-              </Link>
+              </h1>
+              <p className="hero-sub">
+                Sales, customer support, appointment setting, and lead generation
+                teams recruited, trained, and managed by DialExpert so you can
+                scale without the hiring headaches.
+              </p>
+              <div className="hero-actions">
+                <Link className="btn btn-primary" href="/contact">
+                  Book A Strategy Call
+                </Link>
+                <Link className="btn btn-outline" href="/#how-we-operate">
+                  <Play size={15} strokeWidth={2.5} />
+                  See How We Operate
+                </Link>
+              </div>
+            </div>
+            <div className="hero-metrics">
+              {metrics.map((m) => (
+                <div key={m.value} className="hero-metric">
+                  <span className="hero-metric-value">{m.value}</span>
+                  <span className="hero-metric-label">
+                    {m.label.split("\n").map((line, i) => (
+                      <span key={i}>{line}</span>
+                    ))}
+                  </span>
+                </div>
+              ))}
             </div>
           </div>
         </div>

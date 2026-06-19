@@ -2,13 +2,13 @@ import Navbar from "@/components/Navbar"
 import SmoothScroll from "@/components/SmoothScroll"
 import DialExpertOrbitLoader from "@/components/DialExpertOrbitLoader"
 import Hero from "@/components/sections/Hero"
-import Stats from "@/components/sections/Stats"
+import WhyDialExpert from "@/components/sections/WhyDialExpert"
 import Team from "@/components/sections/Team"
-import Revenue from "@/components/sections/Revenue"
+import Challenge from "@/components/sections/Challenge"
 import Services from "@/components/sections/Services"
 import RevenueCycle from "@/components/sections/RevenueCycle"
 import EngagementWays from "@/components/sections/EngagementWays"
-import Testimonials from "@/components/sections/Testimonials"
+import WhyClientsSwitch from "@/components/sections/WhyClientsSwitch"
 import FAQ from "@/components/sections/FAQ"
 import CTA from "@/components/sections/CTA"
 import FooterSection from "@/components/sections/FooterSection"
@@ -20,13 +20,13 @@ export default function Home() {
       <SmoothScroll />
       <Navbar />
       <Hero />
-      <Stats />
+      <Challenge />
+      <WhyClientsSwitch />
+      <WhyDialExpert />
       <Team />
-      <Revenue />
       <Services />
       <RevenueCycle />
       <EngagementWays />
-      <Testimonials />
       <FAQ />
       <CTA />
       <FooterSection />

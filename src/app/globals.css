@@ -526,49 +526,75 @@ img {
   overflow: hidden;
 }
 
-.hero-video {
+/* ── Hero ── */
+
+.hero {
+  position: relative;
+  height: 100svh;
+  min-height: 620px;
+}
+
+.hero-frame {
+  position: absolute;
+  inset: 24px;
+  display: flex;
+}
+
+.hero-panel {
+  position: relative;
+  flex: 1;
+  border-radius: 28px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.hero-bg {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transform: scale(3.8);
-  transform-origin: center center;
+  object-position: center;
 }
 
-.hero-overlay {
+.hero-bg-blend {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.34)),
-    linear-gradient(90deg, rgba(0, 0, 0, 0.64) 0%, rgba(0, 0, 0, 0.28) 55%, rgba(0, 0, 0, 0.1) 100%);
+    linear-gradient(180deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.40)),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.30) 60%, rgba(0, 0, 0, 0.10) 100%);
+  mix-blend-mode: multiply;
 }
 
-.hero-inner {
+.hero-content {
   position: relative;
   z-index: 1;
-  width: min(var(--content), calc(100% - (var(--page-gutter) * 2)));
-  margin: 0 auto;
-  padding: 150px 0 100px;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.hero-copy {
+  width: 100%;
+  max-width: 1536px;
+  margin: 90px auto 0;
+  padding: 80px 64px;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 135px;
+}
+
+.hero-main {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  max-width: 745px;
 }
 
 .hero-title {
   font-family: "Satoshi", "Inter", Arial, Helvetica, sans-serif;
   font-weight: 900;
-  font-size: 64px;
-  line-height: 1.2;
+  font-size: 60px;
+  line-height: 1.15;
   text-transform: uppercase;
   margin: 0;
   color: #fff;
+  max-width: 745px;
 }
 
 .hero-title span {
@@ -614,41 +640,96 @@ img {
   }
 }
 
-.hero-body {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  max-width: 629px;
-}
-
 .hero-sub {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.6;
   font-weight: 400;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.75);
   margin: 0;
+  max-width: 640px;
 }
 
 .hero-actions {
   display: flex;
-  flex-direction: column;
-  gap: 12px;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 
-.hero-cta-text {
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  padding: 0 32px;
   font-size: 16px;
-  color: rgba(255, 255, 255, 0.7);
-  margin: 0;
-  display: none;
-}
-
-.hero .button {
-  width: fit-content;
-  min-height: 47px;
-  padding: 0 26px;
-  font-size: 16px;
+  font-weight: 600;
+  border-radius: 999px;
   background: #fff;
   color: #090909;
+  white-space: nowrap;
+  transition: opacity 0.2s;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  opacity: 0.88;
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 50px;
+  padding: 0 28px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 999px;
+  border: 1.5px solid rgba(255, 255, 255, 0.30);
+  color: #fff;
+  white-space: nowrap;
+  transition: border-color 0.2s, background 0.2s;
+  text-decoration: none;
+}
+
+.btn-outline:hover {
+  border-color: rgba(255, 255, 255, 0.60);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.hero-metrics {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 64px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.hero-metric {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.hero-metric-value {
+  font-size: 28px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.hero-metric-label {
+  font-size: 13px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.35;
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
 }
 
 /* ── Sections ── */
@@ -820,6 +901,73 @@ img {
 
 .who-copy p + p {
   margin-top: 24px;
+}
+
+/* ── Challenge ── */
+
+.challenge-section {
+  text-align: center;
+  padding: 120px var(--page-gutter);
+  background: var(--bg);
+  overflow: visible;
+}
+
+.challenge-section .eyebrow {
+  color: var(--ink);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.challenge-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: var(--content);
+  margin: 0 auto;
+}
+
+.challenge-copy {
+  max-width: 760px;
+  margin: 18px auto 0;
+  color: rgb(95, 95, 95);
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.42;
+  text-align: center;
+}
+
+.challenge-list {
+  list-style: none;
+  margin: 48px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 640px;
+}
+
+.challenge-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(60, 60, 60);
+  line-height: 1.5;
+  text-align: left;
+}
+
+.challenge-bullet {
+  flex-shrink: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--blue);
 }
 
 /* ── Stats ── */
@@ -3326,6 +3474,10 @@ img {
   .service-desc {
     font-size: 16px;
   }
+
+  .hero-metrics {
+    display: none;
+  }
 }
 
 @media (max-width: 760px) {
@@ -3402,26 +3554,26 @@ img {
     min-height: 620px;
   }
 
-  .hero-video {
-    display: block;
-    transform: scale(1.35);
+  .hero-frame {
+    inset: 12px;
   }
 
-  .hero-inner {
-    width: calc(100% - 36px);
-    padding-top: 112px;
-    padding-bottom: 80px;
-    align-items: center;
+  .hero-panel {
+    border-radius: 16px;
   }
 
-  .hero-copy {
-    gap: 18px;
+  .hero-content {
+    padding: 40px 24px;
+    gap: 80px;
+  }
+
+  .hero-main {
+    gap: 20px;
   }
 
   .hero-title {
-    font-size: clamp(22px, 6.8vw, 30px);
-    line-height: 1.05;
-    max-width: 21rem;
+    font-size: clamp(26px, 7.2vw, 36px);
+    line-height: 1.08;
   }
 
   .hero-title span,
@@ -3435,15 +3587,52 @@ img {
     gap: 0 0.26em;
   }
 
-  .hero-body {
-    gap: 28px;
-    max-width: 18rem;
+  .hero-sub {
+    font-size: 15px;
+    line-height: 1.5;
   }
 
-  .hero-sub {
-    max-width: 260px;
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-metrics {
+    display: none;
+  }
+
+  .challenge-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .challenge-section .eyebrow {
     font-size: 14px;
-    line-height: 1.45;
+  }
+
+  .challenge-section .section-heading {
+    margin-top: 18px;
+    font-size: clamp(30px, 10.4vw, 40px);
+    line-height: 1.12;
+  }
+
+  .challenge-list {
+    gap: 14px;
+    max-width: 480px;
+  }
+
+  .challenge-item {
+    font-size: 16px;
+  }
+
+  .challenge-copy {
+    font-size: 16px;
   }
 
   .section {

@@ -15,34 +15,34 @@ import EyebrowIcon from "../EyebrowIcon"
 
 const steps = [
   {
-    num: "1- The Call",
-    heading: "30 minutes. We listen first.",
+    num: "1- Recruit",
+    heading: "We screen large volumes to find the right people.",
     detail:
-      "No deck, no pitch. You tell us what's broken and what good looks like. By the end you'll know whether we can help, what it would cost, and what comes next. If we're not the right fit, we say so.",
+      "Discipline and ambition are not easy to find. We vet large applicant pools to identify candidates who are serious, capable, and ready to perform.",
     image: "https://framerusercontent.com/images/uRnAJVoOX4O4uUxyzAa1VVP32Go.jpg",
     rot: -3,
   },
   {
-    num: "2- Setup",
-    heading: "10 days. Then you're live.",
+    num: "2- Train",
+    heading: "Structured onboarding and continuous development.",
     detail:
-      "We build the team, train on your product, and get the floor ready. The average outsourcing operation takes 4-6 weeks. We've absorbed that setup cost. You just show up to the launch.",
+      "Every agent goes through a rigorous onboarding process. Training doesn't stop after week one — continuous skill development keeps the floor sharp.",
     image: "https://framerusercontent.com/images/GBpay3B8HObfTUqnBW7uHWQV7rs.jpg",
     rot: 3,
   },
   {
-    num: "3- Month One",
-    heading: "Numbers in. We refine.",
+    num: "3- Manage",
+    heading: "Managers oversee quality and day-to-day performance.",
     detail:
-      "Real-time reporting. You give feedback. We sharpen the script, tighten the qualification criteria, fix whatever isn't converting. Active, not passive.",
+      "Real-time oversight from experienced managers who know the calls because they've taken them. Every campaign has dedicated leadership in place.",
     image: "https://framerusercontent.com/images/FyzSrMXLccPvtlrtS0kHTWyNlcU.jpg",
     rot: -3,
   },
   {
-    num: "4- Month Two Onward",
-    heading: "Your pipeline never stops.",
+    num: "4- Optimize",
+    heading: "Performance is reviewed and improved continuously.",
     detail:
-      "The floor knows your campaign. Appointments land. Deals close. Your team stops doing the volume work that was never the right job for them.",
+      "We don't set and forget. Weekly reviews, data-driven adjustments, and ongoing optimization ensure the floor gets better every cycle.",
     image: "https://framerusercontent.com/images/xxhQ666ZyQDc0tmEw1IPm1E9Qr4.webp",
     rot: 3,
   },
@@ -78,11 +78,11 @@ export default function RevenueCycle() {
           className="eyebrow"
         >
           <EyebrowIcon variant="framer" />
-          <span>What To Expect</span>
+          <span>How We Operate.</span>
         </motion.div>
 
         <AnimatedSectionHeading
-          lines={["From first call to", "live campaign."]}
+          lines={["Performance Is Built.", "Not Hired."]}
         />
 
         <motion.p
@@ -93,8 +93,8 @@ export default function RevenueCycle() {
           className="section-lead"
           style={{ maxWidth: 558 }}
         >
-          No mystery. No long sales process. The sequence is short because
-          we&apos;ve already built everything that usually takes months.
+          Great outsourced teams don&apos;t happen by accident. We recruit,
+          train, manage, and optimize — every day.
         </motion.p>
       </div>
 

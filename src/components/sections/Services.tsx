@@ -11,52 +11,45 @@ const MotionLink = motion.create(Link)
 const services = [
   {
     num: "01",
-    title: "Cold Calling & Lead Generation",
-    desc: "We qualify before we connect. By the time a lead reaches your closer, the conversation has already started - we've done the groundwork so your team doesn't have to.",
+    title: "Outbound Sales",
+    desc: "Build a team that follows up consistently without the burden of internal hiring.",
     image:
       "https://framerusercontent.com/images/2OMzQEYtFsMJe9R4TdqOcQE208k.png?width=3360&height=1440",
   },
   {
     num: "02",
-    title: "Debt Settlement & Collection",
-    desc: "FDCPA-compliant and built for sensitivity. Our agents know the compliance lines, the emotional weight of these calls, and how to close without cutting corners.",
+    title: "Lead Generation",
+    desc: "Qualify opportunities and create a stronger pipeline.",
     image:
       "https://framerusercontent.com/images/4pVjOHJLM9w4iDTb5BQ2G1orSo.png?width=1680&height=720",
   },
   {
     num: "03",
-    title: "Financial Relief & Insurance",
-    desc: "Tax relief, health and auto insurance, personal loans - agents trained in the language and qualification criteria of each vertical, not running a generic script on a sensitive conversation.",
+    title: "Appointment Setting",
+    desc: "Keep your calendar filled while your internal team focuses on closing.",
     image:
       "https://framerusercontent.com/images/5kTnXZDLQEOHHQwz8HysG8hzB0.png?width=3360&height=1440",
   },
   {
     num: "04",
-    title: "Sales & Revenue",
-    desc: "First cold dial to signed agreement. Closing floor, appointment pipeline, or live transfers - we set it up and run it. You direct the output.",
+    title: "Inbound Sales",
+    desc: "Turn incoming interest into revenue with trained representatives.",
     image:
       "https://framerusercontent.com/images/cIQiz350DxCswpNIm51NlgSBfIk.png?width=1680&height=720",
   },
   {
     num: "05",
-    title: "Customer Service & Technical Support",
-    desc: "Inbound support, ticket resolution, retention and save calls, and helpdesk - across phone, email, and chat. Every interaction gets QA'd, not sampled.",
+    title: "Customer Support",
+    desc: "Deliver responsive, professional support that protects your brand.",
     image:
       "https://framerusercontent.com/images/CTEEEg6HAZ6NFgnZ3T0KMzlnh74.png?width=1680&height=720",
   },
   {
     num: "06",
-    title: "Real Estate & Wholesaling",
-    desc: "Motivated-seller outreach and deal sourcing for wholesale operations. US-market focused. Agents who understand the pace and directness real estate conversations require.",
+    title: "Specialized Campaigns",
+    desc: "Build custom teams for specific business initiatives.",
     image:
       "https://framerusercontent.com/images/II45yOtnPWRqsj3oAfIVoimV9hM.png?width=1680&height=720",
-  },
-  {
-    num: "07",
-    title: "B2B Sales & SDR",
-    desc: "A dedicated sales-development function for B2B businesses - prospecting, qualifying, and booking meetings with decision-makers.",
-    image:
-      "https://framerusercontent.com/images/lcCYMERhTpq01sdJBbWoEhGJZI.png?width=1680&height=720",
   },
 ]
 
@@ -75,9 +68,9 @@ export default function Services() {
             className="eyebrow eyebrow-dark"
           >
             <EyebrowIcon variant="framer" />
-            <span>Services</span>
+            <span>What We Do.</span>
           </motion.div>
-          <AnimatedSectionHeading lines={["Seven services. One standard."]} />
+          <AnimatedSectionHeading className="section-heading text-white" lines={["One Partner For Sales,", "Support, And Growth."]} />
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -85,9 +78,8 @@ export default function Services() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="section-lead lead-dark"
           >
-            Most clients start with one and add a second within 90 days. A
-            30-minute call is enough to figure out which one makes sense for you
-            first.
+            From outbound sales to customer support, we build and manage teams
+            that perform. Start with one service, add more as you grow.
           </motion.p>
         </div>
 

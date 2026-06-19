@@ -214,10 +214,20 @@
       "norm_label": "react-dom"
     },
     {
+      "label": "react-icons",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "package_dependencies_react_icons",
+      "community": 11,
+      "norm_label": "react-icons"
+    },
+    {
       "label": "devDependencies",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L20",
+      "source_location": "L21",
       "_origin": "ast",
       "id": "package_devdependencies",
       "community": 0,
@@ -227,7 +237,7 @@
       "label": "@tailwindcss/postcss",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L21",
+      "source_location": "L22",
       "_origin": "ast",
       "id": "package_devdependencies_tailwindcss_postcss",
       "community": 0,
@@ -237,7 +247,7 @@
       "label": "@types/node",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L22",
+      "source_location": "L23",
       "_origin": "ast",
       "id": "package_devdependencies_types_node",
       "community": 0,
@@ -247,7 +257,7 @@
       "label": "@types/react",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L23",
+      "source_location": "L24",
       "_origin": "ast",
       "id": "package_devdependencies_types_react",
       "community": 0,
@@ -257,7 +267,7 @@
       "label": "@types/react-dom",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L24",
+      "source_location": "L25",
       "_origin": "ast",
       "id": "package_devdependencies_types_react_dom",
       "community": 0,
@@ -267,7 +277,7 @@
       "label": "eslint",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L25",
+      "source_location": "L26",
       "_origin": "ast",
       "id": "package_devdependencies_eslint",
       "community": 0,
@@ -277,7 +287,7 @@
       "label": "eslint-config-next",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L26",
+      "source_location": "L27",
       "_origin": "ast",
       "id": "package_devdependencies_eslint_config_next",
       "community": 0,
@@ -287,7 +297,7 @@
       "label": "tailwindcss",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L27",
+      "source_location": "L28",
       "_origin": "ast",
       "id": "package_devdependencies_tailwindcss",
       "community": 0,
@@ -297,7 +307,7 @@
       "label": "typescript",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L28",
+      "source_location": "L29",
       "_origin": "ast",
       "id": "package_devdependencies_typescript",
       "community": 0,
@@ -910,7 +920,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_page",
-      "community": 38,
+      "community": 1,
       "norm_label": "page.tsx"
     },
     {
@@ -920,7 +930,7 @@
       "source_location": "L16",
       "_origin": "ast",
       "id": "app_page_home",
-      "community": 38,
+      "community": 1,
       "norm_label": "home()"
     },
     {
@@ -960,7 +970,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_dialexpertorbitloader",
-      "community": 38,
+      "community": 1,
       "norm_label": "dialexpertorbitloader.tsx"
     },
     {
@@ -970,7 +980,7 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "components_dialexpertorbitloader_photos",
-      "community": 38,
+      "community": 1,
       "norm_label": "photos"
     },
     {
@@ -980,7 +990,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "components_dialexpertorbitloader_dialexpertorbitloader",
-      "community": 38,
+      "community": 1,
       "norm_label": "dialexpertorbitloader()"
     },
     {
@@ -990,7 +1000,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "components_eyebrowicon",
-      "community": 38,
+      "community": 4,
       "norm_label": "eyebrowicon.tsx"
     },
     {
@@ -1000,7 +1010,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "components_eyebrowicon_eyebrowiconprops",
-      "community": 38,
+      "community": 4,
       "norm_label": "eyebrowiconprops"
     },
     {
@@ -1010,7 +1020,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "components_eyebrowicon_eyebrowicon",
-      "community": 38,
+      "community": 4,
       "norm_label": "eyebrowicon()"
     },
     {
@@ -1130,7 +1140,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "sections_cta",
-      "community": 38,
+      "community": 1,
       "norm_label": "cta.tsx"
     },
     {
@@ -1140,7 +1150,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "sections_cta_marqueerow",
-      "community": 38,
+      "community": 1,
       "norm_label": "marqueerow()"
     },
     {
@@ -1150,8 +1160,38 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "sections_cta_cta",
-      "community": 38,
+      "community": 1,
       "norm_label": "cta()"
+    },
+    {
+      "label": "Challenge.tsx",
+      "file_type": "code",
+      "source_file": "src/components/sections/Challenge.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "sections_challenge",
+      "community": 10,
+      "norm_label": "challenge.tsx"
+    },
+    {
+      "label": "items",
+      "file_type": "code",
+      "source_file": "src/components/sections/Challenge.tsx",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "sections_challenge_items",
+      "community": 10,
+      "norm_label": "items"
+    },
+    {
+      "label": "Challenge()",
+      "file_type": "code",
+      "source_file": "src/components/sections/Challenge.tsx",
+      "source_location": "L46",
+      "_origin": "ast",
+      "id": "sections_challenge_challenge",
+      "community": 10,
+      "norm_label": "challenge()"
     },
     {
       "label": "EngagementWays.tsx",
@@ -1164,10 +1204,10 @@
       "norm_label": "engagementways.tsx"
     },
     {
-      "label": "EngagementWays",
+      "label": "engagementWays",
       "file_type": "code",
       "source_file": "src/components/sections/EngagementWays.tsx",
-      "source_location": "L30",
+      "source_location": "L9",
       "_origin": "ast",
       "id": "sections_engagementways_engagementways",
       "community": 38,
@@ -1180,7 +1220,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "sections_faq",
-      "community": 38,
+      "community": 1,
       "norm_label": "faq.tsx"
     },
     {
@@ -1190,7 +1230,7 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "sections_faq_faqdata",
-      "community": 38,
+      "community": 1,
       "norm_label": "faqdata"
     },
     {
@@ -1200,7 +1240,7 @@
       "source_location": "L35",
       "_origin": "ast",
       "id": "sections_faq_faq",
-      "community": 38,
+      "community": 1,
       "norm_label": "faq()"
     },
     {
@@ -1290,17 +1330,17 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "sections_hero",
-      "community": 1,
+      "community": 5,
       "norm_label": "hero.tsx"
     },
     {
       "label": "heroLines",
       "file_type": "code",
       "source_file": "src/components/sections/Hero.tsx",
-      "source_location": "L4",
+      "source_location": "L6",
       "_origin": "ast",
       "id": "sections_hero_herolines",
-      "community": 1,
+      "community": 5,
       "norm_label": "herolines"
     },
     {
@@ -1310,17 +1350,27 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "sections_hero_herolinestarts",
-      "community": 1,
+      "community": 5,
       "norm_label": "herolinestarts"
+    },
+    {
+      "label": "metrics",
+      "file_type": "code",
+      "source_file": "src/components/sections/Hero.tsx",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "sections_hero_metrics",
+      "community": 5,
+      "norm_label": "metrics"
     },
     {
       "label": "Hero()",
       "file_type": "code",
       "source_file": "src/components/sections/Hero.tsx",
-      "source_location": "L15",
+      "source_location": "L22",
       "_origin": "ast",
       "id": "sections_hero_hero",
-      "community": 1,
+      "community": 5,
       "norm_label": "hero()"
     },
     {
@@ -1330,7 +1380,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "sections_revenue",
-      "community": 38,
+      "community": 9,
       "norm_label": "revenue.tsx"
     },
     {
@@ -1340,7 +1390,7 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "sections_revenue_cyclesteps",
-      "community": 38,
+      "community": 9,
       "norm_label": "cyclesteps"
     },
     {
@@ -1350,7 +1400,7 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "sections_revenue_orbitstops",
-      "community": 38,
+      "community": 9,
       "norm_label": "orbitstops"
     },
     {
@@ -1360,7 +1410,7 @@
       "source_location": "L61",
       "_origin": "ast",
       "id": "sections_revenue_revenue",
-      "community": 38,
+      "community": 9,
       "norm_label": "revenue()"
     },
     {
@@ -1370,7 +1420,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "sections_revenuecycle",
-      "community": 38,
+      "community": 6,
       "norm_label": "revenuecycle.tsx"
     },
     {
@@ -1380,7 +1430,7 @@
       "source_location": "L16",
       "_origin": "ast",
       "id": "sections_revenuecycle_steps",
-      "community": 38,
+      "community": 6,
       "norm_label": "steps"
     },
     {
@@ -1390,7 +1440,7 @@
       "source_location": "L51",
       "_origin": "ast",
       "id": "sections_revenuecycle_revenuecycle",
-      "community": 38,
+      "community": 6,
       "norm_label": "revenuecycle()"
     },
     {
@@ -1400,7 +1450,7 @@
       "source_location": "L152",
       "_origin": "ast",
       "id": "sections_revenuecycle_timelinerailsegment",
-      "community": 38,
+      "community": 6,
       "norm_label": "timelinerailsegment()"
     },
     {
@@ -1410,7 +1460,7 @@
       "source_location": "L171",
       "_origin": "ast",
       "id": "sections_revenuecycle_timelinestepcontent",
-      "community": 38,
+      "community": 6,
       "norm_label": "timelinestepcontent()"
     },
     {
@@ -1450,7 +1500,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "sections_stats",
-      "community": 38,
+      "community": 4,
       "norm_label": "stats.tsx"
     },
     {
@@ -1460,7 +1510,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "sections_stats_stats",
-      "community": 38,
+      "community": 4,
       "norm_label": "stats"
     },
     {
@@ -1470,18 +1520,88 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "sections_team",
-      "community": 38,
+      "community": 43,
       "norm_label": "team.tsx"
     },
     {
-      "label": "team",
+      "label": "TeamMember",
       "file_type": "code",
       "source_file": "src/components/sections/Team.tsx",
       "source_location": "L10",
       "_origin": "ast",
+      "id": "sections_team_teammember",
+      "community": 43,
+      "norm_label": "teammember"
+    },
+    {
+      "label": "members",
+      "file_type": "code",
+      "source_file": "src/components/sections/Team.tsx",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "sections_team_members",
+      "community": 43,
+      "norm_label": "members"
+    },
+    {
+      "label": "col1",
+      "file_type": "code",
+      "source_file": "src/components/sections/Team.tsx",
+      "source_location": "L63",
+      "_origin": "ast",
+      "id": "sections_team_col1",
+      "community": 43,
+      "norm_label": "col1"
+    },
+    {
+      "label": "col2",
+      "file_type": "code",
+      "source_file": "src/components/sections/Team.tsx",
+      "source_location": "L64",
+      "_origin": "ast",
+      "id": "sections_team_col2",
+      "community": 43,
+      "norm_label": "col2"
+    },
+    {
+      "label": "col3",
+      "file_type": "code",
+      "source_file": "src/components/sections/Team.tsx",
+      "source_location": "L65",
+      "_origin": "ast",
+      "id": "sections_team_col3",
+      "community": 43,
+      "norm_label": "col3"
+    },
+    {
+      "label": "Team()",
+      "file_type": "code",
+      "source_file": "src/components/sections/Team.tsx",
+      "source_location": "L67",
+      "_origin": "ast",
       "id": "sections_team_team",
-      "community": 38,
-      "norm_label": "team"
+      "community": 43,
+      "norm_label": "team()"
+    },
+    {
+      "label": "PhotoCard()",
+      "file_type": "code",
+      "source_file": "src/components/sections/Team.tsx",
+      "source_location": "L149",
+      "_origin": "ast",
+      "id": "sections_team_photocard",
+      "community": 43,
+      "norm_label": "photocard()"
+    },
+    {
+      "label": "MemberRow()",
+      "file_type": "code",
+      "source_file": "src/components/sections/Team.tsx",
+      "source_location": "L185",
+      "_origin": "ast",
+      "id": "sections_team_memberrow",
+      "community": 43,
+      "norm_label": "memberrow()"
     },
     {
       "label": "Testimonials.tsx",
@@ -1490,7 +1610,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "sections_testimonials",
-      "community": 38,
+      "community": 4,
       "norm_label": "testimonials.tsx"
     },
     {
@@ -1500,7 +1620,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "sections_testimonials_headinglines",
-      "community": 38,
+      "community": 4,
       "norm_label": "headinglines"
     },
     {
@@ -1510,8 +1630,128 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "sections_testimonials_testimonials",
-      "community": 38,
+      "community": 4,
       "norm_label": "testimonials()"
+    },
+    {
+      "label": "WhyClientsSwitch.tsx",
+      "file_type": "code",
+      "source_file": "src/components/sections/WhyClientsSwitch.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "sections_whyclientsswitch",
+      "community": 7,
+      "norm_label": "whyclientsswitch.tsx"
+    },
+    {
+      "label": "features",
+      "file_type": "code",
+      "source_file": "src/components/sections/WhyClientsSwitch.tsx",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "sections_whyclientsswitch_features",
+      "community": 7,
+      "norm_label": "features"
+    },
+    {
+      "label": "GridBackground()",
+      "file_type": "code",
+      "source_file": "src/components/sections/WhyClientsSwitch.tsx",
+      "source_location": "L47",
+      "_origin": "ast",
+      "id": "sections_whyclientsswitch_gridbackground",
+      "community": 7,
+      "norm_label": "gridbackground()"
+    },
+    {
+      "label": "FeatureCard()",
+      "file_type": "code",
+      "source_file": "src/components/sections/WhyClientsSwitch.tsx",
+      "source_location": "L62",
+      "_origin": "ast",
+      "id": "sections_whyclientsswitch_featurecard",
+      "community": 7,
+      "norm_label": "featurecard()"
+    },
+    {
+      "label": "WhyClientsSwitch()",
+      "file_type": "code",
+      "source_file": "src/components/sections/WhyClientsSwitch.tsx",
+      "source_location": "L86",
+      "_origin": "ast",
+      "id": "sections_whyclientsswitch_whyclientsswitch",
+      "community": 7,
+      "norm_label": "whyclientsswitch()"
+    },
+    {
+      "label": "WhyDialExpert.tsx",
+      "file_type": "code",
+      "source_file": "src/components/sections/WhyDialExpert.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "sections_whydialexpert",
+      "community": 8,
+      "norm_label": "whydialexpert.tsx"
+    },
+    {
+      "label": "featuresLeft",
+      "file_type": "code",
+      "source_file": "src/components/sections/WhyDialExpert.tsx",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "sections_whydialexpert_featuresleft",
+      "community": 8,
+      "norm_label": "featuresleft"
+    },
+    {
+      "label": "featuresRight",
+      "file_type": "code",
+      "source_file": "src/components/sections/WhyDialExpert.tsx",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "sections_whydialexpert_featuresright",
+      "community": 8,
+      "norm_label": "featuresright"
+    },
+    {
+      "label": "FeatureCard()",
+      "file_type": "code",
+      "source_file": "src/components/sections/WhyDialExpert.tsx",
+      "source_location": "L39",
+      "_origin": "ast",
+      "id": "sections_whydialexpert_featurecard",
+      "community": 8,
+      "norm_label": "featurecard()"
+    },
+    {
+      "label": "WhyDialExpert()",
+      "file_type": "code",
+      "source_file": "src/components/sections/WhyDialExpert.tsx",
+      "source_location": "L51",
+      "_origin": "ast",
+      "id": "sections_whydialexpert_whydialexpert",
+      "community": 8,
+      "norm_label": "whydialexpert()"
+    },
+    {
+      "label": "utils.ts",
+      "file_type": "code",
+      "source_file": "src/lib/utils.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "lib_utils",
+      "community": 43,
+      "norm_label": "utils.ts"
+    },
+    {
+      "label": "cn()",
+      "file_type": "code",
+      "source_file": "src/lib/utils.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "lib_utils_cn",
+      "community": 43,
+      "norm_label": "cn()"
     },
     {
       "label": ".last-run.json",
@@ -2144,6 +2384,16 @@
       "confidence_score": 1.0,
       "source": "package_dependencies",
       "target": "package_dependencies_react_dom"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_react_icons",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3372,6 +3622,17 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/app/page.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_page",
+      "target": "sections_challenge"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.tsx",
       "source_location": "L11",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -3489,6 +3750,28 @@
       "target": "sections_testimonials"
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_page",
+      "target": "sections_whyclientsswitch"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_page",
+      "target": "sections_whydialexpert"
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/components/AnimatedSectionHeading.tsx",
@@ -3597,6 +3880,28 @@
       "target": "components_animatedsectionheading"
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/WhyClientsSwitch.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sections_whyclientsswitch",
+      "target": "components_animatedsectionheading"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/WhyDialExpert.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sections_whydialexpert",
+      "target": "components_animatedsectionheading"
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/components/DialExpertOrbitLoader.tsx",
@@ -3635,6 +3940,17 @@
       "confidence_score": 1.0,
       "source": "components_eyebrowicon",
       "target": "components_eyebrowicon_eyebrowiconprops"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/Challenge.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sections_challenge",
+      "target": "components_eyebrowicon"
     },
     {
       "relation": "imports_from",
@@ -3706,11 +4022,44 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/Team.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sections_team",
+      "target": "components_eyebrowicon"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "src/components/sections/Testimonials.tsx",
       "source_location": "L6",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "sections_testimonials",
+      "target": "components_eyebrowicon"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/WhyClientsSwitch.tsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sections_whyclientsswitch",
+      "target": "components_eyebrowicon"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/WhyDialExpert.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sections_whydialexpert",
       "target": "components_eyebrowicon"
     },
     {
@@ -3823,6 +4172,26 @@
       "confidence_score": 1.0,
       "source": "sections_cta",
       "target": "sections_cta_marqueerow"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/Challenge.tsx",
+      "source_location": "L46",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sections_challenge",
+      "target": "sections_challenge_challenge"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/Challenge.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sections_challenge",
+      "target": "sections_challenge_items"
     },
     {
       "relation": "contains",
@@ -3957,6 +4326,16 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/Hero.tsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sections_hero",
+      "target": "sections_hero_metrics"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "src/components/sections/Revenue.tsx",
       "source_location": "L7",
       "weight": 1.0,
@@ -4055,6 +4434,88 @@
       "target": "sections_stats_stats"
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/Team.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "sections_team",
+      "target": "lib_utils",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/Team.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "sections_team",
+      "target": "lib_utils_cn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/Team.tsx",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "sections_team",
+      "target": "sections_team_col1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/Team.tsx",
+      "source_location": "L64",
+      "weight": 1.0,
+      "source": "sections_team",
+      "target": "sections_team_col2",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/Team.tsx",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "sections_team",
+      "target": "sections_team_col3",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/Team.tsx",
+      "source_location": "L185",
+      "weight": 1.0,
+      "source": "sections_team",
+      "target": "sections_team_memberrow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/Team.tsx",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "sections_team",
+      "target": "sections_team_members",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/Team.tsx",
+      "source_location": "L149",
+      "weight": 1.0,
+      "source": "sections_team",
+      "target": "sections_team_photocard",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/components/sections/Team.tsx",
@@ -4063,6 +4524,38 @@
       "confidence_score": 1.0,
       "source": "sections_team",
       "target": "sections_team_team"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/Team.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "sections_team",
+      "target": "sections_team_teammember",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/sections/Team.tsx",
+      "source_location": "L165",
+      "weight": 1.0,
+      "source": "sections_team_photocard",
+      "target": "lib_utils_cn"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/sections/Team.tsx",
+      "source_location": "L199",
+      "weight": 1.0,
+      "source": "sections_team_memberrow",
+      "target": "lib_utils_cn"
     },
     {
       "relation": "contains",
@@ -4083,6 +4576,96 @@
       "confidence_score": 1.0,
       "source": "sections_testimonials",
       "target": "sections_testimonials_testimonials"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/WhyClientsSwitch.tsx",
+      "source_location": "L62",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sections_whyclientsswitch",
+      "target": "sections_whyclientsswitch_featurecard"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/WhyClientsSwitch.tsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sections_whyclientsswitch",
+      "target": "sections_whyclientsswitch_features"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/WhyClientsSwitch.tsx",
+      "source_location": "L47",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sections_whyclientsswitch",
+      "target": "sections_whyclientsswitch_gridbackground"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/WhyClientsSwitch.tsx",
+      "source_location": "L86",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sections_whyclientsswitch",
+      "target": "sections_whyclientsswitch_whyclientsswitch"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/WhyDialExpert.tsx",
+      "source_location": "L39",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sections_whydialexpert",
+      "target": "sections_whydialexpert_featurecard"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/WhyDialExpert.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sections_whydialexpert",
+      "target": "sections_whydialexpert_featuresleft"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/WhyDialExpert.tsx",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sections_whydialexpert",
+      "target": "sections_whydialexpert_featuresright"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/WhyDialExpert.tsx",
+      "source_location": "L41",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sections_whydialexpert",
+      "target": "sections_whydialexpert_whydialexpert"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/utils.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "lib_utils",
+      "target": "lib_utils_cn",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4476,5 +5059,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "34f89c3e4077d66b3c71e340251a86e276f98aaa"
+  "built_at_commit": "5006e8429374479f5f0286bf0fcec480983933bb"
 }

@@ -1,11 +1,12 @@
-"use client"
+"use client";
 
-import type { CSSProperties } from "react"
-import { useRef } from "react"
-import { motion } from "framer-motion"
-import Image from "next/image"
-import AnimatedSectionHeading from "../AnimatedSectionHeading"
-import HighlightMarkerTextReveal from "../HighlightMarkerTextReveal"
+import type { CSSProperties } from "react";
+import { useRef } from "react";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import AnimatedSectionHeading from "../AnimatedSectionHeading";
+import EyebrowIcon from "../EyebrowIcon";
+import HighlightMarkerTextReveal from "../HighlightMarkerTextReveal";
 
 const team = [
   {
@@ -39,7 +40,7 @@ const team = [
     src: "https://framerusercontent.com/images/ro7AK6m42H5HBn1YHWlRN89ihm8.jpg?width=3024&height=4032",
   },
   {
-    name: "Ahmed said",
+    name: "Nour said",
     role: "Agent - 1 yrs",
     accent: "oklch(73% 0.2 255)",
     src: "https://framerusercontent.com/images/J5KVtq4fCjd95XXrqJjMQivoJ4.jpg?width=1257&height=1886",
@@ -56,16 +57,24 @@ const team = [
     accent: "oklch(76% 0.18 330)",
     src: "https://framerusercontent.com/images/C139n8lAoJLOIVsVVe99V4fEDvU.jpg?width=2048&height=2048",
   },
-]
+];
 
 export default function Team() {
-  const ref = useRef(null)
-  const loopedTeam = [...team, ...team]
+  const ref = useRef(null);
+  const loopedTeam = [...team, ...team];
 
   return (
     <section className="section section-white floor-section">
       <div ref={ref}>
-        <AnimatedSectionHeading lines={["MEET THE FLOOR."]} />
+        <div className="flex items-center justify-center gap-2">
+          <EyebrowIcon variant="framer" />
+          <span className="text-[16px] font-medium text-[var(--muted)]">
+            Meet The Team
+          </span>
+        </div>
+        <AnimatedSectionHeading
+          lines={["The People Behind", "The Performance"]}
+        />
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -73,10 +82,15 @@ export default function Team() {
           viewport={{ once: false, amount: 0.5 }}
           transition={{ duration: 0.6, delay: 0.1 }}
           className="floor-lead"
+          style={{ maxWidth: 900 }}
         >
-          Our team&apos;s ready to meet you, and just as eager to. These are the
-          people at the core of everything that works here, the ones who treat
-          your business like it&apos;s their own.
+          DialExpert is not a faceless outsourcing company. Our team operates
+          from Egypt with a real management structure, real leadership, and real
+          people behind the work. Many of our managers started on the floor
+          themselves. They have handled the calls, dealt with objections, solved
+          customer issues, and earned their way into leadership. That matters.
+          Because great teams are not managed by people who only read reports.
+          They are led by people who understand the work firsthand.
         </motion.p>
 
         <motion.div
@@ -123,15 +137,10 @@ export default function Team() {
               "It's stability that closes.",
             ]}
             markerColor="#3B82F6"
-            markerColors={[
-              "#3B82F6",
-              "#00DEBC",
-              "#D0FF71",
-              "#1A55F9",
-            ]}
+            markerColors={["#3B82F6", "#00DEBC", "#D0FF71", "#1A55F9"]}
           />
         </div>
       </div>
     </section>
-  )
+  );
 }
