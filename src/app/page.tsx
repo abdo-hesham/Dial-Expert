@@ -9,6 +9,7 @@ import Services from "@/components/sections/Services"
 import RevenueCycle from "@/components/sections/RevenueCycle"
 import EngagementWays from "@/components/sections/EngagementWays"
 import WhyClientsSwitch from "@/components/sections/WhyClientsSwitch"
+import Testimonials from "@/components/sections/Testimonials"
 import FAQ from "@/components/sections/FAQ"
 import CTA from "@/components/sections/CTA"
 import FooterSection from "@/components/sections/FooterSection"
@@ -27,6 +28,7 @@ export default function Home() {
       <Services />
       <RevenueCycle />
       <EngagementWays />
+      <Testimonials />
       <FAQ />
       <CTA />
       <FooterSection />

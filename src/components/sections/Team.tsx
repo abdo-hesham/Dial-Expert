@@ -68,7 +68,7 @@ export default function Team() {
       <div ref={ref}>
         <div className="flex items-center justify-center gap-2">
           <EyebrowIcon variant="framer" />
-          <span className="text-[16px] font-medium text-[var(--muted)]">
+          <span className="text-[16px] max-md:text-[14px] font-medium text-[var(--muted)]">
             Meet The Team
           </span>
         </div>

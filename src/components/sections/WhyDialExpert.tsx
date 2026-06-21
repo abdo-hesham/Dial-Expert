@@ -38,19 +38,19 @@ const featuresRight = [
 
 function FeatureCard({ title, description, icon: Icon }: { title: string; description: string; icon: LucideIcon }) {
   return (
-    <div className="flex flex-col p-6 rounded-2xl border border-white/10 bg-white/[0.03] h-full">
-      <div className="flex items-center justify-center w-11 h-11 rounded-xl bg-white/5 border border-white/10 shrink-0 mb-4">
-        <Icon className="text-white/80 size-5" strokeWidth={1.5} />
+    <div className="flex flex-col p-6 max-md:p-4 rounded-2xl border border-white/10 bg-white/[0.03] h-full">
+      <div className="flex items-center justify-center w-11 h-11 max-md:w-10 max-md:h-10 rounded-xl bg-white/5 border border-white/10 shrink-0 mb-4 max-md:mb-3">
+        <Icon className="text-white/80 size-5 max-md:size-4" strokeWidth={1.5} />
       </div>
-      <h3 className="text-white font-bold text-sm mb-1">{title}</h3>
-      <p className="text-white/50 text-sm leading-relaxed">{description}</p>
+      <h3 className="text-white font-bold text-sm max-md:text-xs mb-1">{title}</h3>
+      <p className="text-white/50 text-sm max-md:text-xs leading-relaxed">{description}</p>
     </div>
   )
 }
 
 export default function WhyDialExpert() {
   return (
-    <section className="relative w-full bg-[#0a0a0a] py-24 overflow-hidden">
+    <section className="relative w-full bg-[#0a0a0a] py-[120px] max-md:py-20 overflow-hidden">
       <div className="pointer-events-none absolute inset-0 [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,black,transparent)]">
         <div
           className="absolute inset-0 opacity-[0.03]"
@@ -61,11 +61,11 @@ export default function WhyDialExpert() {
         />
       </div>
 
-      <div className="relative mx-auto w-full max-w-[1728px] px-[96px]">
+      <div className="relative mx-auto w-full max-w-[1728px] px-[96px] max-xl:px-8 max-md:px-[18px]">
         <div className="flex flex-col items-center text-center">
           <div className="flex items-center gap-2">
             <EyebrowIcon variant="framer" />
-            <span className="text-[18px] font-medium text-white/60">
+            <span className="text-[18px] max-md:text-[14px] font-medium text-white/60">
               Why DialExpert
             </span>
           </div>
@@ -75,7 +75,7 @@ export default function WhyDialExpert() {
             lines={["Most Outsourcing Companies", "Sell Headcount. We Build", "Teams People Can Rely On."]}
           />
 
-          <p className="mx-auto mt-6 max-w-3xl text-white/50 text-[17px] font-medium leading-relaxed">
+          <p className="mx-auto mt-6 max-md:mt-4 max-w-3xl text-white/50 text-[17px] max-md:text-[15px] font-medium leading-relaxed">
             Anyone can fill seats. Very few can build a team that is trained,
             managed, accountable, and consistently improving. DialExpert was
             built for businesses that need more than headcount.
@@ -83,7 +83,7 @@ export default function WhyDialExpert() {
         </div>
 
         {/* Desktop: 3-column grid */}
-        <div className="mx-auto mt-16 max-w-6xl hidden lg:grid grid-cols-[1fr_auto_1fr] gap-6">
+        <div className="mx-auto mt-16 max-md:mt-10 max-w-6xl hidden lg:grid grid-cols-[1fr_auto_1fr] gap-6">
           {/* Left column: 2 rows */}
           <div className="grid grid-rows-2 gap-6 h-[420px]">
             {featuresLeft.map((feat) => (
@@ -109,7 +109,7 @@ export default function WhyDialExpert() {
         </div>
 
         {/* Mobile: stacked */}
-        <div className="mx-auto mt-16 max-w-6xl lg:hidden flex flex-col gap-6">
+        <div className="mx-auto mt-10 max-w-6xl lg:hidden flex flex-col gap-6">
           <img
             src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&q=80"
             alt="DialExpert team"

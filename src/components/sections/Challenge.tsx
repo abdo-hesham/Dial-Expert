@@ -70,22 +70,22 @@ export default function Challenge() {
   }, [isPaused]);
 
   return (
-    <section className="w-full bg-[--bg] py-24">
-      <div className="mx-auto w-full max-w-[1728px] px-[96px]">
+    <section className="w-full bg-[--bg] py-[120px] max-md:py-20">
+      <div className="mx-auto w-full max-w-[1728px] px-[96px] max-xl:px-8 max-md:px-[18px]">
         <div className="mb-5 flex items-center gap-2">
           <EyebrowIcon variant="framer" />
-          <span className="text-[18px] font-medium text-[var(--muted)]">
+          <span className="text-[18px] max-md:text-[14px] font-medium text-[var(--muted)]">
             The Challenge
           </span>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 max-md:gap-10 items-start">
           <div className="lg:col-span-5 flex flex-col gap-8 order-2 lg:order-1">
             <div>
-              <h3 className="font-['Satoshi',sans-serif] text-[40px] font-black leading-[1.2] tracking-tight text-[--ink]">
+              <h3 className="font-['Satoshi',sans-serif] text-[40px] max-md:text-[clamp(28px,7vw,34px)] font-black leading-[1.2] tracking-tight text-[--ink]">
                 Scaling A Team Gets Expensive Fast.
               </h3>
-              <p className="mt-4 text-[var(--muted)] text-base font-medium leading-relaxed">
+              <p className="mt-4 text-[var(--muted)] text-base max-md:text-sm font-medium leading-relaxed">
                 Hiring in-house becomes expensive, slow, and hard to manage.
                 Outsourcing often creates new problems: weak communication, poor
                 accountability, and high turnover.
@@ -111,7 +111,7 @@ export default function Challenge() {
                       />
                     </div>
 
-                    <span className="text-[10px] font-medium mt-1 text-[var(--muted)]/50 tabular-nums shrink-0">
+                    <span className="text-[10px] max-md:text-[9px] font-medium mt-1 text-[var(--muted)]/50 tabular-nums shrink-0">
                       /{item.id}
                     </span>
 
@@ -119,15 +119,15 @@ export default function Challenge() {
                       <span
                         className={
                           isActive
-                            ? "text-[--ink] text-2xl font-normal tracking-tight"
-                            : "text-[var(--muted)]/60 text-2xl font-normal tracking-tight"
+                            ? "text-[--ink] text-2xl max-md:text-lg font-normal tracking-tight"
+                            : "text-[var(--muted)]/60 text-2xl max-md:text-lg font-normal tracking-tight"
                         }
                       >
                         {item.title}
                       </span>
 
                       {isActive && (
-                        <p className="text-[var(--muted)] text-sm font-normal leading-relaxed max-w-sm pb-2">
+                        <p className="text-[var(--muted)] text-sm max-md:text-xs font-normal leading-relaxed max-w-sm pb-2">
                           {item.description}
                         </p>
                       )}
@@ -144,7 +144,7 @@ export default function Challenge() {
               onMouseEnter={() => setIsPaused(true)}
               onMouseLeave={() => setIsPaused(false)}
             >
-              <div className="relative aspect-[4/3] rounded-[2.5rem] overflow-hidden bg-[var(--gray)] border border-[var(--line)]/40">
+              <div className="relative aspect-[4/3] max-md:aspect-[16/10] rounded-[2.5rem] max-md:rounded-2xl overflow-hidden bg-[var(--gray)] border border-[var(--line)]/40">
                 {items.map((item, index) => (
                   <div
                     key={item.id}

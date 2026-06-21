@@ -579,6 +579,13 @@ img {
   gap: 135px;
 }
 
+@media (max-width: 760px) {
+  .hero-content {
+    padding: 40px 18px;
+    gap: 80px;
+  }
+}
+
 .hero-main {
   display: flex;
   flex-direction: column;
@@ -1079,7 +1086,7 @@ img {
 
 .floor-section {
   text-align: center;
-  padding-top: 108px;
+  padding-top: 120px;
   padding-bottom: 120px;
 }
 
@@ -1797,7 +1804,7 @@ img {
 /* How We Engage */
 
 .engage-section {
-  padding-top: 110px;
+  padding-top: 120px;
   padding-bottom: 120px;
   text-align: center;
 }
@@ -3781,7 +3788,7 @@ img {
   }
 
   .services-section {
-    padding-top: 18px;
+    padding-top: 80px;
     padding-bottom: 80px;
   }
 

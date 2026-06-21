@@ -67,13 +67,13 @@ function FeatureCard({
   const Icon = feature.icon
 
   return (
-    <div className="relative overflow-hidden p-6 bg-white/80 backdrop-blur-sm border-r border-b border-[var(--line)]/30">
+    <div className="relative overflow-hidden p-6 max-md:p-4 bg-white/80 backdrop-blur-sm border-r border-b border-[var(--line)]/30">
       <Icon
-        className="text-[var(--muted)] size-6"
+        className="text-[var(--muted)] size-6 max-md:size-5"
         strokeWidth={1}
         aria-hidden
       />
-      <h3 className="mt-10 text-sm md:text-base text-[--ink]">
+      <h3 className="mt-10 max-md:mt-6 text-sm md:text-base text-[--ink]">
         {feature.title}
       </h3>
       <p className="text-[var(--muted)] relative z-20 mt-2 text-xs font-light">
@@ -85,13 +85,13 @@ function FeatureCard({
 
 export default function WhyClientsSwitch() {
   return (
-    <section className="relative w-full bg-[--bg] py-24 overflow-hidden">
+    <section className="relative w-full bg-[--bg] py-[120px] max-md:py-20 overflow-hidden">
       <GridBackground />
-      <div className="mx-auto w-full relative z-10 max-w-[1728px] px-[96px]">
+      <div className="mx-auto w-full relative z-10 max-w-[1728px] px-[96px] max-xl:px-8 max-md:px-[18px]">
         <div className="flex flex-col items-center text-center">
           <div className="flex items-center gap-2">
             <EyebrowIcon variant="framer" />
-            <span className="text-[18px] font-medium text-[var(--muted)]">
+            <span className="text-[18px] max-md:text-[14px] font-medium text-[var(--muted)]">
               Why Clients Switch
             </span>
           </div>
@@ -100,7 +100,7 @@ export default function WhyClientsSwitch() {
             lines={["They Are Looking For", "Fewer Problems."]}
           />
 
-          <div className="mx-auto mt-16 max-w-5xl">
+          <div className="mx-auto mt-16 max-md:mt-10 max-w-5xl">
             <p className="text-[var(--muted)] text-sm md:text-base tracking-wide text-balance max-w-3xl mx-auto">
               Most clients come to us because something is already costing them
               time, money, or momentum. They are tired of inconsistent quality and
@@ -110,7 +110,7 @@ export default function WhyClientsSwitch() {
         </div>
 
         <div
-          className="mx-auto mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 border-t border-l border-[var(--line)]/30 rounded-xl overflow-hidden"
+          className="mx-auto mt-12 max-md:mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 border-t border-l border-[var(--line)]/30 rounded-xl max-md:rounded-lg overflow-hidden"
         >
           {features.map((feature, i) => (
             <FeatureCard key={i} feature={feature} />

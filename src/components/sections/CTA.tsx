@@ -8,7 +8,7 @@ import EyebrowIcon from "../EyebrowIcon"
 
 export default function CTA() {
   return (
-    <section className="relative w-full bg-[#0a0a0a] py-24 overflow-hidden">
+    <section className="relative w-full bg-[#0a0a0a] py-[120px] max-md:py-20 overflow-hidden">
       {/* Background image with dark overlay */}
       <div className="pointer-events-none absolute inset-0">
         <img
@@ -38,11 +38,11 @@ export default function CTA() {
         }}
       />
 
-      <div className="relative mx-auto w-full max-w-[1728px] px-[96px]">
+      <div className="relative mx-auto w-full max-w-[1728px] px-[96px] max-xl:px-8 max-md:px-[18px]">
         <div className="flex flex-col items-center text-center">
           <div className="flex items-center gap-2">
             <EyebrowIcon variant="framer" />
-            <span className="text-[18px] font-medium text-white/60">
+            <span className="text-[18px] max-md:text-[14px] font-medium text-white/60">
               Let&apos;s Talk
             </span>
           </div>
@@ -52,7 +52,7 @@ export default function CTA() {
             lines={["Ready To Build A Team", "That Performs?"]}
           />
 
-          <p className="mx-auto mt-6 max-w-3xl text-white/50 text-[17px] font-medium leading-relaxed">
+          <p className="mx-auto mt-6 max-md:mt-4 max-w-3xl text-white/50 text-[17px] max-md:text-[15px] font-medium leading-relaxed">
             Whether you are scaling your internal team, replacing an
             underperforming provider, or looking for a better way to handle sales
             and support, DialExpert can help you build the operation behind your
@@ -68,7 +68,7 @@ export default function CTA() {
           >
             <Link
               href="/contact"
-              className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-white text-[#0a0a0a] font-semibold text-base hover:bg-white/90 transition-all active:scale-95"
+              className="inline-flex items-center justify-center gap-3 px-8 py-4 max-md:px-6 max-md:py-[14px] min-h-[48px] rounded-full bg-white text-[#0a0a0a] font-semibold text-base max-md:text-sm hover:bg-white/90 transition-all active:scale-95 w-full max-w-sm"
             >
               Book A Strategy Call
               <ArrowRight size={18} strokeWidth={2} />
