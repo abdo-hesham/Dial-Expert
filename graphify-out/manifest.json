@@ -135,18 +135,18 @@
     "semantic_hash": ""
   },
   "src/app/contact/page.tsx": {
-    "mtime": 1781144301.1821365,
-    "ast_hash": "659cf28e8d012673bf27b216adcd2f9b",
+    "mtime": 1782061651.8947601,
+    "ast_hash": "07c40d3c5d230de3cc7805f3171ef6cd",
     "semantic_hash": ""
   },
   "src/app/layout.tsx": {
-    "mtime": 1781825085.9164243,
-    "ast_hash": "b521b6b39d93a713ce67d99e740323a6",
+    "mtime": 1782064403.6050518,
+    "ast_hash": "825d21bbeff3cfe3dfbcadb557860249",
     "semantic_hash": ""
   },
   "src/app/page.tsx": {
-    "mtime": 1781851440.690948,
-    "ast_hash": "3474d4f9d3fea4b12aedf9c422e9ae47",
+    "mtime": 1782064168.283134,
+    "ast_hash": "9179cb3c32728ffdb510b0f2ee5573b3",
     "semantic_hash": ""
   },
   "src/components/EyebrowIcon.tsx": {
@@ -160,8 +160,8 @@
     "semantic_hash": ""
   },
   "src/components/Navbar.tsx": {
-    "mtime": 1781847862.93736,
-    "ast_hash": "3e0bcf3e60aac9e1fc1abc150142b439",
+    "mtime": 1782063325.6353536,
+    "ast_hash": "fe4a40e339997027b273f8a3ae165c95",
     "semantic_hash": ""
   },
   "src/components/SmoothScroll.tsx": {
@@ -170,23 +170,23 @@
     "semantic_hash": ""
   },
   "src/components/sections/CTA.tsx": {
-    "mtime": 1781847862.9630613,
-    "ast_hash": "9b124dc564e1f47e7643153f1b13461c",
+    "mtime": 1782063568.9032874,
+    "ast_hash": "d781672ebaf2cb5473c4b09c0fddcfdd",
     "semantic_hash": ""
   },
   "src/components/sections/FAQ.tsx": {
-    "mtime": 1781847862.9766138,
-    "ast_hash": "c74d9bd4f2314d2e469fd88ca87b4f42",
+    "mtime": 1781854500.6844482,
+    "ast_hash": "63fd1fee587ab9acb7aed498ee0ab719",
     "semantic_hash": ""
   },
   "src/components/sections/FooterSection.tsx": {
-    "mtime": 1781847862.9936936,
-    "ast_hash": "ce5a246b92e32985748293dc2e72a3f5",
+    "mtime": 1782063325.8186884,
+    "ast_hash": "a9475dc5d285821e8f8180a87ce384af",
     "semantic_hash": ""
   },
   "src/components/sections/Hero.tsx": {
-    "mtime": 1781848635.2929113,
-    "ast_hash": "b6561379b531d1b20516efc427c70594",
+    "mtime": 1782063928.110701,
+    "ast_hash": "ff14afc249f54c8602c5075662352ce8",
     "semantic_hash": ""
   },
   "src/components/sections/Revenue.tsx": {
@@ -195,13 +195,13 @@
     "semantic_hash": ""
   },
   "src/components/sections/RevenueCycle.tsx": {
-    "mtime": 1781847863.18846,
-    "ast_hash": "d12f6a4eb513fac2ecc9fe877d70e5a4",
+    "mtime": 1781854045.4941711,
+    "ast_hash": "021c904867433cf06bad822345cc2332",
     "semantic_hash": ""
   },
   "src/components/sections/Services.tsx": {
-    "mtime": 1781847863.18846,
-    "ast_hash": "67261975f99cefdae50e648fdc1edb33",
+    "mtime": 1781853928.749466,
+    "ast_hash": "c9b587269232e3b06449a6e17df5ab85",
     "semantic_hash": ""
   },
   "src/components/sections/Stats.tsx": {
@@ -210,13 +210,13 @@
     "semantic_hash": ""
   },
   "src/components/sections/Team.tsx": {
-    "mtime": 1781852870.9822578,
-    "ast_hash": "4eead238f6778ff1001d794e25ec296b",
+    "mtime": 1782010853.888766,
+    "ast_hash": "010c5b432df1b8d779499f9c6cca753d",
     "semantic_hash": ""
   },
   "src/components/sections/Testimonials.tsx": {
-    "mtime": 1781825086.142984,
-    "ast_hash": "dd8d69d89895b31b9340711bdfcfe926",
+    "mtime": 1782055640.2314975,
+    "ast_hash": "372426bfcf5dec9a45b42bd0ed0a5eaf",
     "semantic_hash": ""
   },
   "test-results/.last-run.json": {
@@ -1200,8 +1200,8 @@
     "semantic_hash": ""
   },
   "src/components/sections/EngagementWays.tsx": {
-    "mtime": 1781825086.1339765,
-    "ast_hash": "68b29cbb08d195f20e5ff6d3cb20e59e",
+    "mtime": 1781854378.8297968,
+    "ast_hash": "3ad8d98c73680321b07c541b08761c9a",
     "semantic_hash": ""
   },
   "public/loader/support.js": {
@@ -1465,23 +1465,98 @@
     "semantic_hash": ""
   },
   "src/components/sections/Challenge.tsx": {
-    "mtime": 1781850107.9423366,
-    "ast_hash": "7b0dac09a826d75e527f1042855a563a",
+    "mtime": 1782063568.5379186,
+    "ast_hash": "7780d26a5a83ad972269ca497eb435c3",
     "semantic_hash": ""
   },
   "src/components/sections/WhyClientsSwitch.tsx": {
-    "mtime": 1781851270.8556466,
-    "ast_hash": "bda86b94efa13b90437677643953eca7",
+    "mtime": 1782010856.6043692,
+    "ast_hash": "b2197de3f13d1fca36ac951a749f636f",
     "semantic_hash": ""
   },
   "src/components/sections/WhyDialExpert.tsx": {
-    "mtime": 1781852406.3356194,
-    "ast_hash": "76f0b53803004b7d162ec60a1d1e6978",
+    "mtime": 1782063568.7204611,
+    "ast_hash": "985eb372750d57ca472929cf7b63937b",
     "semantic_hash": ""
   },
   "src/lib/utils.ts": {
     "mtime": 1781852615.849466,
     "ast_hash": "eb5f2059568a2d27f7307cdbb887194c",
+    "semantic_hash": ""
+  },
+  "src/components/BrandLockup.tsx": {
+    "mtime": 1782063325.416617,
+    "ast_hash": "345d430475df0960089901019ba1b45c",
+    "semantic_hash": ""
+  },
+  "src/components/HeroVideoButton.tsx": {
+    "mtime": 1782063233.1832495,
+    "ast_hash": "8cf0c14a04cef08c84121cb28303543b",
+    "semantic_hash": ""
+  },
+  "public/android-chrome-192x192.png": {
+    "mtime": 1782051868.0,
+    "ast_hash": "cc91133671f37031bc36fd4b29e889a0",
+    "semantic_hash": ""
+  },
+  "public/android-chrome-512x512.png": {
+    "mtime": 1782051868.0,
+    "ast_hash": "1ced46b19fc3f0abbf28bb9246519117",
+    "semantic_hash": ""
+  },
+  "public/apple-touch-icon.png": {
+    "mtime": 1782051868.0,
+    "ast_hash": "98f336cf21b3d3cbba85693c31ad367f",
+    "semantic_hash": ""
+  },
+  "public/favicon-16x16.png": {
+    "mtime": 1782051868.0,
+    "ast_hash": "6c672ce0fc13b1e3a0129fe340efedc6",
+    "semantic_hash": ""
+  },
+  "public/favicon-32x32.png": {
+    "mtime": 1782051868.0,
+    "ast_hash": "503645c3d93fd8e5504f335995e1b677",
+    "semantic_hash": ""
+  },
+  "public/favicon-dial/android-chrome-192x192.png": {
+    "mtime": 1782051868.0,
+    "ast_hash": "cc91133671f37031bc36fd4b29e889a0",
+    "semantic_hash": ""
+  },
+  "public/favicon-dial/android-chrome-512x512.png": {
+    "mtime": 1782051868.0,
+    "ast_hash": "1ced46b19fc3f0abbf28bb9246519117",
+    "semantic_hash": ""
+  },
+  "public/favicon-dial/apple-touch-icon.png": {
+    "mtime": 1782051868.0,
+    "ast_hash": "98f336cf21b3d3cbba85693c31ad367f",
+    "semantic_hash": ""
+  },
+  "public/favicon-dial/favicon-16x16.png": {
+    "mtime": 1782051868.0,
+    "ast_hash": "6c672ce0fc13b1e3a0129fe340efedc6",
+    "semantic_hash": ""
+  },
+  "public/favicon-dial/favicon-32x32.png": {
+    "mtime": 1782051868.0,
+    "ast_hash": "503645c3d93fd8e5504f335995e1b677",
+    "semantic_hash": ""
+  },
+  "src/components/DeferredHomeSections.tsx": {
+    "mtime": 1782064262.0908854,
+    "ast_hash": "7babdf9f6ffbbbe50b3b01c0f7860599",
+    "semantic_hash": ""
+  },
+  "public/dialexpert/hero-desktop.webp": {
+    "mtime": 1782063913.356,
+    "ast_hash": "b3680c64e90d2fbfb6c96f9e51d2e627",
+    "semantic_hash": ""
+  },
+  "public/dialexpert/hero-mobile.webp": {
+    "mtime": 1782063913.07,
+    "ast_hash": "e6b6ad6dbf7d4d78e2c1625efbe735c1",
     "semantic_hash": ""
   }
 }

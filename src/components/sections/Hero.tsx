@@ -1,10 +1,6 @@
-"use client"
-
-import { useState, useEffect, useCallback, useRef } from "react"
 import type { CSSProperties } from "react"
 import Link from "next/link"
-import Image from "next/image"
-import { Play, X } from "lucide-react"
+import HeroVideoButton from "../HeroVideoButton"
 
 const heroLines = [
   ["Build", "a", "Revenue", "Team"],
@@ -22,51 +18,26 @@ const metrics = [
   { value: "$300M+", label: "Revenue\nGenerated" },
 ]
 
-function VideoModal({ close }: { close: () => void }) {
-  const videoRef = useRef<HTMLVideoElement>(null)
-
-  useEffect(() => {
-    videoRef.current?.play()
-    const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") close() }
-    window.addEventListener("keydown", onKey)
-    return () => window.removeEventListener("keydown", onKey)
-  }, [close])
-
-  return (
-    <div className="hero-modal-overlay" onClick={close}>
-      <div className="hero-modal" onClick={(e) => e.stopPropagation()}>
-        <button className="hero-modal-close" onClick={close} aria-label="Close">
-          <X size={24} strokeWidth={2} />
-        </button>
-        <video
-          ref={videoRef}
-          src="https://framerusercontent.com/assets/hyfo5PQ53wvNBdlUY8WqoWyo41I.mp4"
-          controls
-          playsInline
-          className="hero-modal-video"
-        />
-      </div>
-    </div>
-  )
-}
-
 export default function Hero() {
-  const [showModal, setShowModal] = useState(false)
-  const open = useCallback(() => setShowModal(true), [])
-  const close = useCallback(() => setShowModal(false), [])
-
   return (
     <section id="top" className="hero">
       <div className="hero-frame">
         <div className="hero-panel">
-          <Image
-            src="https://framerusercontent.com/images/eySk8pJlPyuhtdhXTU7FZFdCs0.jpg?width=5472&height=3648"
-            alt=""
-            fill
-            className="hero-bg"
-            sizes="100vw"
-            priority
-          />
+          <picture>
+            <source
+              srcSet="/dialexpert/hero-mobile.webp"
+              media="(max-width: 760px)"
+              type="image/webp"
+            />
+            <img
+              src="/dialexpert/hero-desktop.webp"
+              alt=""
+              className="hero-bg"
+              loading="eager"
+              decoding="async"
+              fetchPriority="high"
+            />
+          </picture>
           <div className="hero-bg-blend" />
           <div className="hero-content">
             <div className="hero-main">
@@ -98,10 +69,7 @@ export default function Hero() {
                 <Link className="btn btn-primary" href="/contact">
                   Book A Strategy Call
                 </Link>
-                <button className="btn btn-outline" onClick={open}>
-                  <Play size={15} strokeWidth={2.5} />
-                  See How We Operate
-                </button>
+                <HeroVideoButton />
               </div>
             </div>
             <div className="hero-metrics">
@@ -119,7 +87,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      {showModal && <VideoModal close={close} />}
     </section>
   )
 }

@@ -1,7 +1,7 @@
 import Link from "next/link"
-import Image from "next/image"
 import { Phone, Mail } from "lucide-react"
 import type { ReactNode } from "react"
+import BrandLockup from "../BrandLockup"
 
 const navLinks = [
   { label: "About Us", href: "/#who-we-are" },
@@ -68,13 +68,7 @@ export default function FooterSection() {
         <div className="footer-top">
           <div className="footer-branding">
             <Link className="footer-logo" href="/" aria-label="Dial Expert home">
-              <Image
-                src="https://framerusercontent.com/images/1r9bp6mMWQMRoDFpl4dGOCznagw.png?width=473&height=256"
-                alt="Dial Expert"
-                width={473}
-                height={256}
-                loading="lazy"
-              />
+              <BrandLockup />
             </Link>
 
             <p className="footer-eyebrow">Be part of the few</p>

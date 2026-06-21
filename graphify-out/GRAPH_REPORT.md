@@ -1,16 +1,16 @@
-# Graph Report - Dial-Expert  (2026-06-19)
+# Graph Report - Dial-Expert  (2026-06-21)
 
 ## Corpus Check
-- 34 files · ~2,321,503 words
+- 37 files · ~2,337,198 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 219 nodes · 277 edges · 24 communities (13 shown, 11 thin omitted)
+- 231 nodes · 290 edges · 17 communities (11 shown, 6 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `5006e842`
+- Built from commit: `44c1b6d7`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -21,17 +21,10 @@
 - [[_COMMUNITY_Community 3|Community 3]]
 - [[_COMMUNITY_Community 4|Community 4]]
 - [[_COMMUNITY_Community 5|Community 5]]
-- [[_COMMUNITY_Community 6|Community 6]]
-- [[_COMMUNITY_Community 7|Community 7]]
-- [[_COMMUNITY_Community 8|Community 8]]
-- [[_COMMUNITY_Community 9|Community 9]]
-- [[_COMMUNITY_Community 10|Community 10]]
-- [[_COMMUNITY_Community 11|Community 11]]
 - [[_COMMUNITY_Community 12|Community 12]]
 - [[_COMMUNITY_Community 33|Community 33]]
 - [[_COMMUNITY_Community 34|Community 34]]
 - [[_COMMUNITY_Community 35|Community 35]]
-- [[_COMMUNITY_Community 38|Community 38]]
 - [[_COMMUNITY_Community 43|Community 43]]
 - [[_COMMUNITY_Community 62|Community 62]]
 - [[_COMMUNITY_Community 75|Community 75]]
@@ -52,39 +45,32 @@
 10. `boot()` - 5 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `PhotoCard()` --calls--> `cn()`  [EXTRACTED]
-  src/components/sections/Team.tsx → src/lib/utils.ts
-- `MemberRow()` --calls--> `cn()`  [EXTRACTED]
-  src/components/sections/Team.tsx → src/lib/utils.ts
+- None detected - all connections are within the same source files.
 
 ## Import Cycles
 - None detected.
 
-## Communities (24 total, 11 thin omitted)
+## Communities (17 total, 6 thin omitted)
 
 ### Community 0 - "Community 0"
-Cohesion: 0.22
-Nodes (9): devDependencies, eslint, eslint-config-next, tailwindcss, @tailwindcss/postcss, @types/node, @types/react, @types/react-dom (+1 more)
+Cohesion: 0.07
+Nodes (26): dependencies, ffmpeg-static, framer-motion, lenis, lucide-react, next, react, react-dom (+18 more)
+
+### Community 1 - "Community 1"
+Cohesion: 0.06
+Nodes (15): AnimatedSectionHeadingProps, EyebrowIconProps, items, stats, faqData, cycleSteps, orbitStops, steps (+7 more)
 
 ### Community 2 - "Community 2"
 Cohesion: 0.07
-Nodes (30): boot(), compileTemplate(), createComponentFactory(), createExternalModules(), createHelmetManager(), createPseudoSheet(), createRegistry(), createRuntime() (+22 more)
+Nodes (40): boot(), collectProps(), compileAttr(), compileTemplate(), createComponentFactory(), createExternalModules(), createHelmetManager(), createPseudoSheet() (+32 more)
 
 ### Community 3 - "Community 3"
-Cohesion: 0.42
-Nodes (10): collectProps(), compileAttr(), walk(), walkChildren(), walkComponent(), walkElement(), walkFor(), walkIf() (+2 more)
-
-### Community 4 - "Community 4"
-Cohesion: 0.25
-Nodes (3): EyebrowIconProps, Stats, headingLines
+Cohesion: 0.15
+Nodes (11): Challenge, CTA, EngagementWays, FAQ, FooterSection, RevenueCycle, Services, Team (+3 more)
 
 ### Community 5 - "Community 5"
-Cohesion: 0.40
+Cohesion: 0.25
 Nodes (3): heroLines, heroLineStarts, metrics
-
-### Community 11 - "Community 11"
-Cohesion: 0.11
-Nodes (17): dependencies, ffmpeg-static, framer-motion, lenis, lucide-react, next, react, react-dom (+9 more)
 
 ### Community 12 - "Community 12"
 Cohesion: 0.10
@@ -99,36 +85,30 @@ Cohesion: 0.20
 Nodes (9): 1. Visual Theme & Atmosphere, 2. Color Palette & Roles, 3. Typography Rules, 4. Component Stylings, 5. Layout Principles, 6. Motion & Interaction, 7. Anti-Patterns (Banned), 7. Responsive Rules (+1 more)
 
 ### Community 35 - "Community 35"
-Cohesion: 0.13
-Nodes (3): navLinks, navLinks, socialLinks
-
-### Community 38 - "Community 38"
-Cohesion: 0.25
-Nodes (4): AnimatedSectionHeadingProps, engagementWays, MotionLink, services
+Cohesion: 0.12
+Nodes (4): BrandLockupProps, navLinks, navLinks, socialLinks
 
 ### Community 43 - "Community 43"
-Cohesion: 0.14
-Nodes (10): Props, sweepEase, cn(), col1, col2, col3, MemberRow(), members (+2 more)
+Cohesion: 0.22
+Nodes (4): Props, sweepEase, cn(), team
 
 ## Knowledge Gaps
-- **91 isolated node(s):** `eslintConfig`, `nextConfig`, `name`, `version`, `private` (+86 more)
+- **99 isolated node(s):** `eslintConfig`, `nextConfig`, `name`, `version`, `private` (+94 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **11 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **6 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `devDependencies` connect `Community 0` to `Community 11`?**
-  _High betweenness centrality (0.007) - this node is a cross-community bridge._
 - **What connects `eslintConfig`, `nextConfig`, `name` to the rest of the system?**
-  _91 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _99 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Should `Community 0` be split into smaller, more focused modules?**
+  _Cohesion score 0.07407407407407407 - nodes in this community are weakly interconnected._
+- **Should `Community 1` be split into smaller, more focused modules?**
+  _Cohesion score 0.06183574879227053 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
-  _Cohesion score 0.07419712070874862 - nodes in this community are weakly interconnected._
-- **Should `Community 11` be split into smaller, more focused modules?**
-  _Cohesion score 0.1111111111111111 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07111756168359942 - nodes in this community are weakly interconnected._
 - **Should `Community 12` be split into smaller, more focused modules?**
   _Cohesion score 0.1 - nodes in this community are weakly interconnected._
 - **Should `Community 35` be split into smaller, more focused modules?**
-  _Cohesion score 0.13333333333333333 - nodes in this community are weakly interconnected._
-- **Should `Community 43` be split into smaller, more focused modules?**
-  _Cohesion score 0.13970588235294118 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.11764705882352941 - nodes in this community are weakly interconnected._

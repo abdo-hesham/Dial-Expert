@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react"
 import Link from "next/link"
-import Image from "next/image"
+import BrandLockup from "./BrandLockup"
 
 const navLinks = [
   { label: "Home", href: "/" },
@@ -76,17 +76,7 @@ export default function Navbar() {
     <header className={`topbar${overHero ? " over-hero" : ""}${scrolled ? " scrolled" : ""}${hidden && !menuOpen ? " hidden" : ""}${menuOpen ? " menu-open" : ""}`}>
       <div className="topbar-inner">
         <Link className="brand" href="/" aria-label="Dial Expert home" onClick={closeMenu}>
-          <Image
-            src="https://framerusercontent.com/images/aSGF5PBvDXfvTirXeZzxaND6bcg.png?width=4027&height=848"
-            alt="Dial Expert"
-            width={263}
-            height={55}
-            sizes="(max-width: 760px) 118px, (max-width: 1200px) 150px, 205px"
-            quality={45}
-            loading="eager"
-            fetchPriority="high"
-            className="brand-logo"
-          />
+          <BrandLockup />
         </Link>
 
         <nav className="topnav" aria-label="Primary navigation">
@@ -130,16 +120,7 @@ export default function Navbar() {
         </button>
 
         <Link className="mobile-menu-brand" href="/" aria-label="Dial Expert home" tabIndex={menuOpen ? 0 : -1} onClick={closeMenu}>
-          <Image
-            src="https://framerusercontent.com/images/aSGF5PBvDXfvTirXeZzxaND6bcg.png?width=4027&height=848"
-            alt="Dial Expert"
-            width={150}
-            height={32}
-            sizes="150px"
-            quality={45}
-            loading="lazy"
-            className="brand-logo"
-          />
+          <BrandLockup />
         </Link>
 
         <nav className="mobile-nav" aria-label="Mobile navigation">

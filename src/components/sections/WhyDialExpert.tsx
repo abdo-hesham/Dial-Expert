@@ -96,6 +96,8 @@ export default function WhyDialExpert() {
             <img
               src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&q=80"
               alt="DialExpert team"
+              loading="lazy"
+              decoding="async"
               className="rounded-2xl w-[320px] h-full object-cover shadow-lg"
             />
           </div>
@@ -113,6 +115,8 @@ export default function WhyDialExpert() {
           <img
             src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&q=80"
             alt="DialExpert team"
+            loading="lazy"
+            decoding="async"
             className="rounded-2xl w-full h-[300px] object-cover shadow-lg"
           />
           {[...featuresLeft, ...featuresRight].map((feat) => (
