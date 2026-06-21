@@ -1,7 +1,10 @@
+"use client"
+
+import { useState, useEffect, useCallback, useRef } from "react"
 import type { CSSProperties } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { Play } from "lucide-react"
+import { Play, X } from "lucide-react"
 
 const heroLines = [
   ["Build", "a", "Revenue", "Team"],
@@ -19,7 +22,39 @@ const metrics = [
   { value: "$300M+", label: "Revenue\nGenerated" },
 ]
 
+function VideoModal({ close }: { close: () => void }) {
+  const videoRef = useRef<HTMLVideoElement>(null)
+
+  useEffect(() => {
+    videoRef.current?.play()
+    const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") close() }
+    window.addEventListener("keydown", onKey)
+    return () => window.removeEventListener("keydown", onKey)
+  }, [close])
+
+  return (
+    <div className="hero-modal-overlay" onClick={close}>
+      <div className="hero-modal" onClick={(e) => e.stopPropagation()}>
+        <button className="hero-modal-close" onClick={close} aria-label="Close">
+          <X size={24} strokeWidth={2} />
+        </button>
+        <video
+          ref={videoRef}
+          src="https://framerusercontent.com/assets/hyfo5PQ53wvNBdlUY8WqoWyo41I.mp4"
+          controls
+          playsInline
+          className="hero-modal-video"
+        />
+      </div>
+    </div>
+  )
+}
+
 export default function Hero() {
+  const [showModal, setShowModal] = useState(false)
+  const open = useCallback(() => setShowModal(true), [])
+  const close = useCallback(() => setShowModal(false), [])
+
   return (
     <section id="top" className="hero">
       <div className="hero-frame">
@@ -63,10 +98,10 @@ export default function Hero() {
                 <Link className="btn btn-primary" href="/contact">
                   Book A Strategy Call
                 </Link>
-                <Link className="btn btn-outline" href="/#how-we-operate">
+                <button className="btn btn-outline" onClick={open}>
                   <Play size={15} strokeWidth={2.5} />
                   See How We Operate
-                </Link>
+                </button>
               </div>
             </div>
             <div className="hero-metrics">
@@ -84,6 +119,7 @@ export default function Hero() {
           </div>
         </div>
       </div>
+      {showModal && <VideoModal close={close} />}
     </section>
   )
 }

@@ -1,123 +1,32 @@
 "use client"
 
 import Link from "next/link"
-import { ArrowRight, Hand } from "lucide-react"
+import { ArrowRight, Check } from "lucide-react"
 import { motion } from "framer-motion"
-import { useEffect, useRef, useState } from "react"
 import EyebrowIcon from "../EyebrowIcon"
 import AnimatedSectionHeading from "../AnimatedSectionHeading"
 
 const headingLines = [
-  "We're not going to ask you",
-  "to trust a quote from a name you can't verify.",
+  "Forget The Testimonials.",
+  "We'd Rather Have Skin In The Game.",
 ]
 
 export default function Testimonials() {
-  const sectionRef = useRef<HTMLElement | null>(null)
-  const [introActive, setIntroActive] = useState(false)
-  const [introComplete, setIntroComplete] = useState(false)
-  const contentDelay = 4.65
-
-  useEffect(() => {
-    let completeTimer = 0
-    let frame = 0
-    let pollTimer = 0
-
-    const startIntro = () => {
-      window.clearTimeout(completeTimer)
-      setIntroActive(true)
-      setIntroComplete(false)
-      completeTimer = window.setTimeout(() => setIntroComplete(true), 4650)
-    }
-
-    const checkSection = () => {
-      const section = sectionRef.current
-      if (!section) return
-
-      const rect = section.getBoundingClientRect()
-      const entersViewport =
-        rect.top < window.innerHeight &&
-        rect.bottom > 0
-
-      if (entersViewport) {
-        setIntroActive((wasActive) => {
-          if (!wasActive) {
-            startIntro()
-          }
-
-          return true
-        })
-      } else {
-        window.clearTimeout(completeTimer)
-        setIntroActive(false)
-        setIntroComplete(false)
-      }
-    }
-
-    const scheduleCheck = () => {
-      window.cancelAnimationFrame(frame)
-      frame = window.requestAnimationFrame(checkSection)
-    }
-
-    scheduleCheck()
-    pollTimer = window.setInterval(scheduleCheck, 120)
-    window.setTimeout(() => window.clearInterval(pollTimer), 2400)
-    window.addEventListener("scroll", scheduleCheck, { passive: true })
-    window.addEventListener("resize", scheduleCheck)
-
-    return () => {
-      window.clearTimeout(completeTimer)
-      window.clearInterval(pollTimer)
-      window.cancelAnimationFrame(frame)
-      window.removeEventListener("scroll", scheduleCheck)
-      window.removeEventListener("resize", scheduleCheck)
-    }
-  }, [])
-
   return (
-    <section
-      ref={sectionRef}
-      id="testimonials"
-      className={`section testimonials-section testimonials-framer${
-        introActive ? " testimonial-intro-active" : ""
-      }${
-        introComplete ? " testimonial-intro-complete" : ""
-      }`}
-    >
-      <div
-        className="testimonial-intro-stage"
-        aria-hidden="true"
-      >
-        <div className="testimonial-intro-lockup">
-          <div className="testimonial-intro-word">
-            <span>Testimonials?</span>
-            <span className="testimonial-intro-wipe" />
-          </div>
-
-          <div className="testimonial-hand-orb">
-            <span className="testimonial-orb-no">
-              No
-            </span>
-            <span className="testimonial-hand-wave">
-              <Hand size={42} strokeWidth={2.6} />
-            </span>
-          </div>
-        </div>
-      </div>
-
+    <section id="testimonials" className="section testimonials-section testimonials-framer">
       <motion.div
         className="testimonials-framer-inner"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: false, amount: 0.55 }}
-        transition={{ duration: 0.2, delay: contentDelay }}
+        transition={{ duration: 0.55, ease: "easeOut" }}
       >
         <motion.div
           className="eyebrow testimonials-eyebrow"
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false, amount: 0.7 }}
-          transition={{ duration: 0.55, delay: contentDelay, ease: "easeOut" }}
+          transition={{ duration: 0.55, ease: "easeOut" }}
         >
           <motion.span
             animate={{ rotate: [134, 179, 134] }}
@@ -130,41 +39,51 @@ export default function Testimonials() {
           >
             <EyebrowIcon variant="framer" />
           </motion.span>
-          <span>We&apos;ll keep it simple</span>
+          <span>PROOF OVER PRAISE</span>
         </motion.div>
 
-        {introComplete ? (
-          <AnimatedSectionHeading
-            className="testimonials-framer-heading"
-            lines={headingLines}
-            delay={0.12}
-          />
-        ) : null}
+        <AnimatedSectionHeading
+          className="testimonials-framer-heading"
+          lines={headingLines}
+          delay={0.12}
+        />
 
         <motion.p
           className="testimonials-framer-copy"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false, amount: 0.5 }}
-          transition={{ duration: 0.65, delay: contentDelay + 0.7, ease: "easeOut" }}
+          transition={{ duration: 0.55, ease: "easeOut" }}
         >
-          Instead, through our{" "}
+          Anyone can paste a wall of five-star quotes from people you&apos;ll
+          never meet. We&apos;d rather make you a promise we have to keep: a
+          revenue share model where{" "}
           <span className="sparkle-text sparkle-text-dark">
-            revenue share program
+            what we earn depends on what you earn.
           </span>
-          , our pay is tied to your results.
-          <br />
-          You run the account, we run the floor, and the economics reflect what
-          actually happens.
         </motion.p>
 
         <motion.div
-          className="testimonials-actions"
+          className="flex flex-col items-center gap-6 mt-10 w-full"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false, amount: 0.4 }}
-          transition={{ duration: 0.65, delay: contentDelay + 0.92, ease: "easeOut" }}
+          transition={{ duration: 0.55, ease: "easeOut" }}
         >
+          <div className="flex flex-row max-md:flex-col items-center justify-center gap-5 max-md:gap-3 w-full max-w-md mx-auto">
+            {[
+              "Our pay is tied to your results",
+              "You run the account",
+              "We run the floor",
+            ].map((text) => (
+              <div key={text} className="flex items-center gap-2">
+                <Check size={14} strokeWidth={3.5} className="text-[var(--blue)] shrink-0" />
+                <span className="text-white/80 text-[15px] font-medium leading-snug whitespace-nowrap">
+                  {text}
+                </span>
+              </div>
+            ))}
+          </div>
           <Link className="revenue-share-button" href="/contact">
             <span className="revenue-share-fill" aria-hidden="true" />
             <span className="revenue-share-text">
@@ -180,7 +99,7 @@ export default function Testimonials() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false, amount: 0.5 }}
-            transition={{ duration: 0.55, delay: contentDelay + 1.1, ease: "easeOut" }}
+            transition={{ duration: 0.55, ease: "easeOut" }}
           >
             Available to qualifying clients &middot; Discussed on the 30-min call
           </motion.p>

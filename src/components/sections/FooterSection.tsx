@@ -124,7 +124,7 @@ export default function FooterSection() {
                 <Phone size={16} strokeWidth={2.5} />
                 <span>+1-678-890-0526</span>
               </a>
-              <a href="mailto:contact@dialexpertsolutions.com">
+              <a href="mailto:leo@dialexpertsolutions.com">
                 <Mail size={16} strokeWidth={2.5} />
                 <span>contact@dialexpertsolutions.com</span>
               </a>
