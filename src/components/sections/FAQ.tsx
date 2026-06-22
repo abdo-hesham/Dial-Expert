@@ -8,11 +8,11 @@ import EyebrowIcon from "../EyebrowIcon"
 const faqData = [
   {
     q: "What does DialExpert actually do?",
-    a: "We build and manage sales, support, and lead gen teams. You provide the strategy and targets — we provide the people, management, and daily execution.",
+    a: "We build and manage sales, support, and lead gen teams. You provide the strategy and targets we provide the people, management, and daily execution.",
   },
   {
     q: "Where are your agents located?",
-    a: "Our team is based in a physical office in Egypt. Not a work-from-home setup — a real floor with infrastructure, security, and on-site management.",
+    a: "Our team is based in a physical office in Egypt. Not a work-from-home setup a real floor with infrastructure, security, and on-site management.",
   },
   {
     q: "How do you hire?",
@@ -20,7 +20,7 @@ const faqData = [
   },
   {
     q: "Can you work with our existing team?",
-    a: "Yes. We can operate as a full external team or support your internal operations — whatever structure fits your business best.",
+    a: "Yes. We can operate as a full external team or support your internal operations whatever structure fits your business best.",
   },
   {
     q: "How is performance managed?",

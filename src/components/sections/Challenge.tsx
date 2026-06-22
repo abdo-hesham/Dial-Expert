@@ -8,24 +8,18 @@ const items = [
   {
     id: "01",
     title: "Internal teams are expensive to hire and manage.",
-    description:
-      "Salaries, benefits, training, and infrastructure add up fast. Building in-house means months of recruiting before your team can even start working.",
     image:
       "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=1200&auto=format&fit=crop",
   },
   {
     id: "02",
     title: "Cheap outsourcing often creates poor results.",
-    description:
-      "Low-cost providers cut corners on training, quality control, and accountability. You save on paper but lose on performance and client experience.",
     image:
       "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop",
   },
   {
     id: "03",
     title: "Growth slows when execution becomes inconsistent.",
-    description:
-      "When your sales and support teams can't deliver predictably, pipeline dries up and revenue stagnates. Inconsistent execution kills momentum.",
     image:
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
   },
@@ -33,8 +27,6 @@ const items = [
     id: "04",
     title:
       "Leaders lose time managing problems they should not have to manage.",
-    description:
-      "Instead of focusing on strategy and growth, leaders get pulled into fixing operational issues. The job becomes firefighting, not building.",
     image:
       "https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?q=80&w=1200&auto=format&fit=crop",
   },
@@ -125,12 +117,6 @@ export default function Challenge() {
                       >
                         {item.title}
                       </span>
-
-                      {isActive && (
-                        <p className="text-[var(--muted)] text-sm max-md:text-xs font-normal leading-relaxed max-w-sm pb-2">
-                          {item.description}
-                        </p>
-                      )}
                     </div>
                   </button>
                 );

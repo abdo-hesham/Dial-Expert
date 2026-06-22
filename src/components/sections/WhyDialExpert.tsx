@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import {
   type LucideIcon,
@@ -6,46 +6,52 @@ import {
   Award,
   BookOpen,
   Building2,
-} from "lucide-react"
-import AnimatedSectionHeading from "../AnimatedSectionHeading"
-import EyebrowIcon from "../EyebrowIcon"
+} from "lucide-react";
+import AnimatedSectionHeading from "../AnimatedSectionHeading";
+import EyebrowIcon from "../EyebrowIcon";
 
 const featuresLeft = [
   {
     title: "Rigorous recruiting process",
-    description: "We don't hire anyone who hasn't been vetted, tested, and proven before they touch your campaign.",
     icon: UserCheck,
   },
   {
     title: "Performance-based culture",
-    description: "Every agent is measured, every campaign is tracked. What gets measured gets done.",
     icon: Award,
   },
-]
+];
 
 const featuresRight = [
   {
     title: "Continuous training and coaching",
-    description: "Weekly sessions, live feedback loops, and skill upgrades keep the floor sharp.",
     icon: BookOpen,
   },
   {
     title: "Real office operation in Egypt",
-    description: "Not a work-from-home setup. A physical floor with infrastructure, security, and culture.",
     icon: Building2,
   },
-]
+];
 
-function FeatureCard({ title, description, icon: Icon }: { title: string; description: string; icon: LucideIcon }) {
+function FeatureCard({
+  title,
+  icon: Icon,
+}: {
+  title: string;
+  icon: LucideIcon;
+}) {
   return (
     <div className="flex flex-col p-6 max-md:p-4 rounded-2xl border border-white/10 bg-white/[0.03] h-full">
       <div className="flex items-center justify-center w-11 h-11 max-md:w-10 max-md:h-10 rounded-xl bg-white/5 border border-white/10 shrink-0 mb-4 max-md:mb-3">
-        <Icon className="text-white/80 size-5 max-md:size-4" strokeWidth={1.5} />
+        <Icon
+          className="text-white/80 size-5 max-md:size-4"
+          strokeWidth={1.5}
+        />
       </div>
-      <h3 className="text-white font-bold text-sm max-md:text-xs mb-1">{title}</h3>
-      <p className="text-white/50 text-sm max-md:text-xs leading-relaxed">{description}</p>
+      <h3 className="text-white font-bold text-sm max-md:text-xs mb-1">
+        {title}
+      </h3>
     </div>
-  )
+  );
 }
 
 export default function WhyDialExpert() {
@@ -72,7 +78,11 @@ export default function WhyDialExpert() {
 
           <AnimatedSectionHeading
             className="section-heading text-white"
-            lines={["Most Outsourcing Companies", "Sell Headcount. We Build", "Teams People Can Rely On."]}
+            lines={[
+              "Most Outsourcing Companies",
+              "Sell Headcount. We Build",
+              "Teams People Can Rely On.",
+            ]}
           />
 
           <p className="mx-auto mt-6 max-md:mt-4 max-w-3xl text-white/50 text-[17px] max-md:text-[15px] font-medium leading-relaxed">
@@ -125,5 +135,5 @@ export default function WhyDialExpert() {
         </div>
       </div>
     </section>
-  )
+  );
 }

@@ -405,7 +405,7 @@ img {
   color: #fff;
   font-family: var(--font-display);
   font-size: 22px;
-  font-weight: 900;
+  font-weight: 500;
   line-height: 1;
   white-space: nowrap;
 }
