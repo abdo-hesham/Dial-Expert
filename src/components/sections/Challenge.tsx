@@ -42,6 +42,13 @@ export default function Challenge() {
   }, []);
 
   useEffect(() => {
+    items.forEach((item) => {
+      const img = new Image();
+      img.src = item.image;
+    });
+  }, []);
+
+  useEffect(() => {
     if (isPaused) return;
     const interval = setInterval(handleNext, 5000);
     return () => clearInterval(interval);
@@ -143,7 +150,6 @@ export default function Challenge() {
                     src={items[activeIndex].image}
                     alt=""
                     className="w-full h-full object-cover"
-                    loading="lazy"
                     decoding="async"
                   />
                 </motion.div>
