@@ -7,11 +7,11 @@ export const metadata: Metadata = {
     "Outsourced sales, support, and revenue teams that keep campaigns moving.",
   icons: {
     icon: [
-      { url: "/favicon.ico", sizes: "any" },
-      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-dial/favicon.ico", sizes: "any" },
+      { url: "/favicon-dial/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+      { url: "/favicon-dial/favicon.svg", type: "image/svg+xml" },
     ],
-    apple: "/apple-touch-icon.png",
+    apple: "/favicon-dial/apple-touch-icon.png",
   },
   manifest: "/favicon-dial/site.webmanifest",
 }

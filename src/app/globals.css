@@ -645,6 +645,7 @@ img {
   will-change: transform, opacity, filter;
 }
 
+
 @keyframes hero-word-reveal {
   from {
     opacity: 0;
@@ -727,10 +728,9 @@ img {
 }
 
 .hero-metrics {
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  gap: 64px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
   padding-top: 24px;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
@@ -738,8 +738,8 @@ img {
 .hero-metric {
   display: flex;
   flex-direction: row;
-  align-items: baseline;
-  gap: 10px;
+  align-items: center;
+  gap: 8px;
 }
 
 .hero-metric-value {
@@ -748,6 +748,7 @@ img {
   color: #fff;
   line-height: 1;
   white-space: nowrap;
+  min-width: 58px;
 }
 
 .hero-metric-label {
@@ -756,14 +757,15 @@ img {
   color: rgba(255, 255, 255, 0.65);
   line-height: 1.35;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 4px;
   white-space: nowrap;
 }
 
 /* ── Sections ── */
 
 .section {
-  padding: 120px var(--page-gutter);
+  padding: 160px var(--page-gutter);
 }
 
 .section-white {
@@ -1700,15 +1702,7 @@ img {
   transform: translate(-50%, -44%);
 }
 
-.service-index {
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 1.15;
-  color: #fff;
-  letter-spacing: 0;
-  font-variant-numeric: tabular-nums;
-}
+
 
 .service-row h3 {
   margin: 0;
@@ -1785,6 +1779,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  margin-bottom: 25px;
 }
 
 .timeline-heading {
@@ -2804,13 +2799,13 @@ img {
 .footer-wordmark {
   position: relative;
   z-index: 1;
-  max-width: var(--content);
-  width: 100%;
-  margin: clamp(70px, 8vh, 96px) auto 0;
-  color: rgb(255, 255, 255);
+  width: 100vw;
+  max-width: 100vw;
+  margin: clamp(70px, 8vh, 95px) calc(55% - 50vw) 0;
+  color: #fff;
   opacity: 0.7;
   font-family: var(--font-display);
-  font-size: clamp(94px, 12vw, 223px);
+  font-size: clamp(100px, 15vw, 257px);
   font-weight: 500;
   line-height: 0.92;
   letter-spacing: 0;
@@ -3395,10 +3390,6 @@ img {
     /* keep the same hover proportions on tablet */
   }
 
-  .service-index {
-    font-size: 44px;
-  }
-
   .service-row h3 {
     font-size: clamp(30px, 4vw, 40px);
   }
@@ -3822,11 +3813,6 @@ img {
   .service-title {
     align-items: flex-start;
     gap: 12px;
-  }
-
-  .service-index {
-    font-size: 28px;
-    line-height: 1.08;
   }
 
   .service-row h3 {

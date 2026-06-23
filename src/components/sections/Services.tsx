@@ -10,42 +10,34 @@ const MotionLink = motion.create(Link)
 
 const services = [
   {
-    num: "01",
     title: "Outbound Sales",
     desc: "Build a team that follows up consistently without the burden of internal hiring.",
-    image:
-      "https://framerusercontent.com/images/2OMzQEYtFsMJe9R4TdqOcQE208k.png?width=3360&height=1440",
+    image: "/Outbound-Sales.png",
   },
   {
-    num: "02",
     title: "Lead Generation",
     desc: "Qualify opportunities and create a stronger pipeline.",
-    image:
-      "https://framerusercontent.com/images/4pVjOHJLM9w4iDTb5BQ2G1orSo.png?width=1680&height=720",
+    image: "/Lead-Generation-picture.png",
   },
   {
-    num: "03",
     title: "Appointment Setting",
     desc: "Keep your calendar filled while your internal team focuses on closing.",
     image:
       "https://framerusercontent.com/images/5kTnXZDLQEOHHQwz8HysG8hzB0.png?width=3360&height=1440",
   },
   {
-    num: "04",
     title: "Inbound Sales",
     desc: "Turn incoming interest into revenue with trained representatives.",
     image:
       "https://framerusercontent.com/images/cIQiz350DxCswpNIm51NlgSBfIk.png?width=1680&height=720",
   },
   {
-    num: "05",
     title: "Customer Support",
     desc: "Deliver responsive, professional support that protects your brand.",
     image:
       "https://framerusercontent.com/images/CTEEEg6HAZ6NFgnZ3T0KMzlnh74.png?width=1680&height=720",
   },
   {
-    num: "06",
     title: "Specialized Campaigns",
     desc: "Build custom teams for specific business initiatives.",
     image:
@@ -114,13 +106,11 @@ export default function Services() {
                 }}
               >
                 <div className="service-title service-title-overlay">
-                  <span className="service-index">{service.num}</span>
                   <h3>{service.title}</h3>
                 </div>
               </div>
               <div className="service-content">
                 <div className="service-title">
-                  <span className="service-index">{service.num}</span>
                   <h3>{service.title}</h3>
                 </div>
                 <p className="service-desc">{service.desc}</p>

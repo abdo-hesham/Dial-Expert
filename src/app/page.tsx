@@ -4,7 +4,7 @@ import DeferredHomeSections from "@/components/DeferredHomeSections"
 
 export default function Home() {
   return (
-    <main className="page">
+    <main className="page overflow-x-hidden w-full max-w-full">
       <Navbar />
       <Hero />
       <DeferredHomeSections />

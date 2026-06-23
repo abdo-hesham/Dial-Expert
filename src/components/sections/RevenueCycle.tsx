@@ -15,31 +15,27 @@ import EyebrowIcon from "../EyebrowIcon";
 
 const steps = [
   {
-    num: "1- Recruit",
+    num: "Recruit",
     heading: "We screen large volumes to find the right people.",
-    image:
-      "https://framerusercontent.com/images/uRnAJVoOX4O4uUxyzAa1VVP32Go.jpg",
+    image: "/Recruit.png",
     rot: -3,
   },
   {
-    num: "2- Train",
+    num: "Train",
     heading: "Structured onboarding and continuous development.",
-    image:
-      "https://framerusercontent.com/images/GBpay3B8HObfTUqnBW7uHWQV7rs.jpg",
+    image: "/Train.png",
     rot: 3,
   },
   {
-    num: "3- Manage",
+    num: "Manage",
     heading: "Managers oversee quality and day-to-day performance.",
-    image:
-      "https://framerusercontent.com/images/FyzSrMXLccPvtlrtS0kHTWyNlcU.jpg",
+    image: "/Manage.png",
     rot: -3,
   },
   {
-    num: "4- Optimize",
+    num: "Optimize",
     heading: "Performance is reviewed and improved continuously.",
-    image:
-      "https://framerusercontent.com/images/xxhQ666ZyQDc0tmEw1IPm1E9Qr4.webp",
+    image: "/optimize.png",
     rot: 3,
   },
 ];
