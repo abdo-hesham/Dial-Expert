@@ -12,12 +12,12 @@ const services = [
   {
     title: "Outbound Sales",
     desc: "Build a team that follows up consistently without the burden of internal hiring.",
-    image: "/Outbound-Sales.png",
+    image: "/Outbound-Sales.webp",
   },
   {
     title: "Lead Generation",
     desc: "Qualify opportunities and create a stronger pipeline.",
-    image: "/Lead-Generation-picture.png",
+    image: "/Lead-Generation-picture.webp",
   },
   {
     title: "Appointment Setting",

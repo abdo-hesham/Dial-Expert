@@ -104,7 +104,7 @@ export default function WhyDialExpert() {
           {/* Center image */}
           <div className="h-[420px]">
             <img
-              src="/Why-DialExpert.png"
+              src="/Why-DialExpert.webp"
               alt="DialExpert team"
               loading="lazy"
               decoding="async"
@@ -123,7 +123,7 @@ export default function WhyDialExpert() {
         {/* Mobile: stacked */}
         <div className="mx-auto mt-10 max-w-6xl lg:hidden flex flex-col gap-6">
           <img
-            src="/Why-DialExpert.png"
+            src="/Why-DialExpert.webp"
             alt="DialExpert team"
             loading="lazy"
             decoding="async"

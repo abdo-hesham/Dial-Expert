@@ -8,23 +8,23 @@ const items = [
   {
     id: "01",
     title: "Internal teams are expensive to hire and manage.",
-    image: "/the%20challenge.png",
+    image: "/the%20challenge.webp",
   },
   {
     id: "02",
     title: "Cheap outsourcing often creates poor results.",
-    image: "/the%20challenge-1.png",
+    image: "/the%20challenge-1.webp",
   },
   {
     id: "03",
     title: "Growth slows when execution becomes inconsistent.",
-    image: "/the%20challenge-2.png",
+    image: "/the%20challenge-2.webp",
   },
   {
     id: "04",
     title:
       "Leaders lose time managing problems they should not have to manage.",
-    image: "/the%20challenge-3.png",
+    image: "/the%20challenge-3.webp",
   },
 ];
 

@@ -17,25 +17,25 @@ const steps = [
   {
     num: "Recruit",
     heading: "We screen large volumes to find the right people.",
-    image: "/Recruit.png",
+    image: "/Recruit.webp",
     rot: -3,
   },
   {
     num: "Train",
     heading: "Structured onboarding and continuous development.",
-    image: "/Train.png",
+    image: "/Train.webp",
     rot: 3,
   },
   {
     num: "Manage",
     heading: "Managers oversee quality and day-to-day performance.",
-    image: "/Manage.png",
+    image: "/Manage.webp",
     rot: -3,
   },
   {
     num: "Optimize",
     heading: "Performance is reviewed and improved continuously.",
-    image: "/optimize.png",
+    image: "/optimize.webp",
     rot: 3,
   },
 ];

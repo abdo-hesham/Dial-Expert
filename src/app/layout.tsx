@@ -23,6 +23,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-scroll-behavior="smooth">
+      <head>
+        <link rel="preconnect" href="https://framerusercontent.com" />
+        <link rel="preconnect" href="https://images.unsplash.com" />
+        <link rel="dns-prefetch" href="https://framerusercontent.com" />
+        <link rel="dns-prefetch" href="https://images.unsplash.com" />
+      </head>
       <body>{children}</body>
     </html>
   )
